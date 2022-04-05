@@ -45,10 +45,10 @@
 						<label for="email">Courriel *</label>
 						<input type="email" name="email" id="email" />
 
-						<label for="phone">Numéro de téléphone</label>
+						<label for="phone">Numéro de téléphone *</label>
 						<input type="tel" />
 
-						<label for="year">année de la voiture</label>
+						<label for="year">année de la voiture *</label>
 						<select name="year" id="year">
 							<option value="" selected disabled hidden></option>
 
@@ -95,7 +95,7 @@
 							<option value="2000">2000</option>
 						</select>
 
-						<label for="marque">marque</label>
+						<label for="marque">marque *</label>
 						<select name="marque" id="marque">
 							<option value="" selected disabled hidden></option>
 							<option value="Acura">Acura</option>
@@ -145,11 +145,95 @@
 							<option value="Volvo">Volvo</option>
 						</select>
 
-						<label for="phone">Numéro de téléphone</label>
-						<input type="tel" />
+						<label for="modele">modèle *</label>
+						<input type="text" name="modele" id="modele" />
+
+						<label for="km">kilométrage *</label>
+						<input type="number" name="km" id="km" />
+
+						<label for="transmission">Transmission *</label>
+						<input
+							type="radio"
+							id="automatic"
+							value="automatic"
+							name="transmission"
+							checked
+						/>
+						<label for="automatic">Automatique</label>
+						<input
+							type="radio"
+							id="manual"
+							value="manual"
+							name="transmission"
+						/>
+						<label for="manual">Manuelle</label>
+
+						<label for="num-id">numéro d'indentification *</label>
+						<p>
+							Afin de mieux vous servir, veuillez nous fournir
+							votre numéro d'identification de véhicule. Il s'agit
+							d'un numéro de série à 17 chiffres qui se trouve sur
+							le papier d'immatriculation de votre véhicule. (Ce
+							numéro ne nous donne accès à aucune de vos
+							informations personnelles. Il nous permet uniquement
+							de vérifier l'historique des accidents associés à
+							votre véhicule.)
+						</p>
+						<input type="text" name="num-id" id="num-id" />
+						<label for="process"
+							>Où en êtes vous dans votre processus de vente ?
+						</label>
+						<select name="process" id="process">
+							<option value="" selected disabled hidden></option>
+							<option value="1">
+								Prêt pour le vendre rapidement
+							</option>
+							<option value="2">
+								Le vendre dans quelques mois
+							</option>
+							<option value="3">Simplement curieux</option>
+						</select>
+						<input
+							type="submit"
+							name="sumbit"
+							id="sumbit"
+							value="ENVOYER"
+						/>
 					</form>
+				</div>
+				<div class="rm-cont-link">
+					<a href="./home.html"></a>
 				</div>
 			</div>
 		</div>
+		<footer>
+			<h2>Contactez-nous</h2>
+			<ul>
+				<li>
+					<img src="../images/location.svg" alt="location-icon" />
+					<p>
+						1410 Boul. Taschereau, <br />
+						La Prairie, QC J5R 4E8
+					</p>
+				</li>
+				<li>
+					<img src="../images/phone.svg" alt="phone-icon" />
+					<p><a href="tel:4509071596">(450) 907-1596</a></p>
+				</li>
+				<li>
+					<img src="../images/email.svg" alt="email-icon" />
+					<p>info@simplicitelocation.com</p>
+				</li>
+			</ul>
+			<h2>Heures d'ouverture</h2>
+			<p>Lundi/ Vendredi : 9am - 5pm</p>
+			<a href="#"
+				><img src="../images/linkedin.svg" alt="linkedin-icon"
+			/></a>
+			<span></span>
+			<div class="cont-petit-lien">
+				<a href="#">Mentions légales</a> <span>|</span> <a href="#"></a>
+			</div>
+		</footer>
 	</body>
 </html>
