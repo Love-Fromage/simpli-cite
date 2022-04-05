@@ -1,4 +1,4 @@
-# controle de version pour simpli-cite
+# Repo GitHub pour simpli-cite
 
 ## npm install
 
