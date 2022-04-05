@@ -1,0 +1,26 @@
+.cont-slider{
+    margin: auto;
+    width: 3*200px;
+    overflow: hidden;
+    .slides{
+        display: flex;
+        width:100vw;
+        //overflow: hidden;
+        .cont-slide{
+            width: 200px;
+            img{
+                width: inherit;
+            }
+        }
+    }
+    .cont-nav-carou{
+        display: flex;
+        img{
+            width: 50px;
+        &:first-child{
+            transform: rotate(180deg);
+        }
+        }
+        
+    }
+}
