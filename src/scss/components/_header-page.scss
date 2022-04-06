@@ -44,6 +44,26 @@
 							}
 						}
 					}
+					.toggle-off {
+						display: none;
+					}
+					.toggle-on {
+						display: flex;
+						flex-direction: column;
+						height: fit-content;
+						nav {
+							height: fit-content;
+							ul {
+								margin-top: 55vh;
+								padding-left: 0%;
+								list-style: none;
+								li {
+									a {
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
