@@ -1,19 +1,21 @@
 //FICHIER DE CONFIGURATION POUR LES VARIABLES DE POLICE
 
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&display=swap");
 /// Grosseur des textes
 
 $fz-normal: rem(16);
 
-
 /// Grosseur des titres
 
-$fz-h1: rem(60);
-$fz-h2: rem(32);
-$fz-h3: rem(28);
-$fz-h4: rem(24);
+$fz-h1: rem(100);
+$fz-h2: rem(60);
+$fz-h3: rem(30);
+$fz-h4: rem(25);
 $fz-h5: rem(20);
 $fz-h6: rem(16);
+$fz-p: rem(16);
+$fz-a: rem(14);
+$fz-btn: rem(16);
 
 /// Hauteur de ligne
 $lh-extra-thin: 1;
@@ -23,11 +25,12 @@ $lh-medium: 1.8;
 $lh-large: 2;
 $lh-extra-large: 2.4;
 
-
 /// Font family
 
-$ff-normal: 'Roboto', Helvetica, Arial, sans-serif;
-$ff-title: 'Open Sans', Helvetica, Arial, sans-serif;
+$ff-poppins: "Poppins", sans-serif;
+$ff-raleway: "Raleway", sans-serif;
+$ff-normal: $ff-poppins; //"Roboto", Helvetica, Arial, sans-serif;
+$ff-title: $ff-raleway; //"Open Sans", Helvetica, Arial, sans-serif;
 
 /// Fonts weight
 $fw-thin: 100;
@@ -39,6 +42,3 @@ $fw-semibold: 600;
 $fw-bold: 700;
 $fw-extra-bold: 800;
 $fw-black: 900;
-
-
-
