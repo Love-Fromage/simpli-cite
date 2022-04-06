@@ -1,2 +1,64 @@
 @media screen and(max-width:767px) {
+	.gros-background {
+		width: 100%;
+		overflow: hidden;
+		background-image: url("../../images/bg-road.webp");
+		background-color: black;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: cover;
+		height: 100vh;
+		.bg-noir {
+			background-color: rgba(0, 0, 0, 0.85);
+			height: inherit;
+			padding-bottom: 2vh;
+			.cont-logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				// max-width: 100vw;
+				img {
+					margin-top: 5vh;
+					width: 50vw;
+					height: auto;
+				}
+			}
+			.cont-droit-d {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-top: auto;
+				margin-bottom: auto;
+				h1 {
+					// text-align: center;
+
+					margin-left: 30vw;
+					display: block;
+					width: 45%;
+					font-family: $ff-raleway;
+					font-size: rem(18);
+					font-weight: bold;
+					color: white;
+					line-height: rem(26);
+				}
+				a {
+					margin-top: 5vh;
+					margin-bottom: 5vh;
+					display: block;
+					margin-left: 30vw;
+					padding: 5% 20%;
+					width: fit-content;
+					border: 1px solid $blue;
+					color: white;
+				}
+				span {
+					display: block;
+					background-color: $blue;
+					width: 70vw;
+					height: 2px;
+					margin-left: auto;
+				}
+			}
+		}
+	}
 }
