@@ -1,0 +1,20 @@
+@media screen and(max-width:767px) {
+	.bg-home {
+		background-image: url("../../images/bg-road.webp");
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		header {
+			nav {
+				.nav-m {
+					display: flex;
+					justify-content: space-between;
+					img {
+						width: 20vw;
+					}
+				}
+			}
+		}
+	}
+}
