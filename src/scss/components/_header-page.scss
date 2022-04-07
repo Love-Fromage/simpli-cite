@@ -1,23 +1,29 @@
 @media screen and(max-width:767px) {
+	h1 {
+		font-size: rem(50);
+		margin-top: 50vh;
+	}
 	.bg-home {
 		overflow: hidden;
 		background-image: url("../../images/bg-road.webp");
 		background-position: 0 0;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 100vh;
+		//height: 100vh;
 		header {
 			nav {
 				height: 10vh;
 				.nav-d {
 					display: none;
 				}
-				.nav-m {
+				.nav-m,
+				.cont-m {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					//overflow: hidden;
 					height: inherit;
-					margin-top: 2vh;
+					// margin-top: 2vh;
 					img {
 						// margin-top: auto;
 						// margin-bottom: auto;
@@ -43,23 +49,63 @@
 								margin-bottom: 10px;
 							}
 						}
+						.pain2 {
+							background-color: $blue;
+						}
 					}
-					.toggle-off {
-						display: none;
+				}
+
+				//toggle du menu c<'est ici que ca se joue
+				.toggle-off {
+					display: none;
+				}
+				.blanc-nav {
+					background-color: white;
+				}
+
+				.toggle-on {
+					display: flex;
+					flex-direction: column;
+					height: fit-content;
+					background-color: white;
+					position: relative;
+					// top: 0vh;
+					height: 100vh;
+					overflow: hidden;
+					a {
+						font-weight: $fw-extra-bold;
+						font-family: $ff-raleway;
+						font-size: rem(15);
 					}
-					.toggle-on {
-						display: flex;
-						flex-direction: column;
+					nav {
 						height: fit-content;
-						nav {
-							height: fit-content;
-							ul {
-								margin-top: 55vh;
-								padding-left: 0%;
-								list-style: none;
-								li {
-									a {
-									}
+						margin-top: 10vh;
+						// margin-bottom: 80%;
+						ul {
+							//margin-top: 5vh;
+							padding-left: 0%;
+							list-style: none;
+							margin-left: auto;
+							margin-right: auto;
+							width: 80%;
+							z-index: 2;
+
+							li {
+								width: 80%;
+								margin-bottom: 10px;
+								text-transform: uppercase;
+								a {
+									letter-spacing: 1%;
+									color: $black;
+									font-family: $ff-poppins;
+									font-size: rem(20);
+									font-weight: medium;
+								}
+							}
+							.activePage {
+								a {
+									color: $blue;
+									font-weight: medium;
 								}
 							}
 						}
@@ -68,4 +114,14 @@
 			}
 		}
 	}
+}
+//version tablette ici
+@media screen and(min-width:768px) {
+	//tu dois reprendre des choses de mobile ici
+}
+//version desktop ici
+@media screen and(min-width:1280px) {
+	//principalement gossage depuis la version tablette
+	//mais pour le debut (7 avril 2022) on n'a pas la verison tablette
+	//donc fait juste le faire via la maquette
 }
