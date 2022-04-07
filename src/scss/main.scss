@@ -37,6 +37,11 @@
 @import "components/formulaire-inscription";
 @import "components/formulaire-commentaires";
 
+//SOUS-COMPONENTS
+
+//HOME (a-propos)
+@import "components/home/about";
+
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 @import "utilities/spacing";

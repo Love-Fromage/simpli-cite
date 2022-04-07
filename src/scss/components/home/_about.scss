@@ -1,0 +1,40 @@
+//version mobile ici
+@media screen and(max-width:767px) {
+	//content
+	.about {
+		.home-cont-about-title {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 2vh;
+			span {
+				display: block;
+				background-color: $blue;
+				width: 40vw;
+				height: 2px;
+
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+			h1 {
+				font-family: $ff-raleway;
+				font-weight: $fw-light;
+				font-size: rem(40);
+				text-transform: none;
+				color: $blue;
+				display: inline-block;
+				width: fit-content;
+				margin-right: 10vw;
+			}
+		}
+	}
+}
+
+//version tablette ici
+@media screen and(min-width:768px) {
+	//content
+}
+
+//version desktop ici
+@media screen and(min-width:1280px) {
+	//content
+}
