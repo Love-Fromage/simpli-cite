@@ -46,11 +46,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			logoImg = "logo-noir.svg";
 			logoNav.src = "../images/" + logoImg;
 		} else {
-			logoImg = "logo-blanc.svg";
-			logoNav.src = "../images/" + logoImg;
-			navM.classList.remove("blanc-nav");
-			hamPain1.classList.remove("pain2");
-			hamPain2.classList.remove("pain2");
+			// logoImg = "logo-blanc.svg";
+			// logoNav.src = "../images/" + logoImg;
+			// navM.classList.remove("blanc-nav");
+			// hamPain1.classList.remove("pain2");
+			// hamPain2.classList.remove("pain2");
+			if (menuHam.classList.contains("toggle-off")) {
+				logoImg = "logo-blanc.svg";
+				logoNav.src = "../images/" + logoImg;
+				navM.classList.remove("blanc-nav");
+				hamPain1.classList.remove("pain2");
+				hamPain2.classList.remove("pain2");
+			}
 		}
 	});
 	const uneFonction = () => {

@@ -4,6 +4,7 @@
 		position: relative;
 		top: -12vh;
 		height: 100%;
+		z-index: 5;
 		.hero-d {
 			height: inherit;
 			background: linear-gradient(
@@ -24,6 +25,20 @@
 			margin-left: 10vw;
 			margin-right: auto;
 			line-height: rem(29);
+		}
+		.home-call {
+			color: white;
+			display: inline-block;
+
+			margin-left: 10vw;
+			border: $blue 2px solid;
+			// box-shadow: inset 0px 0px 0px 2px $blue;
+			padding: 5% 15%;
+			margin-top: 5vh;
+			text-transform: uppercase;
+			font-family: $ff-poppins;
+			font-weight: medium;
+			letter-spacing: 14%;
 		}
 	}
 }
