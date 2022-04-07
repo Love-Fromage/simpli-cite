@@ -32,8 +32,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			logoNav.src = "../images/" + logoImg;
 		}
 	};
+	console.log(window.pageYOffset);
 
 	btnHam.addEventListener("click", toggleLeMenu);
+	window.addEventListener("scroll", () => {
+		// console.log(window.pageYOffset);
+		if (window.pageYOffset >= 10) {
+			// console.log("plus bas de 10");
+			navM.classList.add("blanc-nav");
+			hamPain1.classList.add("pain2");
+			hamPain2.classList.add("pain2");
+
+			logoImg = "logo-noir.svg";
+			logoNav.src = "../images/" + logoImg;
+		} else {
+			logoImg = "logo-blanc.svg";
+			logoNav.src = "../images/" + logoImg;
+			navM.classList.remove("blanc-nav");
+			hamPain1.classList.remove("pain2");
+			hamPain2.classList.remove("pain2");
+		}
+	});
 	const uneFonction = () => {
 		// console.log("coucou");
 	};
