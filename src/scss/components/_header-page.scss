@@ -1,18 +1,25 @@
 @media screen and(max-width:767px) {
-	h1 {
+	h1,
+	h2,
+	h3,
+	h4 {
 		font-size: rem(50);
 		margin-top: 50vh;
 	}
 	.bg-home {
-		overflow: hidden;
+		// overflow: hidden;
 		background-image: url("../../images/bg-road.webp");
 		background-position: 0 0;
 		background-repeat: no-repeat;
 		background-size: cover;
+		width: 100%;
 		//height: 100vh;
 		header {
+			width: 100%;
 			nav {
+				z-index: 5;
 				height: 10vh;
+				position: sticky;
 				.nav-d {
 					display: none;
 				}
@@ -21,8 +28,11 @@
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
-					//overflow: hidden;
+					// overflow-x: hidden;
 					height: inherit;
+					position: fixed;
+					// top: 10vh;
+					width: 100%;
 					// margin-top: 2vh;
 					img {
 						// margin-top: auto;
@@ -68,14 +78,21 @@
 					flex-direction: column;
 					height: fit-content;
 					background-color: white;
-					position: relative;
-					// top: 0vh;
-					height: 100vh;
+					position: fixed;
+					top: 9.9vh;
+					height: 100%;
+					width: 100%;
 					overflow: hidden;
-					a {
+					border: none;
+					.lang {
 						font-weight: $fw-extra-bold;
 						font-family: $ff-raleway;
 						font-size: rem(15);
+						margin-top: auto;
+						margin-bottom: 35vh;
+						width: 80%;
+						margin-left: auto;
+						margin-right: auto;
 					}
 					nav {
 						height: fit-content;
