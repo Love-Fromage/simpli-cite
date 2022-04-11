@@ -56,13 +56,14 @@
 				width: 10vw;
 				z-index: -1;
 				top: 40px;
+				// height: 500vh;
 				@media screen and(min-height:667px) {
 					top: 5.5vh;
 				}
 
 				right: 0;
 				left: 90vw;
-				height: 300vh;
+				height: 250vh;
 				background-color: $gray;
 			}
 			.col-right {
@@ -141,6 +142,9 @@
 			position: relative;
 
 			margin-top: 200px;
+			@media screen and(max-height:740px) {
+				margin-top: 280px;
+			}
 
 			.voiture-m {
 				overflow-x: hidden;
