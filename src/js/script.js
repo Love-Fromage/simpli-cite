@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	//Un commentaire
 	console.log("Ça fonctionne!!!");
+	const homeB = document.querySelector(".home-cont-about");
 	const menuHam = document.querySelector("#ham");
 	const btnHam = document.querySelector(".cont-ham");
 	const navM = document.querySelector(".nav-m");
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const hamPain2 = document.querySelector("#pain2");
 
 	let logoImg = logoNav.src.split("/").pop();
-	if (document.querySelector(".home-cont-about") !== null) {
+	if (homeB !== null) {
 		window.addEventListener("scroll", () => {
 			console.log(window.pageYOffset);
 			if (window.pageYOffset !== 0) {
@@ -39,38 +40,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			}
 		});
 		console.log(logoNav.src);
-		if (!navM.classList.contains("blanc-nav")) {
-			navM.classList.add("blanc-nav");
-		} else if (
-			navM.classList.contains("blanc-nav") &&
-			window.scrollY <= 10
-		) {
-			navM.classList.remove("blanc-nav");
-		}
-		if (logoImg === "logo-blanc.svg") {
-			console.log("change l'image!");
-			logoImg = "logo-noir.svg";
-			logoNav.src = "../images/" + logoImg;
-			//sinon si l'image est noir...
-		} else if (logoImg === "logo-noir.svg" && window.scrollY <= 10) {
-			logoImg = "logo-blanc.svg";
-			logoNav.src = "../images/" + logoImg;
-		}
-
-		if (
-			!hamPain1.classList.contains("pain2") &&
-			!hamPain2.classList.contains("pain2")
-		) {
-			hamPain1.classList.add("pain2");
-			hamPain2.classList.add("pain2");
-		} else if (
-			hamPain1.classList.contains("pain2") &&
-			hamPain2.classList.contains("pain2") &&
-			window.scrollY <= 10
-		) {
-			hamPain1.classList.remove("pain2");
-			hamPain2.classList.remove("pain2");
-		}
 	}
 
 	const toggleLeMenu = () => {
@@ -88,8 +57,40 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			menuHam.classList.remove("toggle-on");
 		}
 
-		//fait juste ca si tes sur la page d'accueil please
-
+		if (homeB !== null) {
+			//fait juste ca si tes sur la page d'accueil please
+			if (logoImg === "logo-blanc.svg") {
+				console.log("change l'image!");
+				logoImg = "logo-noir.svg";
+				logoNav.src = "../images/" + logoImg;
+				//sinon si l'image est noir...
+			} else if (logoImg === "logo-noir.svg" && window.scrollY <= 10) {
+				logoImg = "logo-blanc.svg";
+				logoNav.src = "../images/" + logoImg;
+			}
+			if (!navM.classList.contains("blanc-nav")) {
+				navM.classList.add("blanc-nav");
+			} else if (
+				navM.classList.contains("blanc-nav") &&
+				window.scrollY <= 10
+			) {
+				navM.classList.remove("blanc-nav");
+			}
+			if (
+				!hamPain1.classList.contains("pain2") &&
+				!hamPain2.classList.contains("pain2")
+			) {
+				hamPain1.classList.add("pain2");
+				hamPain2.classList.add("pain2");
+			} else if (
+				hamPain1.classList.contains("pain2") &&
+				hamPain2.classList.contains("pain2") &&
+				window.scrollY <= 10
+			) {
+				hamPain1.classList.remove("pain2");
+				hamPain2.classList.remove("pain2");
+			}
+		}
 		//si l'image est blanche...
 	};
 	console.log(window.pageYOffset);
