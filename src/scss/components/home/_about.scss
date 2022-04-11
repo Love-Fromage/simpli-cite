@@ -27,7 +27,15 @@
 			}
 		}
 		.home-cont-about {
-			height: 170vh;
+			// height: 170vh;
+			position: relative;
+			.home-about-para-d {
+				.col-right {
+					img {
+						// position: relative;
+					}
+				}
+			}
 			.col-left {
 				p {
 					font-family: $ff-poppins;
@@ -43,54 +51,78 @@
 					}
 				}
 			}
+			.col-droite {
+				position: absolute;
+				width: 10vw;
+				z-index: -1;
+				top: 40px;
+				@media screen and(min-height:667px) {
+					top: 5.5vh;
+				}
 
-			.home-overlay {
-				position: relative;
-				top: -65vh;
+				right: 0;
+				left: 90vw;
+				height: 300vh;
 				background-color: $gray;
-				padding-bottom: 5vh;
-				width: 90%;
-				h2 {
-					font-family: $ff-raleway;
-					font-weight: $fw-extra-bold;
-					font-size: rem(15);
-					display: inline-block;
-					margin-top: 6vh;
-					color: $black;
-					margin-left: 10vw;
-
-					span {
-						color: $blue;
-					}
+			}
+			.col-right {
+				position: relative;
+				//height: 850px;
+				margin-bottom: 150px;
+				@media screen and(min-height:896px) {
+					margin-bottom: 0px;
 				}
-				p {
-					margin-left: 10vw;
-					width: 80%;
-					font-family: $ff-poppins;
-					font-weight: $fw-regular;
-					font-size: rem(12);
-					line-height: rem(20);
-					color: #16191b;
-				}
+				.home-overlay {
+					position: absolute;
+					top: 70px;
+					background-color: $gray;
+					padding-bottom: 5vh;
+					width: 90%;
+					height: fit-content;
+					h2 {
+						font-family: $ff-raleway;
+						font-weight: $fw-extra-bold;
+						font-size: rem(15);
+						display: inline-block;
+						margin-top: 6vh;
+						color: $black;
+						margin-left: 10vw;
 
-				.home-cont-croix {
-					width: fit-content;
-					height: auto;
-					span {
-						display: block;
-						background-color: $blue;
-						width: 12vw;
-						height: 2px;
-						position: relative;
-						top: 5vh;
-						left: 84.2vw;
-
-						&:first-child {
-							//test
-							transform: rotate(90deg) translateX(2px);
+						span {
+							color: $blue;
 						}
-						&:last-child {
-							//test
+					}
+					p {
+						margin-left: 10vw;
+						width: 80%;
+						font-family: $ff-poppins;
+						font-weight: $fw-regular;
+						font-size: rem(12);
+						line-height: rem(20);
+						color: #16191b;
+					}
+
+					.home-cont-croix {
+						width: fit-content;
+						height: auto;
+						position: relative;
+						span {
+							display: block;
+							background-color: $blue;
+							width: 12vw;
+							height: 2px;
+							position: relative;
+							top: 5vh;
+							left: 84.2vw;
+
+							&:first-child {
+								//test
+								transform: rotate(90deg) translateX(2px);
+							}
+							&:last-child {
+								//test
+								position: relative;
+							}
 						}
 					}
 				}
@@ -98,16 +130,9 @@
 		}
 		.home-cont-voiture {
 			position: relative;
-			.col-droite {
-				position: absolute;
-				width: 10vw;
-				z-index: -1;
-				top: -10.5vh;
-				right: 0;
-				left: 90%;
-				height: 300vh;
-				background-color: $gray;
-			}
+
+			margin-top: 200px;
+
 			.voiture-m {
 				overflow-x: hidden;
 				img {
