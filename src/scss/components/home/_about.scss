@@ -187,6 +187,33 @@
 						margin-right: 2vw;
 					}
 				}
+				.contenu {
+					margin-top: 30px;
+					margin-bottom: 30px;
+					p {
+						width: 60%;
+					}
+					.first-p {
+						color: $black;
+						font-family: $ff-poppins;
+						font-weight: $fw-bold;
+						font-size: rem(14);
+						line-height: rem(22);
+						margin-left: 10vw;
+					}
+					.last-p {
+						color: $black;
+						font-family: $ff-poppins;
+						font-size: rem(12);
+						font-weight: $fw-regular;
+						line-height: rem(20);
+						margin-left: 10vw;
+					}
+				}
+			}
+			.last-card {
+				background-image: url("../../../images/last-card-bg-m.webp");
+				background-position: 115% 50%;
 			}
 		}
 	}
