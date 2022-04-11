@@ -168,6 +168,27 @@
 				}
 			}
 		}
+		.home-cont-cartes {
+			margin-top: 150px;
+			display: flex;
+			flex-direction: column;
+			.carte {
+				height: fit-content;
+				.header {
+					height: 60px;
+					background-color: $blue;
+					width: 45vw;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					img {
+						width: 10vw;
+						max-height: 39px;
+						margin-right: 2vw;
+					}
+				}
+			}
+		}
 	}
 }
 
