@@ -160,6 +160,9 @@
 				line-height: rem(22);
 				font-weight: $fw-regular;
 				text-align: center;
+				a {
+					font-weight: $fw-bold;
+				}
 			}
 		}
 	}
