@@ -164,6 +164,15 @@
 					font-weight: $fw-bold;
 				}
 			}
+			img {
+				display: block;
+				margin-top: 50px;
+				width: 30vw;
+				// text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 50px;
+			}
 		}
 	}
 }
