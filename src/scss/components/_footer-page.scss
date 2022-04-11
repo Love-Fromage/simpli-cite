@@ -1,0 +1,148 @@
+//version mobile ici
+@media screen and(max-width:767px) {
+	footer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 5;
+		background-color: $black;
+
+		.cont-scroll {
+			span {
+				display: block;
+				width: 20vw;
+				height: 2px;
+				background-color: $blue;
+				transform: rotate(90deg);
+			}
+			p {
+				width: fit-content;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 50px;
+				color: white;
+				font-family: $ff-poppins;
+				font-size: rem(16);
+				font-weight: $fw-medium;
+			}
+		}
+		h2 {
+			color: $blue;
+			font-size: rem(25);
+			font-weight: $fw-bold;
+			font-family: $ff-raleway;
+			text-transform: none;
+			text-align: left;
+			margin-left: 10vw;
+			margin-right: auto;
+		}
+		ul {
+			padding: 0;
+			margin-left: 10vw;
+			margin-right: auto;
+			li {
+				display: flex;
+				align-items: center;
+				img {
+					width: 3vw;
+					height: fit-content;
+					margin-right: 10px;
+				}
+				p {
+					color: white;
+					font-family: $ff-poppins;
+					font-size: rem(12);
+					font-weight: $fw-regular;
+					line-height: rem(20);
+					a {
+						&:link {
+							color: #fff;
+						}
+						&:visited {
+							color: #fff;
+						}
+						// background-color: red;
+					}
+				}
+			}
+		}
+		.hour {
+			display: flex;
+			flex-direction: column;
+
+			margin-right: auto;
+			margin-left: 10vw;
+			h2 {
+				width: fit-content;
+				display: block;
+				// display: inline-block;
+				margin-right: auto;
+				margin-left: 0;
+				color: $blue;
+				font-family: $ff-raleway;
+				font-weight: $fw-bold;
+				font-size: rem(15);
+			}
+			p {
+				color: #fff;
+				font-family: $ff-poppins;
+				font-weight: $fw-regular;
+				line-height: rem(26);
+				font-size: rem(12);
+			}
+		}
+		.cont-footer-line {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: flex-start;
+			margin-top: 20px;
+			margin-bottom: 50px;
+			.footer-line-rm {
+				margin-left: 10vw;
+				background-color: $gray;
+				width: 12vw;
+				height: 1px;
+				margin-right: 10px;
+			}
+			a {
+				font-family: $ff-poppins;
+				font-weight: $fw-medium;
+				line-height: rem(26);
+				font-size: rem(12);
+				&:link {
+					color: $blue;
+				}
+				&:visited {
+					color: $blue;
+				}
+			}
+		}
+		.cont-linkedin {
+			margin-bottom: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			img {
+				width: fit-content;
+				margin-bottom: 50px;
+			}
+			span {
+				width: 100vw;
+				height: 1px;
+				background-color: $gray;
+			}
+		}
+	}
+}
+
+//version tablette ici
+@media screen and (min-width: 768px) {
+	//du stuck
+}
+
+//verison desktop ici
+@media screen and(min-width:1280px) {
+	//du stuck
+}
