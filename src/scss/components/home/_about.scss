@@ -66,11 +66,20 @@
 				background-color: $gray;
 			}
 			.col-right {
+				// overflow-x: hidden;
 				position: relative;
 				//height: 850px;
 				margin-bottom: 150px;
 				@media screen and(min-height:896px) {
 					margin-bottom: 0px;
+				}
+				.cont-img {
+					overflow: hidden;
+					img {
+						// display: block;
+						// width: 90%;
+						margin-left: 10vw;
+					}
 				}
 				.home-overlay {
 					position: absolute;
