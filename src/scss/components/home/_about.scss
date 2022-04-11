@@ -143,6 +143,30 @@
 				}
 				position: relative;
 			}
+			.col-left {
+				display: flex;
+				width: 100%;
+				position: relative;
+				h2 {
+					position: absolute;
+					font-family: $ff-raleway;
+					font-size: rem(40);
+					text-transform: none;
+					font-weight: $fw-light;
+					color: $blue;
+					display: inline-block;
+					margin-left: 10vw;
+				}
+				span {
+					position: absolute;
+					display: block;
+					width: 20vw;
+					top: 55px;
+					left: 80%;
+					background-color: $blue;
+					height: 2px;
+				}
+			}
 		}
 	}
 }
