@@ -14,123 +14,123 @@
 		background-size: 100% 100vh;
 		width: 100%;
 		height: 100vh;
-		header {
-			width: 100%;
-			z-index: 10;
-			nav {
-				z-index: 5;
-				height: 10vh;
-				// position: sticky;
-				.nav-d {
-					display: none;
-				}
-				.nav-m,
-				.cont-m {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					// overflow-x: hidden;
-					height: inherit;
-					position: fixed;
-					z-index: 10;
-					padding-top: 2vh;
-					padding-bottom: 2vh;
+	}
+	header {
+		width: 100%;
+		z-index: 10;
+		nav {
+			z-index: 5;
+			height: 10vh;
+			// position: sticky;
+			.nav-d {
+				display: none;
+			}
+			.nav-m,
+			.cont-m {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				// overflow-x: hidden;
+				height: inherit;
+				position: fixed;
+				z-index: 10;
+				padding-top: 2vh;
+				padding-bottom: 2vh;
 
-					height: 12vh;
-					// top: 10vh;
-					width: 100%;
-					// margin-top: 2vh;
-					img {
-						// margin-top: auto;
-						// margin-bottom: auto;
-						margin-left: 10vw;
-						width: 30vw;
-						height: auto;
-						// filter: blur(-5px);
-					}
-					.cont-ham {
-						// display: block;
+				height: 12vh;
+				// top: 10vh;
+				width: 100%;
+				// margin-top: 2vh;
+				img {
+					// margin-top: auto;
+					// margin-bottom: auto;
+					margin-left: 10vw;
+					width: 30vw;
+					height: auto;
+					// filter: blur(-5px);
+				}
+				.cont-ham {
+					// display: block;
+					width: 30px;
+					height: 30px;
+					margin-right: 10vw;
+					margin-top: 5vw;
+					// margin: auto;
+
+					span {
+						display: block;
 						width: 30px;
-						height: 30px;
-						margin-right: 10vw;
-						margin-top: 5vw;
-						// margin: auto;
-
-						span {
-							display: block;
-							width: 30px;
-							height: 2px;
-							background-color: white;
-							&:first-child {
-								margin-bottom: 10px;
-							}
-						}
-						.pain2 {
-							background-color: $blue;
+						height: 2px;
+						background-color: white;
+						&:first-child {
+							margin-bottom: 10px;
 						}
 					}
+					.pain2 {
+						background-color: $blue;
+					}
 				}
+			}
 
-				//toggle du menu c<'est ici que ca se joue
-				.toggle-off {
-					display: none;
-				}
-				.blanc-nav {
-					background-color: white;
-				}
+			//toggle du menu c<'est ici que ca se joue
+			.toggle-off {
+				display: none;
+			}
+			.blanc-nav {
+				background-color: white;
+			}
 
-				.toggle-on {
-					display: flex;
-					flex-direction: column;
+			.toggle-on {
+				display: flex;
+				flex-direction: column;
+				height: fit-content;
+				background-color: white;
+				position: fixed;
+				top: 9.9vh;
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				border: none;
+				z-index: 10;
+				.lang {
+					font-weight: $fw-extra-bold;
+					font-family: $ff-raleway;
+					font-size: rem(15);
+					margin-top: auto;
+					margin-bottom: 35vh;
+					width: 80%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				nav {
 					height: fit-content;
-					background-color: white;
-					position: fixed;
-					top: 9.9vh;
-					height: 100%;
-					width: 100%;
-					overflow: hidden;
-					border: none;
-					z-index: 10;
-					.lang {
-						font-weight: $fw-extra-bold;
-						font-family: $ff-raleway;
-						font-size: rem(15);
-						margin-top: auto;
-						margin-bottom: 35vh;
-						width: 80%;
+					margin-top: 10vh;
+					// margin-bottom: 80%;
+					ul {
+						//margin-top: 5vh;
+						padding-left: 0%;
+						list-style: none;
 						margin-left: auto;
 						margin-right: auto;
-					}
-					nav {
-						height: fit-content;
-						margin-top: 10vh;
-						// margin-bottom: 80%;
-						ul {
-							//margin-top: 5vh;
-							padding-left: 0%;
-							list-style: none;
-							margin-left: auto;
-							margin-right: auto;
-							width: 80%;
-							z-index: 2;
+						width: 80%;
+						z-index: 2;
 
-							li {
-								width: 80%;
-								margin-bottom: 10px;
-								text-transform: uppercase;
-								a {
-									letter-spacing: 1%;
-									color: $black;
-									font-family: $ff-poppins;
-									font-size: rem(20);
-									font-weight: medium;
-								}
+						li {
+							width: 80%;
+							margin-bottom: 10px;
+							text-transform: uppercase;
+							a {
+								letter-spacing: 1%;
+								color: $black;
+								font-family: $ff-poppins;
+								font-size: rem(20);
+								font-weight: medium;
 							}
-							.activePage {
-								a {
-									color: $blue;
-									font-weight: medium;
-								}
+						}
+						.activePage {
+							a {
+								color: $blue;
+								font-weight: medium;
 							}
 						}
 					}
