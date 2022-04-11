@@ -1,7 +1,33 @@
 //version mobile ici
 @media screen and(max-width:767px) {
-	body {
-		background-color: red;
+	.veh-hero {
+		background-image: url("../../../images/vehi-hero.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		width: 100%;
+		height: 15vh;
+	}
+	section.veh-carousel {
+		.cont-title {
+			width: 100%;
+			display: flex;
+			margin-top: 25px;
+			align-items: center;
+			span {
+				width: 15vw;
+				height: 2px;
+				background-color: $blue;
+			}
+			h1 {
+				color: $blue;
+				font-family: $ff-raleway;
+				font-weight: $fw-light;
+				font-size: rem(40);
+				text-transform: none;
+				margin-left: 5vw;
+			}
+		}
 	}
 	//content
 }
