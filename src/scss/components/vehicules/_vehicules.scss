@@ -44,11 +44,26 @@
 		}
 		div.veh-btn-contact {
 			display: flex;
-			width: 90%;
-			margin: auto;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
 			justify-content: center;
+			height: 100px;
+			margin-bottom: 100px;
+			// margin-top: 100px;
+			position: relative;
+			top: -20px;
+			border: solid 2px $blue;
+			box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
 
 			a.veh-btn-contact {
+				margin: auto;
+				color: $black;
+				font-family: $ff-poppins;
+				font-weight: $fw-medium;
+				font-size: rem(16);
+				letter-spacing: 4%;
+				text-transform: uppercase;
 			}
 		}
 	}
