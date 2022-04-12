@@ -1,0 +1,123 @@
+//version pour le mobile
+@media screen and(max-width:767px) {
+	section.veh-carousel {
+		.cont-title {
+			width: 100%;
+			display: flex;
+			margin-top: 25px;
+			align-items: center;
+
+			span {
+				width: 15vw;
+				height: 2px;
+				background-color: $blue;
+			}
+			h1 {
+				color: $blue;
+				font-family: $ff-raleway;
+				font-weight: $fw-light;
+				font-size: rem(40);
+				text-transform: none;
+				margin-left: 5vw;
+			}
+		}
+
+		//le carousel
+
+		.cont-slider {
+			overflow: hidden;
+			// overflow-y: visible;
+			display: block;
+			width: 70vw;
+			margin: auto;
+			.slides {
+				display: flex;
+				width: 100vw;
+				.cont-slide {
+					width: 70vw;
+					height: 300px;
+					position: relative;
+					margin-right: 10px;
+					// overflow-y: visible;
+					.cont-img {
+						border: 5px $gray solid;
+						width: inherit;
+						height: 218px;
+						img {
+							width: inherit;
+							height: auto;
+							// margin-bottom: 50px;
+						}
+					}
+					.carte-grise {
+						background-color: $gray;
+						padding: 10px;
+						position: absolute;
+						top: 150px;
+						z-index: 5;
+
+						box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+						h4 {
+							margin: 0;
+							font-family: $ff-poppins;
+							font-weight: $fw-bold;
+							font-size: rem(18);
+							line-height: rem(40);
+						}
+					}
+				}
+			}
+			.cont-nav-carou {
+				display: flex;
+				width: 100%;
+				margin-top: 25px;
+				margin-bottom: 25px;
+				.f-s {
+					filter: grayscale(1);
+					opacity: 0.2;
+				}
+
+				justify-content: center;
+				img {
+					width: 20vw;
+					&:first-child {
+						transform: scaleX(-1);
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.swiper-wrapper {
+			width: 70vw;
+			// margin: auto;
+			.swiper-slide {
+				width: 70vw;
+				border: 5px $gray solid;
+				height: 218px;
+				position: relative;
+				// overflow-y: visible;
+				img {
+					width: inherit;
+					height: auto;
+					// margin-bottom: 50px;
+				}
+				.carte-grise {
+					background-color: $gray;
+					padding: 10px;
+					position: absolute;
+					top: 150px;
+					z-index: 5;
+
+					box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+					h4 {
+						margin: 0;
+						font-family: $ff-poppins;
+						font-weight: $fw-bold;
+						font-size: rem(18);
+						line-height: rem(40);
+					}
+				}
+			}
+		}
+	}
+}

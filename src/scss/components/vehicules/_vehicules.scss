@@ -8,108 +8,50 @@
 		width: 100%;
 		height: 15vh;
 	}
-	section.veh-carousel {
-		.cont-title {
-			width: 100%;
+
+	//le css pour le carousel est dans un autre fichier
+	// --> /src/scss/components/vehicules/_carousel.scss
+	section.veh-extra {
+		.veh-cont-gris {
 			display: flex;
-			margin-top: 25px;
-			align-items: center;
-
-			span {
-				width: 15vw;
-				height: 2px;
-				background-color: $blue;
-			}
-			h1 {
-				color: $blue;
+			flex-direction: column;
+			// padding-top: 15px;
+			// padding-bottom: 15px;
+			width: 100%;
+			height: 140px;
+			// justify-content: center;
+			padding-left: 10vw;
+			background-color: $gray;
+			h3 {
+				width: 60%;
 				font-family: $ff-raleway;
-				font-weight: $fw-light;
-				font-size: rem(40);
-				text-transform: none;
-				margin-left: 5vw;
+				font-weight: $fw-extra-bold;
+				font-size: rem(15);
+				color: $black;
+				display: inline-block;
+				margin-top: 40px;
+
+				text-transform: uppercase;
+				& > span {
+					color: $blue;
+				}
+			}
+			.veh-sep {
+				background-color: rgba(0, 0, 0, 0.2);
+				width: 90%;
+				height: 2px;
 			}
 		}
-
-		//le carousel
-
-		.cont-slider {
-			overflow: hidden;
-			// overflow-y: visible;
-			display: block;
-			width: 70vw;
+		div.veh-btn-contact {
+			display: flex;
+			width: 90%;
 			margin: auto;
-			.slides {
-				display: flex;
-				width: 100vw;
-				.cont-slide {
-					width: 70vw;
-					height: 300px;
-					position: relative;
-					margin-right: 10px;
-					// overflow-y: visible;
-					.cont-img {
-						border: 5px $gray solid;
-						width: inherit;
-						height: 218px;
-						img {
-							width: inherit;
-							height: auto;
-							// margin-bottom: 50px;
-						}
-					}
-					.carte-grise {
-						background-color: $gray;
-						padding: 10px;
-						position: absolute;
-						top: 150px;
-						z-index: 5;
+			justify-content: center;
 
-						box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
-						h4 {
-							margin: 0;
-							font-family: $ff-poppins;
-							font-weight: $fw-bold;
-							font-size: rem(18);
-							line-height: rem(40);
-						}
-					}
-				}
-			}
-		}
-		.swiper-wrapper {
-			width: 70vw;
-			// margin: auto;
-			.swiper-slide {
-				width: 70vw;
-				border: 5px $gray solid;
-				height: 218px;
-				position: relative;
-				// overflow-y: visible;
-				img {
-					width: inherit;
-					height: auto;
-					// margin-bottom: 50px;
-				}
-				.carte-grise {
-					background-color: $gray;
-					padding: 10px;
-					position: absolute;
-					top: 150px;
-					z-index: 5;
-
-					box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
-					h4 {
-						margin: 0;
-						font-family: $ff-poppins;
-						font-weight: $fw-bold;
-						font-size: rem(18);
-						line-height: rem(40);
-					}
-				}
+			a.veh-btn-contact {
 			}
 		}
 	}
-	//content
 }
 
 //version tablette ici
