@@ -4,6 +4,10 @@
 		<title>Véhicules</title>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -94,78 +98,78 @@
 			<div class="cont-slider">
 				<div class="slides" id="slides">
 					<div class="cont-slide">
-						<!-- contenu d'une slide ici -->
-						1
-						<img
-							src="../images/dodge.webp"
-							alt="dodge"
-							class="veh-carou-img"
-						/>
+						<div class="cont-img">
+							<img
+								src="../images/dodge.webp"
+								alt="dodge"
+								class="veh-carou-img"
+							/>
+						</div>
 						<div class="carte-grise">
 							<h4>DODGE</h4>
 							<p>VUS, Lorem, Ipsum</p>
 						</div>
 					</div>
 					<div class="cont-slide">
-						<!-- contenu d'une slide ici -->
-						2
-						<img
-							src="../images/chevrolet.webp"
-							alt="chevrolet"
-							class="veh-carou-img"
-						/>
+						<div class="cont-img">
+							<img
+								src="../images/chevrolet.webp"
+								alt="chevrolet"
+								class="veh-carou-img"
+							/>
+						</div>
 						<div class="carte-grise">
 							<h4>chevrolet</h4>
 							<p>VUS, Lorem, Ipsum</p>
 						</div>
 					</div>
 					<div class="cont-slide">
-						<!-- contenu d'une slide ici -->
-						3
-						<img
-							src="../images/jeep.webp"
-							alt="jeep"
-							class="veh-carou-img"
-						/>
+						<div class="cont-img">
+							<img
+								src="../images/jeep.webp"
+								alt="jeep"
+								class="veh-carou-img"
+							/>
+						</div>
 						<div class="carte-grise">
 							<h4>jeep</h4>
 							<p>VUS, Lorem, Ipsum</p>
 						</div>
 					</div>
 					<div class="cont-slide">
-						<!-- contenu d'une slide ici -->
-						4
-						<img
-							src="../images/mercedes-benz.webp"
-							alt="mercedes"
-							class="veh-carou-img"
-						/>
+						<div class="cont-img">
+							<img
+								src="../images/mercedes-benz.webp"
+								alt="mercedes"
+								class="veh-carou-img"
+							/>
+						</div>
 						<div class="carte-grise">
 							<h4>mercedes-benz</h4>
 							<p>VUS, Lorem, Ipsum</p>
 						</div>
 					</div>
 					<div class="cont-slide">
-						<!-- contenu d'une slide ici -->
-						5
-						<img
-							src="../images/hyundai.webp"
-							alt="hyundai"
-							class="veh-carou-img"
-						/>
+						<div class="cont-img">
+							<img
+								src="../images/hyundai.webp"
+								alt="hyundai"
+								class="veh-carou-img"
+							/>
+						</div>
 						<div class="carte-grise">
 							<h4>hyundai</h4>
 							<p>VUS, Lorem, Ipsum</p>
 						</div>
 					</div>
 					<div class="cont-slide">
-						<!-- contenu d'une slide ici -->
-						6
-						<img
-							src="../images/gmc.webp"
-							alt="gmc"
-							class="veh-carou-img"
-						/>
+						<div class="cont-img">
+							<img
+								src="../images/gmc.webp"
+								alt="gmc"
+								class="veh-carou-img"
+							/>
+						</div>
 						<div class="carte-grise">
 							<h4>gmc</h4>
 							<p>VUS, Lorem, Ipsum</p>
@@ -229,5 +233,17 @@
 				</p>
 			</div>
 		</footer>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
 	</body>
 </html>
