@@ -106,6 +106,7 @@
 				</div>
 			</div>
 			<div class="carr-actual-content">
+				<div class="chapeau"></div>
 				<img src="../images/madame-phone.webp" alt="madame-phone" />
 				<div class="carr-cont-cpt">
 					<div class="carr-cpt-bloc">
@@ -178,21 +179,27 @@
 					<input type="tel" name="phone" id="phone" required />
 					<label for="message">MESSAGE</label>
 					<textarea name="message" id="message"></textarea>
-					<div class="carr-last-bit">
-						<label for="file"
-							>Veuillez joindre votre CV et lettre de
-							présentation</label
-						>
-						<input
-							name="file"
-							type="file"
-							accept=".pdf, .docx, .txt"
-						/>
-						<input
-							type="submit"
-							value="ENVOYER"
-							class="carr-send-btn"
-						/>
+					<div class="carr-cont-last-bit">
+						<div class="carr-last-bit">
+							<p>
+								Veuillez joindre votre CV et lettre de
+								présentation
+							</p>
+							<label for="file" class="file-label"
+								><input
+									name="file"
+									type="file"
+									id="file"
+									accept=".pdf, .docx, .txt"
+								/>AJOUTER
+							</label>
+
+							<input
+								type="submit"
+								value="ENVOYER"
+								class="carr-send-btn"
+							/>
+						</div>
 					</div>
 				</form>
 			</div>

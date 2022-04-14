@@ -1,7 +1,13 @@
 //version pour le mobile
 @media screen and(max-width:767px) {
 	.carr-actual-content {
-		padding-top: 90px;
+		.chapeau {
+			width: 90%;
+			margin-left: auto;
+			background-color: white;
+			height: 90px;
+		}
+		// padding-top: 90px;
 		background-color: $gray;
 		margin-left: auto;
 		width: 90%;
@@ -9,7 +15,8 @@
 			display: block;
 		}
 		.carr-cont-cpt {
-			margin-left: 10vw;
+			margin-left: auto;
+			// margin-right: auto;
 			margin-top: 50px;
 			margin-bottom: 70px;
 			h4 {
@@ -19,8 +26,10 @@
 				color: $black;
 				line-height: rem(20);
 				margin-bottom: 0;
+				margin-left: 10vw;
 			}
 			p {
+				margin-left: 10vw;
 				margin-top: 15px;
 				font-family: $ff-poppins;
 				font-weight: $fw-regular;
@@ -34,9 +43,12 @@
 			}
 			.ligne-dotted {
 				display: block;
-				width: 90%;
+				width: 70%;
 				height: 0px;
+				margin-bottom: 50px;
 				border: 1px dashed $blue;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}
