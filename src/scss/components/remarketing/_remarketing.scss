@@ -1,6 +1,12 @@
 //version pour le mobile
 @media screen and(max-width:767px) {
 	//content
+	.cont-rm {
+		background-image: url("../../../images/bg-road.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 640px;
+	}
 }
 
 //version pour la tablette
