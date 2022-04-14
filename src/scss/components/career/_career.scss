@@ -41,10 +41,13 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+
 			// align-items: center;
 			h1 {
 				display: inline-block;
 				margin-left: 10vw;
+				padding-top: 8%;
+				// margin-bottom: auto;
 				font-family: $ff-raleway;
 				font-weight: $fw-extra-bold;
 				font-size: rem(15);
@@ -66,7 +69,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			top: 18%;
+			top: 8%;
 			left: calc(100% - 30px);
 
 			span {
