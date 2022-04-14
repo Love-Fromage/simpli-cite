@@ -83,15 +83,9 @@
 				transform: translateY(2px);
 			}
 		}
-		.carr-actual-content {
-			padding-top: 90px;
-			background-color: #fff;
-			margin-left: auto;
-			width: 90%;
-			img {
-				display: block;
-			}
-		}
+
+		//le scss du cpt se trouve dans un fichier
+		//va voir la : /src/scss/career/_cpt.scss
 	}
 }
 

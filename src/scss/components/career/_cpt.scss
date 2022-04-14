@@ -1,0 +1,22 @@
+//version pour le mobile
+@media screen and(max-width:767px) {
+	.carr-actual-content {
+		padding-top: 90px;
+		background-color: $gray;
+		margin-left: auto;
+		width: 90%;
+		img {
+			display: block;
+		}
+	}
+}
+
+//version pour la tablette
+@media screen and(min-width:768px) {
+	//content
+}
+
+//version pour le desktop
+@media screen and(min-width:1280px) {
+	//content
+}
