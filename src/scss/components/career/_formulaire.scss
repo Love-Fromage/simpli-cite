@@ -21,6 +21,29 @@
 			form {
 				display: flex;
 				flex-direction: column;
+				label {
+					font-family: $ff-poppins;
+					font-weight: $fw-bold;
+					font-size: rem(10);
+					text-transform: uppercase;
+					line-height: rem(24);
+					color: $black;
+				}
+				input,
+				textarea {
+					width: 85%;
+					border-radius: 0;
+					background-color: $gray;
+					border: none;
+					border-right: 4px solid $blue;
+					margin-bottom: 30px;
+					resize: none;
+				}
+				textarea {
+					height: 130px;
+				}
+				.carr-last-bit {
+				}
 			}
 		}
 	}
