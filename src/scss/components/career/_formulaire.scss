@@ -1,0 +1,37 @@
+@media screen and(max-width:767px) {
+	//section formulaire
+	.formulaire {
+		.carr-para-form {
+			width: 85%;
+			margin-left: 10vw;
+			p {
+				width: inherit;
+				font-family: $ff-poppins;
+				font-weight: $fw-regular;
+				font-size: rem(12);
+				color: #16191b;
+				&:last-child {
+					margin-bottom: 70px;
+				}
+			}
+		}
+		.carr-cont-form {
+			width: 85%;
+			margin-left: 10vw;
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+//version pour la tablette
+@media screen and(min-width:768px) {
+	//content
+}
+
+//version pour le desktop
+@media screen and(min-width:1280px) {
+	//content
+}

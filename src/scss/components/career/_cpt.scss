@@ -8,6 +8,37 @@
 		img {
 			display: block;
 		}
+		.carr-cont-cpt {
+			margin-left: 10vw;
+			margin-top: 50px;
+			margin-bottom: 70px;
+			h4 {
+				font-family: $ff-poppins;
+				font-weight: $fw-bold;
+				font-size: rem(15);
+				color: $black;
+				line-height: rem(20);
+				margin-bottom: 0;
+			}
+			p {
+				margin-top: 15px;
+				font-family: $ff-poppins;
+				font-weight: $fw-regular;
+				font-size: rem(12);
+				line-height: rem(20);
+				color: #16191b;
+				width: 80%;
+				&:last-child {
+					padding-bottom: 50px;
+				}
+			}
+			.ligne-dotted {
+				display: block;
+				width: 90%;
+				height: 0px;
+				border: 1px dashed $blue;
+			}
+		}
 	}
 }
 
