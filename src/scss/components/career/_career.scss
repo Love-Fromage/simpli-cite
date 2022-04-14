@@ -29,6 +29,30 @@
 			margin-left: 5vw;
 		}
 	}
+	//big section
+	.carr-info-cpt {
+		position: relative;
+		.carr-petite-boite-grise {
+			position: absolute;
+			top: 0;
+			width: 80%;
+			height: 120px;
+			background-color: $gray;
+			display: flex;
+			// justify-content: center;
+			align-items: center;
+			h1 {
+				display: inline-block;
+				margin-left: 10vw;
+				font-family: $ff-raleway;
+				font-weight: $fw-extra-bold;
+				font-size: rem(15);
+				span {
+					color: $blue;
+				}
+			}
+		}
+	}
 }
 
 //version pour la tablette
