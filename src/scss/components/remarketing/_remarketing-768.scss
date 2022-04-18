@@ -1,5 +1,5 @@
-//version pour le mobile
-@media screen and(max-width:767px) {
+//version pour la tablette ici
+@media screen and(min-width:768px) {
 	//content
 	.cont-rm {
 		height: fit-content;
@@ -115,12 +115,4 @@
 			}
 		}
 	}
-}
-
-//version pour la tablette se trouve dans un autre fichier
-//voir src/scss/components/remarketing/_remarketing-768.scss
-
-//version pour le desktop
-@media screen and(min-width:1280px) {
-	//content
 }

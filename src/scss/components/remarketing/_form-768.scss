@@ -1,6 +1,6 @@
-//version pour le mobile ici
-@media screen and(max-width:767px) {
-	//c'est ici le code pour faire le form
+//version tablette du formulaire
+@media screen and(min-width:768px) {
+	//content
 	.leform {
 		width: 62%;
 		margin-left: 5vw;
@@ -148,15 +148,4 @@
 		padding-bottom: 50px;
 		margin-bottom: 0;
 	}
-}
-
-//version pour la tablette se trouve dans un autre fichier
-//voir src/scss/components/remarketing/_form-768.scss
-@media screen and(min-width:768px) {
-	//
-}
-
-//version pour le desktop ici
-@media screen and(min-width:1280px) {
-	//
 }
