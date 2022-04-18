@@ -5,16 +5,17 @@
 		height: fit-content;
 		background-color: black;
 		.rm-bg-img {
-			background-image: url("../../../images/bg-road.webp");
+			background-image: url("../../../images/rm-768.webp");
 			background-repeat: no-repeat;
 			background-size: cover;
+			height: 1024px;
 		}
 		//ici c'est literalement le linear-gradient qui
 		//part du au jusqu'a la fin de l'image de fond.
 
 		.rm-black {
 			background: linear-gradient(180deg, transparent, black);
-			height: 500px;
+			height: 1024px;
 		}
 
 		img {
@@ -37,7 +38,7 @@
 			margin-top: 50px;
 			left: 50%;
 			right: auto;
-			height: 80px;
+			height: 100px;
 		}
 		h1 {
 			display: block;
@@ -59,7 +60,7 @@
 			.rm-cont-form {
 				display: flex;
 				position: relative;
-				top: -125px;
+				top: -525px;
 				width: 80%;
 				background-color: white;
 				flex-direction: column;
@@ -68,13 +69,23 @@
 				margin-right: auto;
 				height: fit-content;
 				h2 {
+					width: 75%;
+					margin-left: auto;
+					margin-right: auto;
 					margin-top: 50px;
 					font-family: $ff-raleway;
 					font-weight: $fw-extra-bold;
-					font-size: rem(15);
-					line-height: rem(22);
+					font-size: rem(20);
+					line-height: rem(30);
 					color: $black;
 					text-transform: uppercase;
+					br {
+						display: none;
+						&:nth-child(2) {
+							background-color: red;
+							display: block;
+						}
+					}
 					span {
 						color: $blue;
 					}
@@ -82,11 +93,11 @@
 				p {
 					font-family: $ff-poppins;
 					font-weight: $fw-regular;
-					font-size: rem(12);
-					line-height: rem(20);
+					font-size: rem(14);
+					line-height: rem(22);
 					color: $black;
-					width: 62%;
-					margin-left: 5vw;
+					width: 75%;
+					// margin-left: 5vw;
 					&:nth-child(3) {
 						font-weight: $fw-bold;
 					}
