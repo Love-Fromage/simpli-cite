@@ -2,14 +2,14 @@
 @media screen and(min-width:768px) {
 	//content
 	.leform {
-		width: 62%;
-		margin-left: 5vw;
+		width: 75%;
+		// margin-left: 5vw;
 		label {
 			text-transform: uppercase;
 			color: $black;
 			font-family: $ff-poppins;
 			font-weight: $fw-bold;
-			font-size: rem(10);
+			font-size: rem(12);
 			line-height: rem(24);
 		}
 		input,
@@ -100,7 +100,7 @@
 				}
 				.container .checkmark:after {
 					top: 5px;
-					left: 1.25vw;
+					left: 5px;
 					width: 5px;
 					height: 5px;
 					border-radius: 50%;

@@ -53,7 +53,14 @@
 						<input type="tel" />
 
 						<label for="year">année de la voiture *</label>
-						<select name="year" id="year">
+						<select
+							name="year"
+							id="year"
+							onfocus="this.size=10;"
+							onblur="this.size=1;"
+							onchange="this.size=1; this.blur();"
+							style="height: auto"
+						>
 							<option value="" selected disabled hidden></option>
 
 							<option value="2020">2020</option>
@@ -100,7 +107,14 @@
 						</select>
 
 						<label for="marque">marque *</label>
-						<select name="marque" id="marque">
+						<select
+							name="marque"
+							id="marque"
+							onfocus="this.size=10;"
+							onblur="this.size=1;"
+							onchange="this.size=1; this.blur();"
+							style="height: auto"
+						>
 							<option value="" selected disabled hidden></option>
 							<option value="Acura">Acura</option>
 							<option value="Alfa Romeo">Alfa Romeo</option>
@@ -197,6 +211,9 @@
 								name="process"
 								id="process"
 								class="select-selected"
+								onfocus="this.size=3; this.style='height: auto;'"
+								onblur="this.size=1;"
+								onchange="this.size=1; this.blur();"
 							>
 								<option
 									value=""
