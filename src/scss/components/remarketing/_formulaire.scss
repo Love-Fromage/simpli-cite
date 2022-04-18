@@ -1,6 +1,131 @@
 //version pour le mobile ici
 @media screen and(max-width:767px) {
 	//c'est ici le code pour faire le form
+	.leform {
+		width: 62%;
+		margin-left: 5vw;
+		label {
+			text-transform: uppercase;
+			color: $black;
+			font-family: $ff-poppins;
+			font-weight: $fw-bold;
+			font-size: rem(10);
+			line-height: rem(24);
+		}
+		input,
+		select {
+			width: 100%;
+			border-radius: 0px;
+			background-color: $gray;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border: none;
+			border-right: solid 4px $blue;
+		}
+		.cont-radio {
+			display: flex;
+			flex-direction: column;
+
+			.cont-radio-1,
+			.cont-radio-2 {
+				display: flex;
+				.container {
+					display: flex;
+					position: relative;
+					align-items: center;
+					padding-left: 10vw;
+					padding-top: 5px;
+					margin-bottom: 12px;
+					text-transform: none;
+					cursor: pointer;
+					font-size: rem(10);
+
+					user-select: none;
+				}
+
+				/* Hide the browser's default radio button */
+				.container input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+					height: 0;
+					width: 0;
+				}
+
+				/* Create a custom radio button */
+				.checkmark {
+					position: absolute;
+					top: 10px;
+					left: 2vw;
+					height: 15px;
+					width: 15px;
+					background-color: #eee;
+					border-radius: 50%;
+				}
+
+				/* On mouse-over, add a grey background color */
+				.container:hover input ~ .checkmark {
+					background-color: #ccc;
+				}
+
+				/* When the radio button is checked, add a blue background */
+				.container input:checked ~ .checkmark {
+					background-color: #2196f3;
+				}
+
+				/* Create the indicator (the dot/circle - hidden when not checked) */
+				.checkmark:after {
+					content: "";
+					position: absolute;
+					display: none;
+				}
+
+				/* Show the indicator (dot/circle) when checked */
+				.container input:checked ~ .checkmark:after {
+					display: block;
+				}
+
+				/* Style the indicator (dot/circle) */
+			}
+			[type="checkbox"] {
+				width: fit-content;
+				text-align: left;
+				border: none;
+				background-color: red;
+			}
+			.radio {
+				text-transform: none;
+
+				font-weight: $fw-medium;
+				margin-left: 5vw;
+				height: fit-content;
+			}
+		}
+		.cont-partie-2 {
+			p {
+				&:nth-child(2) {
+					width: 100%;
+					margin-left: 0;
+					font-family: $ff-poppins;
+					font-weight: $fw-medium;
+					font-size: rem(9);
+					color: $black;
+					line-height: normal;
+				}
+			}
+		}
+		[type="submit"] {
+			background-color: #fff;
+			border: $blue 2px solid;
+
+			font-size: rem(12);
+			font-weight: $fw-medium;
+			letter-spacing: 4%;
+			height: 60px;
+		}
+		padding-bottom: 50px;
+		margin-bottom: 0;
+	}
 }
 
 //version pour la tablette ici

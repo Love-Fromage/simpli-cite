@@ -3,7 +3,7 @@
 	//content
 	.cont-rm {
 		height: fit-content;
-		background-color: $black;
+		background-color: black;
 		.rm-bg-img {
 			background-image: url("../../../images/bg-road.webp");
 			background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 		}
 		//le bg de toute le reste sauf le formulaire
 		.rm-bg {
-			background-color: $black;
+			background-color: black;
 			height: fit-content;
 
 			.rm-cont-form {
@@ -94,6 +94,25 @@
 			}
 			//pour le formulaire, va voir dans un autre fichier
 			// src/remarketing/_formulaire.scss
+			.rm-cont-link {
+				height: 100px;
+				margin-top: 0;
+				position: relative;
+				top: -50px;
+
+				text-align: center;
+				text-transform: uppercase;
+				a {
+					font-family: $ff-poppins;
+					font-weight: $fw-medium;
+					letter-spacing: 4%;
+					font-size: rem(16);
+					color: $blue;
+					&:visited {
+						color: $blue;
+					}
+				}
+			}
 		}
 	}
 }

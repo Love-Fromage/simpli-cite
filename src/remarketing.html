@@ -42,7 +42,7 @@
 						formulaire ci-dessous et obtenez le meilleur prix sur le
 						marché.
 					</p>
-					<form action="">
+					<form action="" class="leform">
 						<label for="nom">nom et prénom *</label>
 						<input type="text" name="nom" id="nom" />
 
@@ -156,47 +156,59 @@
 						<input type="number" name="km" id="km" />
 
 						<label for="transmission">Transmission *</label>
-						<input
-							type="radio"
-							id="automatic"
-							value="automatic"
-							name="transmission"
-							checked
-						/>
-						<label for="automatic">Automatique</label>
-						<input
-							type="radio"
-							id="manual"
-							value="manual"
-							name="transmission"
-						/>
-						<label for="manual">Manuelle</label>
+						<div class="cont-radio">
+							<div class="cont-radio-1">
+								<label class="container"
+									>Automatique
+									<input type="checkbox" checked="checked" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="cont-radio-2">
+								<label class="container"
+									>Manuelle
+									<input type="checkbox" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
 
-						<label for="num-id">numéro d'indentification *</label>
-						<p>
-							Afin de mieux vous servir, veuillez nous fournir
-							votre numéro d'identification de véhicule. Il s'agit
-							d'un numéro de série à 17 chiffres qui se trouve sur
-							le papier d'immatriculation de votre véhicule. (Ce
-							numéro ne nous donne accès à aucune de vos
-							informations personnelles. Il nous permet uniquement
-							de vérifier l'historique des accidents associés à
-							votre véhicule.)
-						</p>
-						<input type="text" name="num-id" id="num-id" />
-						<label for="process"
-							>Où en êtes vous dans votre processus de vente ?
-						</label>
-						<select name="process" id="process">
-							<option value="" selected disabled hidden></option>
-							<option value="1">
-								Prêt pour le vendre rapidement
-							</option>
-							<option value="2">
-								Le vendre dans quelques mois
-							</option>
-							<option value="3">Simplement curieux</option>
-						</select>
+						<div class="cont-partie-2">
+							<label for="num-id"
+								>numéro d'indentification *</label
+							>
+							<p>
+								Afin de mieux vous servir, veuillez nous fournir
+								votre numéro d'identification de véhicule. Il
+								s'agit d'un numéro de série à 17 chiffres qui se
+								trouve sur le papier d'immatriculation de votre
+								véhicule. <br />
+								<br />
+								(Ce numéro ne nous donne accès à aucune de vos
+								informations personnelles. Il nous permet
+								uniquement de vérifier l'historique des
+								accidents associés à votre véhicule.)
+							</p>
+							<input type="text" name="num-id" id="num-id" />
+							<label for="process"
+								>Où en êtes vous dans votre processus de vente ?
+							</label>
+							<select name="process" id="process">
+								<option
+									value=""
+									selected
+									disabled
+									hidden
+								></option>
+								<option value="1">
+									Prêt pour le vendre rapidement
+								</option>
+								<option value="2">
+									Le vendre dans quelques mois
+								</option>
+								<option value="3">Simplement curieux</option>
+							</select>
+						</div>
 						<input
 							type="submit"
 							name="sumbit"
@@ -206,12 +218,12 @@
 					</form>
 				</div>
 				<div class="rm-cont-link">
-					<a href="./home.html"></a>
+					<a href="./home.html">visitez notre site web</a>
 				</div>
 			</div>
 		</div>
 		<footer>
-			<div class="cont-scroll">
+			<div class="cont-scroll" onclick="gotoTop()">
 				<span></span>
 				<p id="scroll-btn">RETOUR</p>
 			</div>
@@ -233,21 +245,46 @@
 					<p>info@simplicitelocation.com</p>
 				</li>
 			</ul>
-			<h2>Heures d'ouverture</h2>
-			<p>Lundi/ Vendredi : 9am - 5pm</p>
-			<a href="#"
-				><img src="../images/linkedin.svg" alt="linkedin-icon"
-			/></a>
-			<span></span>
+			<div class="hour">
+				<h2>Heures d'ouverture</h2>
+				<p>Lundi/ Vendredi : 9am - 5pm</p>
+			</div>
+			<div class="cont-footer-line">
+				<span class="footer-line-rm"></span>
+				<a href="./remarketing.html">REMARKETING</a>
+			</div>
+			<div class="cont-linkedin">
+				<a href="#"
+					><img src="../images/linkedin.svg" alt="linkedin-icon"
+				/></a>
+				<span></span>
+			</div>
 			<div class="cont-petit-lien">
-				<a href="#">Mentions légales</a> <span>|</span>
-				<a href="#">Politique de confidentialité</a>
-				<p>@2022 - Simpl-Cité Location - Tous droits réservés</p>
+				<div>
+					<a href="#">Mentions légales</a> <span>|</span>
+					<a href="#">Politique de confidentialité</a>
+				</div>
+
+				<p>@2022 - Simpli-Cité Location - Tous droits réservés</p>
 				<p class="bda">
 					Site réalisé par
 					<a href="https://blackduckagency.com">Black Duck Agency</a>
 				</p>
+				<img
+					src="../images/simplicite-logo.svg"
+					alt="logo-footer"
+					onclick="gotoTop()"
+				/>
 			</div>
 		</footer>
+		<script>
+			const gotoTop = () => {
+				window.scrollTo({
+					top: 0,
+					left: 0,
+					behavior: "smooth",
+				});
+			};
+		</script>
 	</body>
 </html>
