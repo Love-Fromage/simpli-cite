@@ -2,10 +2,99 @@
 @media screen and(max-width:767px) {
 	//content
 	.cont-rm {
-		background-image: url("../../../images/bg-road.webp");
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 640px;
+		height: fit-content;
+		background-color: $black;
+		.rm-bg-img {
+			background-image: url("../../../images/bg-road.webp");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		//ici c'est literalement le linear-gradient qui
+		//part du au jusqu'a la fin de l'image de fond.
+
+		.rm-black {
+			background: linear-gradient(180deg, transparent, black);
+			height: 500px;
+		}
+
+		img {
+			display: block;
+			margin: auto;
+			position: relative;
+			padding-top: 50px;
+
+			width: 40vw;
+			height: auto;
+		}
+		.ligne-bleue {
+			position: absolute;
+			width: 0.5vw;
+			display: block;
+			// transform: rotate(90deg);
+			background-color: $blue;
+			margin-right: 0;
+			// text-align: center;
+			margin-top: 50px;
+			left: 50%;
+			right: auto;
+			height: 80px;
+		}
+		h1 {
+			display: block;
+			width: fit-content;
+			font-family: $ff-raleway;
+			font-weight: $fw-bold;
+			font-size: rem(28);
+			letter-spacing: 2%;
+			color: white;
+			margin-top: 200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		//le bg de toute le reste sauf le formulaire
+		.rm-bg {
+			background-color: $black;
+			height: fit-content;
+
+			.rm-cont-form {
+				display: flex;
+				position: relative;
+				top: -125px;
+				width: 80%;
+				background-color: white;
+				flex-direction: column;
+				align-items: center;
+				margin-left: auto;
+				margin-right: auto;
+				height: fit-content;
+				h2 {
+					margin-top: 50px;
+					font-family: $ff-raleway;
+					font-weight: $fw-extra-bold;
+					font-size: rem(15);
+					line-height: rem(22);
+					color: $black;
+					text-transform: uppercase;
+					span {
+						color: $blue;
+					}
+				}
+				p {
+					font-family: $ff-poppins;
+					font-weight: $fw-regular;
+					font-size: rem(12);
+					line-height: rem(20);
+					color: $black;
+					width: 62%;
+					margin-left: 5vw;
+					&:nth-child(3) {
+						font-weight: $fw-bold;
+					}
+				}
+			}
+			//pour le formulaire, va voir dans un autre fichier
+			// src/remarketing/_formulaire.scss
+		}
 	}
 }
 
