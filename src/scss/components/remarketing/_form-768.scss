@@ -47,7 +47,7 @@
 					display: flex;
 					position: relative;
 					align-items: center;
-					padding-left: 10vw;
+					padding-left: 6vw;
 					padding-top: 5px;
 					margin-bottom: 12px;
 					text-transform: none;
@@ -123,8 +123,10 @@
 				height: fit-content;
 			}
 		}
+
 		.cont-partie-2 {
-			p {
+			p.partie-2-p {
+				margin-right: 0;
 				&:nth-child(2) {
 					width: 100%;
 					margin-left: 0;
@@ -135,7 +137,14 @@
 					line-height: normal;
 				}
 			}
+			#num-id {
+				margin-bottom: 35px;
+			}
+			select {
+				margin-bottom: 55px;
+			}
 		}
+
 		[type="submit"] {
 			background-color: #fff;
 			border: $blue 2px solid;
