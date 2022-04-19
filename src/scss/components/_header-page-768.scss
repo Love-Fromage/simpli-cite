@@ -1,6 +1,13 @@
 //version pour la tablette ici
 @media screen and(min-width:768px) {
 	//content
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-size: rem(50);
+		// margin-top: 50vh;
+	}
 	.bg-home {
 		// overflow: hidden;
 		background-image: url("../../images/bg-road.webp");

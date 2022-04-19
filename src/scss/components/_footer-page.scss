@@ -177,6 +177,14 @@
 					}
 				}
 			}
+			.bda {
+				a {
+					color: $blue;
+					&:visited {
+						color: $blue;
+					}
+				}
+			}
 			p {
 				font-family: $ff-raleway;
 				color: white;
