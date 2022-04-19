@@ -90,7 +90,7 @@
 				.lang {
 					font-weight: $fw-extra-bold;
 					font-family: $ff-raleway;
-					font-size: rem(15);
+					font-size: rem(22);
 					margin-top: auto;
 					margin-bottom: 35vh;
 					width: 80%;
@@ -118,8 +118,8 @@
 								letter-spacing: 1%;
 								color: $black;
 								font-family: $ff-poppins;
-								font-size: rem(20);
-								font-weight: medium;
+								font-size: rem(40);
+								font-weight: $fw-medium;
 							}
 						}
 						.activePage {
