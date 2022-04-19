@@ -19,7 +19,7 @@
 		.cont-scroll {
 			span {
 				display: block;
-				width: 20vw;
+				width: 15vw;
 				height: 2px;
 				background-color: $blue;
 				transform: rotate(90deg);
@@ -237,23 +237,27 @@
 				// justify-content: center;
 				h2 {
 					color: $blue;
-					font-size: rem(25);
+					font-size: rem(20);
 					font-weight: $fw-bold;
 					font-family: $ff-raleway;
 					text-transform: none;
 					text-align: left;
 					// margin-left: 10vw;
 					margin-right: auto;
+					margin-bottom: 5px;
 				}
 				ul {
 					padding: 0;
 					// margin-left: 10vw;
 					margin-right: auto;
+					margin-top: 5px;
+
 					li {
 						display: flex;
 						align-items: center;
+						margin-bottom: 5px;
 						img {
-							width: 3vw;
+							width: 1.5vw;
 							height: fit-content;
 							margin-right: 10px;
 						}
@@ -296,7 +300,8 @@
 						color: $blue;
 						font-family: $ff-raleway;
 						font-weight: $fw-bold;
-						font-size: rem(15);
+						font-size: rem(13);
+						margin-top: 25px;
 					}
 					p {
 						color: #fff;
