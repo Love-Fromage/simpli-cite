@@ -357,10 +357,42 @@
 
 			background-color: rgba(255, 255, 255, 0.15);
 		}
+
+		//mentions legal et blablabla
 		.cont-petit-lien {
+			display: flex;
+			justify-content: space-between;
+			width: 90%;
+			// height: 250px;
+			margin-left: auto;
+			margin-right: auto;
+			.flex-t {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+				// margin-left: auto;
+				// margin-right: auto;
+			}
+			.row-1 {
+				display: flex;
+				width: fit-content;
+				justify-content: center;
+				align-items: center;
+			}
+			.row-2 {
+				a {
+					color: $blue;
+					&:visited {
+						color: $blue;
+					}
+				}
+			}
 			div {
 				display: flex;
 				justify-content: center;
+				align-items: flex-start;
+
 				a {
 					font-family: $ff-raleway;
 					color: white;
@@ -368,11 +400,19 @@
 					line-height: rem(22);
 					font-weight: $fw-regular;
 					&:first-child {
-						margin-right: 10px;
+						// margin-right: 10px;
 					}
 					&:last-child {
 						margin-left: 10px;
 					}
+				}
+				span {
+					color: white;
+					font-size: rem(10);
+					font-weight: $fw-regular;
+					align-items: center;
+					margin-top: auto;
+					margin-bottom: auto;
 				}
 			}
 			p {
@@ -382,6 +422,8 @@
 				line-height: rem(22);
 				font-weight: $fw-regular;
 				text-align: center;
+				margin-bottom: 0;
+				margin-top: 0;
 				a {
 					font-weight: $fw-bold;
 				}
@@ -389,7 +431,7 @@
 			img {
 				display: block;
 				margin-top: 50px;
-				width: 30vw;
+				width: 20vw;
 				// text-align: center;
 				margin-left: auto;
 				margin-right: auto;
