@@ -1,4 +1,237 @@
 //version pour la tablette va ici
 @media screen and(min-width:768px) {
 	//content
+	.about {
+		.home-cont-about-title {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 2vh;
+			span {
+				display: block;
+				background-color: $blue;
+				width: 40vw;
+				height: 2px;
+
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+			h1 {
+				font-family: $ff-raleway;
+				font-weight: $fw-light;
+				font-size: rem(40);
+				text-transform: none;
+				color: $blue;
+				display: inline-block;
+				width: fit-content;
+				margin-right: 10vw;
+			}
+		}
+		.home-cont-about {
+			// height: 170vh;
+			position: relative;
+			.home-about-para-d {
+				.col-right {
+					img {
+						// position: relative;
+					}
+				}
+			}
+			.col-left {
+				p {
+					font-family: $ff-poppins;
+					font-weight: $fw-regular;
+					line-height: rem(20);
+					font-size: rem(12);
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+					color: $black;
+					&:last-child {
+						margin-bottom: 5vh;
+					}
+				}
+			}
+			.col-droite {
+				position: absolute;
+				width: 10vw;
+				z-index: -1;
+				top: 40px;
+				// height: 500vh;
+				@media screen and(min-height:667px) {
+					top: 5.5vh;
+				}
+
+				right: 0;
+				left: 90vw;
+				height: 250vh;
+				background-color: $gray;
+			}
+			.col-right {
+				// overflow-x: hidden;
+				position: relative;
+				//height: 850px;
+				margin-bottom: 150px;
+				@media screen and(min-height:896px) {
+					margin-bottom: 0px;
+				}
+				.cont-img {
+					overflow: hidden;
+					img {
+						// display: block;
+						// width: 90%;
+						margin-left: 10vw;
+					}
+				}
+				.home-overlay {
+					position: absolute;
+					top: 70px;
+					background-color: $gray;
+					padding-bottom: 5vh;
+					width: 90%;
+					height: fit-content;
+					h2 {
+						font-family: $ff-raleway;
+						font-weight: $fw-extra-bold;
+						font-size: rem(15);
+						display: inline-block;
+						margin-top: 6vh;
+						color: $black;
+						margin-left: 10vw;
+
+						span {
+							color: $blue;
+						}
+					}
+					p {
+						margin-left: 10vw;
+						width: 80%;
+						font-family: $ff-poppins;
+						font-weight: $fw-regular;
+						font-size: rem(12);
+						line-height: rem(20);
+						color: #16191b;
+					}
+
+					.home-cont-croix {
+						width: fit-content;
+						height: auto;
+						position: relative;
+						span {
+							display: block;
+							background-color: $blue;
+							width: 12vw;
+							height: 2px;
+							position: relative;
+							top: 5vh;
+							left: 84.2vw;
+
+							&:first-child {
+								//test
+								transform: rotate(90deg) translateX(2px);
+							}
+							&:last-child {
+								//test
+								position: relative;
+							}
+						}
+					}
+				}
+			}
+		}
+		.home-cont-voiture {
+			position: relative;
+
+			margin-top: 200px;
+			@media screen and(max-height:740px) {
+				margin-top: 280px;
+			}
+
+			.voiture-m {
+				overflow-x: hidden;
+				img {
+					display: block;
+					max-width: 100%;
+					margin-left: auto;
+					margin-right: -20vw;
+				}
+				position: relative;
+			}
+			.col-left {
+				display: flex;
+				width: 100%;
+				position: relative;
+				h2 {
+					position: absolute;
+					font-family: $ff-raleway;
+					font-size: rem(40);
+					text-transform: none;
+					font-weight: $fw-light;
+					color: $blue;
+					display: inline-block;
+					margin-left: 10vw;
+				}
+				span {
+					position: absolute;
+					display: block;
+					width: 20vw;
+					top: 55px;
+					left: 80%;
+					background-color: $blue;
+					height: 2px;
+				}
+			}
+		}
+		.home-cont-cartes {
+			margin-top: 150px;
+			display: flex;
+			flex-direction: column;
+			.carte {
+				height: fit-content;
+				.header {
+					height: 60px;
+					background-color: $blue;
+					width: 45vw;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					img {
+						width: 10vw;
+						max-height: 39px;
+						margin-right: 2vw;
+					}
+				}
+				.contenu {
+					margin-top: 30px;
+					margin-bottom: 30px;
+					p {
+						width: 60%;
+					}
+					.first-p {
+						color: $black;
+						font-family: $ff-poppins;
+						font-weight: $fw-bold;
+						font-size: rem(14);
+						line-height: rem(22);
+						margin-left: 10vw;
+					}
+					.last-p {
+						color: $black;
+						font-family: $ff-poppins;
+						font-size: rem(12);
+						font-weight: $fw-regular;
+						line-height: rem(20);
+						margin-left: 10vw;
+						//test
+					}
+				}
+			}
+			.last-card {
+				background-image: url("../../../images/last-card-bg-m.webp");
+				background-position: 115% 50%;
+				.contenu {
+					margin-bottom: 100px;
+				}
+			}
+		}
+	}
 }

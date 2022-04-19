@@ -1,11 +1,6 @@
-@media screen and(max-width:767px) {
-	// h1,
-	// h2,
-	// h3,
-	// h4 {
-	// 	font-size: rem(50);
-	// 	// margin-top: 50vh;
-	// }
+//version pour la tablette ici
+@media screen and(min-width:768px) {
+	//content
 	.bg-home {
 		// overflow: hidden;
 		background-image: url("../../images/bg-road.webp");
@@ -138,14 +133,4 @@
 			}
 		}
 	}
-}
-//version tablette ici
-@media screen and(min-width:768px) {
-	//tu dois reprendre des choses de mobile ici
-}
-//version desktop ici
-@media screen and(min-width:1280px) {
-	//principalement gossage depuis la version tablette
-	//mais pour le debut (7 avril 2022) on n'a pas la verison tablette
-	//donc fait juste le faire via la maquette
 }
