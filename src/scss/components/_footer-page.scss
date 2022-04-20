@@ -476,6 +476,7 @@
 	//du stuck
 	footer {
 		width: 100%;
+
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -486,8 +487,11 @@
 
 		.cont-scroll {
 			span {
+				// position: absolute;
+				// top: 50px;
 				display: block;
 				width: 10vw;
+				// z-index: 55;
 				height: 2px;
 				background-color: $blue;
 				transform: rotate(90deg);
@@ -511,12 +515,14 @@
 			display: flex;
 			width: 90%;
 			justify-content: space-between;
+			overflow: hidden;
 			// margin-left: auto;
 			// margin-right: auto;
 			.col-1 {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				overflow: hidden;
 				// justify-content: center;
 				h2 {
 					color: $blue;
@@ -564,6 +570,7 @@
 				}
 			}
 			.col-2 {
+				overflow: hidden;
 				display: flex;
 				flex-direction: column;
 				align-items: flex-end;
@@ -595,6 +602,7 @@
 					}
 				}
 				.cont-footer-line {
+					overflow: hidden;
 					display: flex;
 					width: 100%;
 					align-items: center;
@@ -622,6 +630,7 @@
 					}
 				}
 				.cont-linkedin {
+					overflow: hidden;
 					margin-bottom: 50px;
 					display: flex;
 					flex-direction: column;
@@ -634,6 +643,7 @@
 			}
 		}
 		span.separator {
+			overflow: hidden;
 			width: 100vw;
 			height: 1px;
 			// margin-right: auto;
@@ -643,6 +653,7 @@
 
 		//mentions legal et blablabla
 		.cont-petit-lien {
+			overflow: hidden;
 			display: flex;
 			justify-content: space-between;
 			width: 90%;
@@ -656,6 +667,7 @@
 				display: none;
 			}
 			.flex-t {
+				overflow: hidden;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -664,12 +676,14 @@
 				// margin-right: auto;
 			}
 			.row-1 {
+				overflow: hidden;
 				display: flex;
 				width: fit-content;
 				justify-content: center;
 				align-items: center;
 			}
 			.row-2 {
+				overflow: hidden;
 				a {
 					color: $blue;
 					&:visited {
@@ -718,6 +732,7 @@
 				}
 			}
 			img {
+				overflow: hidden;
 				display: block;
 				margin-top: 50px;
 				width: 20vw;
