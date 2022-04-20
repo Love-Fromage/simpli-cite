@@ -481,6 +481,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-end;
 		z-index: 5;
 		background-color: $black;
 		height: fit-content;
@@ -518,6 +519,10 @@
 			width: 90%;
 			justify-content: space-between;
 			overflow: hidden;
+			position: relative;
+			top: -50px;
+			margin-bottom: -100px;
+
 			// margin-left: auto;
 			// margin-right: auto;
 			.col-1 {
@@ -528,7 +533,7 @@
 				// justify-content: center;
 				h2 {
 					color: $blue;
-					font-size: rem(20);
+					font-size: rem(30);
 					font-weight: $fw-bold;
 					font-family: $ff-raleway;
 					text-transform: none;
@@ -544,11 +549,17 @@
 					margin-top: 5px;
 
 					li {
+						&:first-child {
+							p {
+								position: relative;
+								top: 5px;
+							}
+						}
 						display: flex;
 						align-items: center;
 						margin-bottom: 5px;
 						img {
-							width: 1.5vw;
+							width: 1vw;
 							height: fit-content;
 							margin-right: 10px;
 						}
@@ -589,11 +600,12 @@
 						// display: inline-block;
 						// margin-right: auto;
 						margin-left: auto;
+						text-transform: none;
 						color: $blue;
 						font-family: $ff-raleway;
 						font-weight: $fw-bold;
-						font-size: rem(13);
-						margin-top: 25px;
+						font-size: rem(15);
+						margin-top: 30px;
 					}
 					p {
 						color: #fff;
@@ -660,11 +672,16 @@
 			display: flex;
 			justify-content: space-between;
 			width: 90%;
-			// height: 250px;
+			height: 70px;
 			margin-left: auto;
 			margin-right: auto;
 			.tablette {
+				margin-top: 15px;
+				margin-bottom: 5px;
 				display: block;
+				width: 10vw;
+				height: 40px;
+				// height: 5vh;
 			}
 			.flex-mobile {
 				display: none;
@@ -672,8 +689,9 @@
 			.flex-t {
 				overflow: hidden;
 				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
 				width: 100%;
 				// margin-left: auto;
 				// margin-right: auto;
@@ -738,7 +756,8 @@
 				overflow: hidden;
 				display: block;
 				margin-top: 50px;
-				width: 20vw;
+				max-width: 100%;
+				height: auto;
 				// text-align: center;
 				margin-left: auto;
 				margin-right: auto;
