@@ -1,4 +1,127 @@
 //version pour la tablette
 @media screen and(min-width:768px) {
 	//content
+	.formulaire {
+		background-image: url("../../../images/last-card-bg-m.webp");
+		background-size: 120%;
+		background-position: -47vw 100%;
+		background-repeat: no-repeat;
+		height: 1305px;
+		.carr-para-form {
+			width: 70%;
+			margin-left: 10vw;
+			// margin-left: auto;
+			margin-right: auto;
+			margin-top: 250px;
+			p {
+				width: inherit;
+				font-family: $ff-poppins;
+				font-weight: $fw-regular;
+				font-size: rem(14);
+				color: #16191b;
+				&:last-child {
+					margin-bottom: 70px;
+				}
+			}
+		}
+		.carr-cont-form {
+			width: 85%;
+			margin-left: 10vw;
+			margin-right: auto;
+
+			form {
+				display: flex;
+				flex-direction: column;
+				label {
+					font-family: $ff-poppins;
+					font-weight: $fw-bold;
+					font-size: rem(12);
+					text-transform: uppercase;
+					line-height: rem(24);
+					color: $black;
+				}
+				input,
+				textarea {
+					width: 60%;
+					border-radius: 0;
+					background-color: $gray;
+					border: none;
+					border-right: 4px solid $blue;
+					margin-bottom: 30px;
+					resize: none;
+				}
+				textarea {
+					height: 130px;
+				}
+				.carr-cont-last-bit {
+					//might need this but not working properly
+					// background-image: url("../../../images/last-card-bg-m.webp");
+					// background-size: 100%;
+					// background-position: 90% 50%;
+					margin-bottom: 100px;
+				}
+				.carr-last-bit {
+					.carr-last-bit-t {
+						display: flex;
+						width: 60%;
+						justify-content: space-between;
+						align-items: center;
+						margin-bottom: 50px;
+						p {
+							width: 45%;
+							font-size: rem(12);
+						}
+						.file-label {
+							position: relative;
+							top: 20px;
+							width: 40%;
+						}
+					}
+					p {
+						font-family: $ff-poppins;
+						font-weight: $fw-regular;
+						font-size: rem(12);
+						line-height: rem(26);
+						color: #16191b;
+					}
+					#file {
+						display: none;
+					}
+					.file-label {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 30vw;
+						font-size: rem(10);
+						height: 35px;
+						box-shadow: none;
+						background-color: $blue;
+						color: white;
+						padding: 10px 25px;
+						font-family: $ff-poppins;
+						font-weight: $fw-medium;
+						letter-spacing: 4%;
+						margin-bottom: 50px;
+					}
+					.carr-send-btn {
+						display: block;
+
+						// margin-left: 5vw;
+						width: 60%;
+						height: fit-content;
+						// margin-right: auto;
+						background-color: transparent;
+						border: 2px solid $blue;
+
+						font-family: $ff-poppins;
+						font-weight: $fw-medium;
+						font-size: rem(12);
+						letter-spacing: 4%;
+						padding-top: 20px;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
 }

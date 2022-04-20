@@ -15,7 +15,9 @@
 		margin-right: 5vw;
 		width: 30%;
 		overflow-x: hidden;
-
+		position: absolute;
+		left: 100%;
+		right: 0vw;
 		img {
 			width: 150%;
 			display: block;
@@ -23,21 +25,23 @@
 			right: 10vw;
 		}
 		.carr-cont-cpt {
-			margin-left: auto;
+			// margin-left: auto;
 			// margin-right: auto;
 			margin-top: 50px;
 			margin-bottom: 70px;
+			width: 90%;
 			h4 {
 				font-family: $ff-poppins;
 				font-weight: $fw-bold;
-				font-size: rem(15);
+				font-size: rem(18);
 				color: $black;
-				line-height: rem(20);
+				line-height: rem(24);
 				margin-bottom: 0;
-				margin-left: 5vw;
+				margin-left: 3vw;
+				margin-right: auto;
 			}
 			p {
-				margin-left: 5vw;
+				margin-left: 3vw;
 				margin-top: 15px;
 				font-family: $ff-poppins;
 				font-weight: $fw-regular;
@@ -51,12 +55,12 @@
 			}
 			.ligne-dotted {
 				display: block;
-				width: 70%;
+				width: 90%;
 				height: 0px;
 				margin-bottom: 50px;
 				border: 1px dashed $blue;
-				margin-left: auto;
-				margin-right: auto;
+				margin-left: 3vw;
+				// margin-right: auto;
 			}
 		}
 	}

@@ -26,7 +26,7 @@
 		h1 {
 			font-family: $ff-raleway;
 			font-weight: $fw-light;
-			font-size: rem(22);
+			font-size: rem(70);
 			color: $blue;
 			text-transform: none;
 			margin-left: 5vw;
@@ -46,22 +46,19 @@
 			z-index: 5;
 			// align-items: center;
 			h1 {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
+				display: inline-block;
+
 				// position: relative;
-				width: 100%;
+				width: 80%;
 				margin-left: 5vw;
 
-				// padding-top: 8%;
+				padding-top: 35px;
 				// margin-bottom: auto;
 				font-family: $ff-raleway;
 				font-weight: $fw-extra-bold;
 				font-size: rem(22);
 				br {
-					&:first-child {
-						display: none;
-					}
+					display: none;
 				}
 				span {
 					color: $blue;
@@ -81,7 +78,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			top: -2px;
+			top: 25px;
 			left: calc(100% - 30px);
 
 			span {
