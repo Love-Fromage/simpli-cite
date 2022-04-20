@@ -1,0 +1,105 @@
+//version pour la tablette
+@media screen and(min-width:768px) {
+	//content
+	.carr-hero {
+		margin-top: 20px;
+		background-image: url("../../../images/career-hero-t.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 25vh;
+	}
+	.carr-cont-title {
+		margin-top: 55px;
+		display: flex;
+		align-items: center;
+		span {
+			display: block;
+			background-color: $blue;
+			width: 25vw;
+			height: 2px;
+			margin-left: 0;
+		}
+		h1 {
+			font-family: $ff-raleway;
+			font-weight: $fw-light;
+			font-size: rem(22);
+			color: $blue;
+			text-transform: none;
+			margin-left: 5vw;
+		}
+	}
+	.carr-info-cpt {
+		position: relative;
+		.carr-petite-boite-grise {
+			position: absolute;
+			top: 40px;
+			width: 70%;
+			height: 170px;
+			background-color: $gray;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			z-index: 5;
+			// align-items: center;
+			h1 {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				// position: relative;
+				width: 100%;
+				margin-left: 5vw;
+
+				// padding-top: 8%;
+				// margin-bottom: auto;
+				font-family: $ff-raleway;
+				font-weight: $fw-extra-bold;
+				font-size: rem(22);
+				br {
+					&:first-child {
+						display: none;
+					}
+				}
+				span {
+					color: $blue;
+				}
+			}
+			.sous-section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		.carr-cont-croix {
+			width: 60px;
+			height: 60px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: -2px;
+			left: calc(100% - 30px);
+
+			span {
+				display: block;
+				background-color: $blue;
+				width: 60px;
+				height: 2.67px;
+				position: relative;
+			}
+			.vertical {
+				transform: rotate(90deg);
+			}
+			.horizontal {
+				transform: translateY(2px);
+			}
+		}
+
+		//le scss du cpt se trouve dans un fichier
+		//va voir la : /src/scss/career/_cpt.scss
+	}
+}
