@@ -22,7 +22,11 @@
 			}
 			.nav-d {
 				display: flex;
+				position: fixed;
+				width: 100%;
+				z-index: 10;
 				justify-content: space-between;
+				height: 110px;
 				.cont-logo {
 					//bdfkjhbadskjh
 					display: flex;
@@ -37,12 +41,15 @@
 				}
 
 				.cont-nav {
+					display: flex;
 					margin-right: 5vw;
 					nav {
 						display: flex;
 						ul {
 							display: flex;
 							list-style: none;
+							justify-content: center;
+							align-items: center;
 
 							li {
 								margin-left: 10px;
@@ -51,14 +58,22 @@
 								}
 								a {
 									text-transform: uppercase;
+									font-family: $ff-poppins;
+									font-weight: $fw-bold;
+									letter-spacing: 0.04em;
 								}
 							}
 							.last-li-d {
-								display: flex;
-								width: 2%;
+								div {
+									display: flex;
+									// width: 2%;
+									width: fit-content;
 
-								img {
-									// max-width: 100%;
+									img {
+										// max-width: 100%;
+										width: 1.5vw;
+										margin-right: 10px;
+									}
 								}
 							}
 						}
