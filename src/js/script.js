@@ -17,16 +17,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	let logoImgD = logoNav.src.split("/").pop();
 	if (homeB !== null) {
 		navD.addEventListener("mouseenter", () => {
-			navD.classList.add("blanc-nav");
-			scrollD.classList.add("scrolled");
-			logoImgD = "logo-noir-d.svg";
-			logoNavD.src = "../images/" + logoImgD;
+			if (window.screenY == 0) {
+				navD.classList.add("blanc-nav");
+				scrollD.classList.add("scrolled");
+				logoImgD = "logo-noir-d.svg";
+				logoNavD.src = "../images/" + logoImgD;
+			}
 		});
 		navD.addEventListener("mouseleave", () => {
-			navD.classList.remove("blanc-nav");
-			scrollD.classList.remove("scrolled");
-			logoImgD = "logo-blanc.svg";
-			logoNavD.src = "../images/" + logoImgD;
+			// console.log(window.pageYOffset);
+			if (
+				window.pageYOffset == 0 &&
+				navD.classList.contains("blanc-nav")
+			) {
+				navD.classList.remove("blanc-nav");
+				scrollD.classList.remove("scrolled");
+				logoImgD = "logo-blanc.svg";
+				logoNavD.src = "../images/" + logoImgD;
+			}
 		});
 		window.addEventListener("scroll", () => {
 			console.log(window.pageYOffset);
