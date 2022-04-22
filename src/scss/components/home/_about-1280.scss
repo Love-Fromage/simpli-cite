@@ -13,21 +13,21 @@
 			span {
 				display: block;
 				background-color: $blue;
-				width: 40vw;
-				height: 2px;
-
+				width: 60vw;
+				height: 4px;
+				margin-right: 10vw;
 				margin-top: auto;
 				margin-bottom: auto;
 			}
 			h1 {
 				font-family: $ff-raleway;
 				font-weight: $fw-light;
-				font-size: rem(70);
+				font-size: rem(100);
 				text-transform: none;
 				color: $blue;
 				display: inline-block;
 				width: fit-content;
-				margin-right: 10vw;
+				margin-right: auto;
 			}
 		}
 		.home-cont-about {
