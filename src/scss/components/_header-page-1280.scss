@@ -52,25 +52,44 @@
 							// height: 110px;
 							justify-content: center;
 							align-items: center;
-							padding-top: 0;
-							padding-bottom: 0;
-							margin-top: 0;
-							margin-bottom: 0;
+							// padding-top: 0;
+							// padding-bottom: 0;
+							// margin-top: 0;
+							// margin-bottom: 0;
 							//ca c'est pour la tite barre bleu en haut
 							.active-nav {
 								// padding-top: 47px;
-								padding-top: 39px;
-								border-top: solid 5px $blue;
-								font-weight: $fw-bold;
-								color: $blue;
+								// padding-top: auto;
+								display: flex;
+								align-items: center;
+								height: 10vh;
+								border-top: solid 4px $blue;
+
+								a {
+									font-weight: $fw-bold;
+									color: $blue;
+								}
+
+								// span {
+								// 	display: block;
+								// 	position: relative;
+								// 	top: -3.6vh;
+								// 	background-color: $blue;
+								// 	width: inherit;
+								// 	height: 3px;
+								// }
+								// a {
+								// 	font-weight: $fw-bold;
+								// 	color: $blue;
+								// }
 							}
 
 							li {
 								// display: block;
 								height: inherit;
 								margin-left: 50px;
-								padding-top: 50px;
-								padding-bottom: 30px;
+								// padding-top: 50px;
+								// padding-bottom: 30px;
 
 								&:first-child {
 									margin-left: 0;
