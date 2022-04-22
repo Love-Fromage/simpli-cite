@@ -5,22 +5,44 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const menuHam = document.querySelector("#ham");
 	const btnHam = document.querySelector(".cont-ham");
 	const navM = document.querySelector(".nav-m");
+	const navD = document.querySelector(".nav-d");
+	const scrollD = document.querySelector("#scrolled");
+
 	const logoNav = document.querySelector("#logo-nav-m");
+	const logoNavD = document.querySelector("#logo-nav-d");
 	const hamPain1 = document.querySelector("#pain1");
 	const hamPain2 = document.querySelector("#pain2");
 
 	let logoImg = logoNav.src.split("/").pop();
+	let logoImgD = logoNav.src.split("/").pop();
 	if (homeB !== null) {
+		navD.addEventListener("mouseenter", () => {
+			navD.classList.add("blanc-nav");
+			scrollD.classList.add("scrolled");
+			logoImgD = "logo-noir-d.svg";
+			logoNavD.src = "../images/" + logoImgD;
+		});
+		navD.addEventListener("mouseleave", () => {
+			navD.classList.remove("blanc-nav");
+			scrollD.classList.remove("scrolled");
+			logoImgD = "logo-blanc.svg";
+			logoNavD.src = "../images/" + logoImgD;
+		});
 		window.addEventListener("scroll", () => {
 			console.log(window.pageYOffset);
 			if (window.pageYOffset !== 0) {
 				// console.log("plus bas de 10");
 				navM.classList.add("blanc-nav");
+				navD.classList.add("blanc-nav");
+				scrollD.classList.add("scrolled");
 				hamPain1.classList.add("pain2");
 				hamPain2.classList.add("pain2");
 
 				logoImg = "logo-noir.svg";
+
+				logoImgD = "logo-noir-d.svg";
 				logoNav.src = "../images/" + logoImg;
+				logoNavD.src = "../images/" + logoImgD;
 			} else {
 				// logoImg = "logo-blanc.svg";
 				// logoNav.src = "../images/" + logoImg;
@@ -33,7 +55,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				) {
 					logoImg = "logo-blanc.svg";
 					logoNav.src = "../images/" + logoImg;
+					logoNavD.src = "../images/" + logoImg;
 					navM.classList.remove("blanc-nav");
+					navD.classList.remove("blanc-nav");
+					scrollD.classList.remove("scrolled");
 					hamPain1.classList.remove("pain2");
 					hamPain2.classList.remove("pain2");
 				}

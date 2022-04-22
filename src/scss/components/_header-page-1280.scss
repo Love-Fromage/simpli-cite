@@ -28,6 +28,7 @@
 				z-index: 10;
 				justify-content: space-between;
 				height: 110px;
+
 				.cont-logo {
 					//bdfkjhbadskjh
 					display: flex;
@@ -46,6 +47,18 @@
 					// margin-right: 5vw;
 					nav {
 						display: flex;
+						.scrolled {
+							li {
+								a {
+									color: #000;
+								}
+							}
+							.last-li-d {
+								a {
+									color: white;
+								}
+							}
+						}
 						ul {
 							display: flex;
 							list-style: none;
