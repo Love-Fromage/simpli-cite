@@ -33,6 +33,9 @@
 		.home-cont-about {
 			// height: 170vh;
 			position: relative;
+			.home-about-para-d-2 {
+				display: none;
+			}
 			.home-about-para-d {
 				.col-right {
 					img {

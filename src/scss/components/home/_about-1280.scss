@@ -34,10 +34,86 @@
 			// height: 170vh;
 			position: relative;
 			.home-about-para-d {
-				// display: flex;
+				display: none;
 				.col-right {
 					img {
 						// position: relative;
+					}
+				}
+			}
+			.home-about-para-d-2 {
+				//content
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				margin-left: 5vw;
+				margin-right: 5vw;
+				.d2-col-1 {
+					width: 45%;
+					// margin-right: 5vw;
+					p {
+						width: fit-content;
+						margin-top: 0;
+					}
+				}
+				.d2-col-2 {
+					// margin-left: 5vw;
+					// width: 45%;
+					width: fit-content;
+					.cont-img {
+						width: fit-content;
+						.cont2-img {
+							width: fit-content;
+							position: relative;
+							img {
+								//stuff
+								width: 80%;
+								height: 1258px;
+							}
+						}
+						.boite-grise {
+							position: absolute;
+							top: 500px;
+							left: -63vw;
+							// right: 80%;
+							background-color: $gray;
+							width: 80%;
+							display: flex;
+							flex-direction: column;
+						}
+						h2 {
+							margin-left: 5vw;
+							display: inline-block;
+							width: 45%;
+						}
+						p {
+							width: 45%;
+							// margin: 0;
+							padding: 0;
+						}
+					}
+				}
+				.home-cont-croix {
+					width: fit-content;
+					height: auto;
+					position: relative;
+					span {
+						display: block;
+						background-color: $blue;
+						width: 12vw;
+						height: 4px;
+						position: relative;
+						top: 5vh;
+						left: 64vw;
+
+						&:first-child {
+							//test
+							transform: rotate(90deg) translateX(2px);
+						}
+						&:last-child {
+							//test
+							position: relative;
+						}
 					}
 				}
 			}
