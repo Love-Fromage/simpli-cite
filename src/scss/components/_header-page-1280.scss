@@ -7,6 +7,7 @@
 	h4 {
 		font-size: rem(50);
 	}
+
 	.bg-home {
 		background-image: url("../../images/bg-road-d.webp");
 
@@ -48,15 +49,32 @@
 						ul {
 							display: flex;
 							list-style: none;
+							// height: 110px;
 							justify-content: center;
 							align-items: center;
+							padding-top: 0;
+							padding-bottom: 0;
+							margin-top: 0;
+							margin-bottom: 0;
+							//ca c'est pour la tite barre bleu en haut
+							.active-nav {
+								// padding-top: 47px;
+								padding-top: 39px;
+								border-top: solid 5px $blue;
+							}
 
 							li {
+								// display: block;
+								height: inherit;
 								margin-left: 50px;
+								padding-top: 50px;
+								padding-bottom: 30px;
+
 								&:first-child {
 									margin-left: 0;
-									margin-right: 10px;
-									background-color: red;
+
+									// margin-right: 0px;
+									// background-color: red;
 								}
 								a {
 									text-transform: uppercase;
