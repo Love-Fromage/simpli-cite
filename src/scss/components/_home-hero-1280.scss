@@ -9,7 +9,7 @@
 		.hero-d {
 			height: inherit;
 			width: 50%;
-			// height: inherit;
+
 			background: linear-gradient(
 				180deg,
 				rgba(0, 0, 0, 0) 5.51%,
@@ -21,6 +21,30 @@
 			padding-left: 5vw;
 			align-items: center;
 			padding-bottom: 15px;
+			.home-scroll-down {
+				display: block;
+				position: absolute;
+				top: 84vh;
+				left: 46%;
+				background-color: #fff;
+				width: 8vw;
+				height: 2px;
+				transform: rotate(90deg);
+				animation: scroll 2s ease-in-out infinite;
+				clip-path: inset(0 100% 0% 0);
+			}
+			@keyframes scroll {
+				0% {
+					clip-path: inset(0 100% 0% 0);
+				}
+
+				50% {
+					clip-path: inset(0 0% 0 0);
+				}
+				100% {
+					clip-path: inset(0% 0% 0% 100%);
+				}
+			}
 		}
 		h1 {
 			font-family: $ff-raleway;
