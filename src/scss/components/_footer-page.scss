@@ -488,19 +488,32 @@
 
 		.cont-scroll {
 			cursor: pointer;
+			width: fit-content;
+			height: fit-content;
+			position: absolute;
+			top: 0;
+			z-index: 55;
 			span {
 				// position: absolute;
 				// top: 50px;
 				// left: 45%;
 				display: block;
 				width: 10vw;
-				// z-index: 55;
 				height: 2px;
 				background-color: $blue;
 				transform: rotate(90deg);
 				// margin-bottom: 125px;
+				cursor: pointer;
+			}
+			#scroll-btn {
+				cursor: pointer;
+				z-index: 10;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 			p {
+				cursor: pointer;
 				width: fit-content;
 				margin-right: auto;
 				margin-left: auto;
@@ -517,10 +530,13 @@
 		.cont-flex-t {
 			display: flex;
 			width: 90%;
+			// height: ;
+			padding-top: 110px;
 			justify-content: space-between;
 			overflow: hidden;
 			position: relative;
-			top: -50px;
+			z-index: 5;
+			// top: 50px;
 			margin-bottom: -100px;
 
 			// margin-left: auto;
