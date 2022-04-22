@@ -13,7 +13,7 @@
 			span {
 				display: block;
 				background-color: $blue;
-				width: 60vw;
+				width: 55vw;
 				height: 4px;
 				margin-right: 10vw;
 				margin-top: auto;
@@ -34,6 +34,7 @@
 			// height: 170vh;
 			position: relative;
 			.home-about-para-d {
+				// display: flex;
 				.col-right {
 					img {
 						// position: relative;
@@ -44,10 +45,10 @@
 				p {
 					font-family: $ff-poppins;
 					font-weight: $fw-regular;
-					line-height: rem(20);
-					font-size: rem(14);
-					width: 90%;
-					margin-left: auto;
+					line-height: rem(26);
+					font-size: rem(16);
+					width: 45%;
+					margin-left: 5vw;
 					margin-right: auto;
 					color: $black;
 					&:last-child {
@@ -80,29 +81,43 @@
 				}
 				.cont-img {
 					overflow: hidden;
+					position: relative;
+					top: -30vh;
+					@media screen and(max-height:900px) {
+						top: -40vh;
+					}
+					@media screen and(max-height:800px) {
+						top: -45vh;
+					}
+					@media screen and(max-height:700px) {
+						top: -50vh;
+					}
 					img {
 						display: block;
 
 						margin-right: 5vw;
+
 						margin-left: auto;
-						width: 70%;
-						height: 746px;
+						width: 40%;
+						height: 1258px;
 					}
 				}
 				.home-overlay {
 					position: absolute;
-					top: 70px;
+					z-index: 5;
+					// top: 14.5vh;
+					// margin-top: 82px;
 					background-color: $gray;
 					padding-bottom: 5vh;
-					width: 70%;
+					width: 60%;
 					// height: 730px;
-					height: fit-content;
+					height: 800px;
 					h2 {
 						font-family: $ff-raleway;
 						font-weight: $fw-extra-bold;
-						font-size: rem(22);
+						font-size: rem(30);
 						display: inline-block;
-						margin-top: 6vh;
+						margin-top: 15vh;
 						color: $black;
 						margin-left: 5vw;
 
@@ -115,8 +130,8 @@
 						width: 80%;
 						font-family: $ff-poppins;
 						font-weight: $fw-regular;
-						font-size: rem(14);
-						line-height: rem(20);
+						font-size: rem(16);
+						line-height: rem(26);
 						color: #16191b;
 					}
 
