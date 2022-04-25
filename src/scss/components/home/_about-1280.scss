@@ -35,11 +35,6 @@
 			position: relative;
 			.home-about-para-d {
 				display: none;
-				.col-right {
-					img {
-						// position: relative;
-					}
-				}
 			}
 			.home-about-para-d-2 {
 				//content
@@ -101,6 +96,7 @@
 								max-width: 100%;
 								height: 1258px;
 								margin-bottom: 0;
+								// margin-right: 0;
 							}
 							.col-droite {
 								position: absolute;
@@ -143,125 +139,6 @@
 						&:last-child {
 							//test
 							position: relative;
-						}
-					}
-				}
-			}
-			.col-left {
-				p {
-					font-family: $ff-poppins;
-					font-weight: $fw-regular;
-					line-height: rem(26);
-					font-size: rem(16);
-					width: 45%;
-					margin-left: 5vw;
-					margin-right: auto;
-					color: $black;
-					&:last-child {
-						margin-bottom: 5vh;
-					}
-				}
-			}
-			// .col-droite {
-			// 	position: absolute;
-			// 	width: 25vw;
-			// 	z-index: 0;
-			// 	top: 3.5vh;
-			// 	// height: 500vh;
-			// 	@media screen and(min-height:1025px) {
-			// 		top: 5.5vh;
-			// 	}
-
-			// 	right: 0;
-			// 	left: 70vw;
-			// 	height: 150vh;
-			// 	background-color: $gray;
-			// }
-			.col-right {
-				// overflow-x: hidden;
-				position: relative;
-				//height: 850px;
-				margin-bottom: 150px;
-				@media screen and(min-height:896px) {
-					margin-bottom: 0px;
-				}
-				.cont-img {
-					overflow: hidden;
-					position: relative;
-					top: -30vh;
-					@media screen and(max-height:900px) {
-						top: -40vh;
-					}
-					@media screen and(max-height:800px) {
-						top: -45vh;
-					}
-					@media screen and(max-height:700px) {
-						top: -50vh;
-					}
-					img {
-						display: block;
-
-						margin-right: 5vw;
-
-						margin-left: auto;
-						width: 40%;
-						height: 1258px;
-					}
-				}
-				.home-overlay {
-					position: absolute;
-					z-index: 5;
-					// top: 14.5vh;
-					// margin-top: 82px;
-					background-color: $gray;
-					padding-bottom: 5vh;
-					width: 60%;
-					// height: 730px;
-					height: 800px;
-					h2 {
-						font-family: $ff-raleway;
-						font-weight: $fw-extra-bold;
-						font-size: rem(30);
-						display: inline-block;
-						margin-top: 15vh;
-						color: $black;
-						margin-left: 5vw;
-
-						span {
-							color: $blue;
-						}
-					}
-					p {
-						margin-left: 5vw;
-						width: 80%;
-						font-family: $ff-poppins;
-						font-weight: $fw-regular;
-						font-size: rem(16);
-						line-height: rem(26);
-						color: #16191b;
-					}
-
-					.home-cont-croix {
-						width: fit-content;
-						height: auto;
-						position: relative;
-						span {
-							display: block;
-							background-color: $blue;
-							width: 12vw;
-							height: 4px;
-							position: relative;
-							top: 5vh;
-							left: 64vw;
-
-							&:first-child {
-								//test
-								transform: rotate(90deg) translateX(2px);
-							}
-							&:last-child {
-								//test
-								position: relative;
-							}
 						}
 					}
 				}
