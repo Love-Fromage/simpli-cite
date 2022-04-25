@@ -102,8 +102,10 @@
 							}
 							.col-droite {
 								position: relative;
-								left: 0;
-								bottom: 0;
+								width: 32vw;
+								left: calc(30%);
+								top: auto;
+								bottom: 6px;
 							}
 						}
 					}
