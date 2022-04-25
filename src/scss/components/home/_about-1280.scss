@@ -100,6 +100,26 @@
 							}
 							.col-droite {
 								position: absolute;
+								@media screen and(max-height:1024px) {
+									height: 150vh;
+								}
+								@media screen and(max-height:900px) {
+									height: 200vh;
+								}
+								@media screen and(max-height:800px) {
+									height: 200vh;
+								}
+								@media screen and(max-height:750px) {
+									height: 250vh;
+								}
+								@media screen and(max-height:700px) {
+									height: 310vh;
+								}
+								@media screen and(max-height:600px) {
+									height: 310vh;
+								}
+
+								height: 200vh;
 								width: 32vw;
 								left: calc(30%);
 								top: 99.5%;
@@ -258,8 +278,6 @@
 					.contenu {
 						position: relative;
 						top: 15px;
-						.first-p {
-						}
 					}
 				}
 				&:nth-child(3) {
@@ -281,10 +299,6 @@
 			}
 			.last-card {
 				margin-bottom: 150px;
-
-				.contenu {
-					// margin-bottom: 100px;
-				}
 			}
 		}
 	}
