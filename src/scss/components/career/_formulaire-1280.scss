@@ -1,9 +1,9 @@
 //version pour le desktop
 @media screen and(min-width:1280px) {
 	.formulaire {
-		background-image: url("../../../images/last-card-bg-m.webp");
-		background-size: 120%;
-		background-position: -47vw 100%;
+		background-image: url("../../../images/carr-form-bg-d.webp");
+		background-size: 80%;
+		background-position: -30vw 100%;
 		background-repeat: no-repeat;
 		height: 1305px;
 		.carr-para-form {
@@ -16,7 +16,8 @@
 				width: inherit;
 				font-family: $ff-poppins;
 				font-weight: $fw-regular;
-				font-size: rem(14);
+				font-size: rem(16);
+				line-height: rem(26);
 				color: #16191b;
 				&:last-child {
 					margin-bottom: 70px;
@@ -43,6 +44,7 @@
 				textarea {
 					width: 60%;
 					border-radius: 0;
+					height: 40px;
 					background-color: $gray;
 					border: none;
 					border-right: 4px solid $blue;
@@ -73,7 +75,7 @@
 						.file-label {
 							position: relative;
 							top: 20px;
-							width: 40%;
+							width: 25%;
 						}
 					}
 					p {
@@ -90,9 +92,9 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						width: 30vw;
+						// width: 21vw;
 						font-size: rem(10);
-						height: 35px;
+						height: 30px;
 						box-shadow: none;
 						background-color: $blue;
 						color: white;
@@ -107,7 +109,7 @@
 
 						// margin-left: 5vw;
 						width: 60%;
-						height: fit-content;
+						height: 60px;
 						// margin-right: auto;
 						background-color: transparent;
 						border: 2px solid $blue;

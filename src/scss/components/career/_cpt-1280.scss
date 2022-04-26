@@ -29,10 +29,12 @@
 			margin-top: 50px;
 			margin-bottom: 70px;
 			width: 90%;
+			height: 1328px;
+
 			h4 {
 				font-family: $ff-poppins;
 				font-weight: $fw-bold;
-				font-size: rem(18);
+				font-size: rem(25);
 				color: $black;
 				line-height: rem(24);
 				margin-bottom: 0;
@@ -44,8 +46,8 @@
 				margin-top: 15px;
 				font-family: $ff-poppins;
 				font-weight: $fw-regular;
-				font-size: rem(12);
-				line-height: rem(20);
+				font-size: rem(16);
+				line-height: rem(26);
 				color: #16191b;
 				width: inherit;
 				&:last-child {
