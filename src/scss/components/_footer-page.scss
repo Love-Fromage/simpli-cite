@@ -252,6 +252,7 @@
 			display: flex;
 			width: 90%;
 			justify-content: space-between;
+			height: 250px;
 			// margin-left: auto;
 			// margin-right: auto;
 			.col-1 {
@@ -364,6 +365,7 @@
 				}
 				.cont-linkedin {
 					margin-bottom: 50px;
+					margin-top: -25px;
 					display: flex;
 					flex-direction: column;
 					align-items: flex-end;
@@ -530,7 +532,7 @@
 		.cont-flex-t {
 			display: flex;
 			width: 90%;
-			// height: ;
+			height: 370px;
 			padding-top: 110px;
 			justify-content: space-between;
 			overflow: hidden;
