@@ -1,0 +1,101 @@
+//version pour le desktop
+@media screen and(min-width:1280px) {
+	.contact {
+		background-color: $gray;
+		width: 90%;
+		padding-top: 100px;
+		padding-bottom: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		// margin-bottom: 50px;
+		padding-bottom: 90px;
+		display: flex;
+		height: 650px;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		// align-items: center;
+		justify-content: space-evenly;
+		.carte {
+			padding-top: 50px;
+
+			display: flex;
+			width: 30%;
+			// padding-left: 10vw;
+			// padding-right: 10vw;
+			flex-direction: column;
+			align-items: center;
+			&:last-child {
+				padding-bottom: 0px;
+				// margin-top: 20px;
+			}
+			&:nth-child(1),
+			&:nth-child(5) {
+				margin-top: 0px;
+				p {
+					margin-top: 70px;
+				}
+				// background-color: red;
+			}
+			&:nth-child(5) {
+				p {
+					margin-top: 80px;
+				}
+			}
+			&:nth-child(1) {
+				margin-top: 0px;
+				border-right: 2px solid $gray;
+				// padding-left: 5vw;
+				// background-color: red;
+			}
+			&:nth-child(3) {
+				margin-top: 0px;
+				p {
+					margin-top: 35px;
+				}
+				// padding-right: 5vw;
+				// background-color: red;
+			}
+			h1 {
+				font-family: $ff-raleway;
+				font-weight: $fw-extra-bold;
+				font-size: rem(30);
+				line-height: rem(40);
+				text-align: center;
+			}
+			p {
+				font-family: $ff-raleway;
+				font-weight: $fw-medium;
+				font-size: rem(14);
+				line-height: rem(40);
+				color: $black;
+			}
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid $blue;
+				width: 10vw;
+				height: 60px;
+				color: $black;
+				font-family: $ff-poppins;
+				font-weight: $fw-medium;
+				letter-spacing: 4%;
+				font-size: rem(12);
+			}
+		}
+		.separator {
+			display: block;
+			margin-left: 0;
+			position: relative;
+			top: 150px;
+			bottom: 0;
+
+			margin-right: auto;
+			margin-top: 50px;
+			width: 50vw;
+			height: 1px;
+			transform: rotate(90deg);
+			background-color: #13141543;
+		}
+	}
+}
