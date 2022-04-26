@@ -118,16 +118,16 @@
 					.home-cont-croix {
 						width: fit-content;
 						height: auto;
-						position: relative;
+						position: absolute;
+						top: auto;
+						bottom: 0vh;
+						left: 84.2vw;
 						span {
 							display: block;
 							background-color: $blue;
 							width: 12vw;
 							height: 2px;
 							position: relative;
-							top: auto;
-							bottom: -48px;
-							left: 84.2vw;
 
 							&:first-child {
 								//test
