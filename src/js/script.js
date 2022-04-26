@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	let logoImgD = logoNav.src.split("/").pop();
 	if (homeB !== null) {
 		navD.addEventListener("mouseenter", () => {
-			if (window.screenY == 0) {
+			if (window.pageYOffset == 0) {
 				navD.classList.add("blanc-nav");
 				scrollD.classList.add("scrolled");
 				logoImgD = "logo-noir-d.svg";
