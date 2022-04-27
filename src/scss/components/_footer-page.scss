@@ -574,11 +574,33 @@
 								top: 5px;
 							}
 						}
+						//icone de location
+						&:nth-child(1) {
+							img {
+								width: 10px;
+								height: 15px;
+							}
+						}
+						//icone de telephone
+						&:nth-child(2) {
+							img {
+								width: 14px;
+								height: 15px;
+							}
+						}
+						//icone de courriel
+						&:nth-child(3) {
+							img {
+								width: 15px;
+								height: 9px;
+							}
+						}
 						display: flex;
 						align-items: center;
 						margin-bottom: 5px;
 						img {
-							width: 1vw;
+							width: 10px;
+
 							height: fit-content;
 							margin-right: 10px;
 						}
@@ -690,13 +712,14 @@
 			overflow: hidden;
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 			width: 90%;
 			height: 120px;
 			margin-left: auto;
 			margin-right: auto;
 			.tablette {
-				margin-top: 15px;
-				margin-bottom: 5px;
+				margin-top: 0px;
+				margin-bottom: 0px;
 				display: block;
 				width: 10vw;
 				height: 40px;
