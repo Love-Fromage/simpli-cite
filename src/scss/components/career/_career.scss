@@ -70,7 +70,22 @@
 			justify-content: center;
 			align-items: center;
 			top: auto;
-			bottom: 0;
+			bottom: -10px;
+			@media screen and(min-width:460px) {
+				bottom: -8px;
+			}
+			@media screen and(min-width:525px) {
+				bottom: -6px;
+			}
+			@media screen and(min-width:590px) {
+				bottom: -4px;
+			}
+			@media screen and(min-width:640px) {
+				bottom: -2px;
+			}
+			@media screen and(min-width:720px) {
+				bottom: 0px;
+			}
 			left: calc(100% - 30px);
 
 			span {
