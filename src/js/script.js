@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li2 = document.querySelector(".li-2");
 	const li3 = document.querySelector(".li-3");
 	const li4 = document.querySelector(".li-4");
+	const leChar = document.getElementById("leChar");
+
 	//const magicLine = document.querySelector(".magic-line");
 	// $(".magic-line").finish().animate({
 	// 	left: "",
@@ -46,8 +48,106 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				logoNavD.src = "../images/" + logoImgD;
 			}
 		});
-		window.addEventListener("scroll", () => {
-			console.log(window.pageYOffset);
+
+		window.addEventListener("scroll", (e) => {
+			let leCharValue = (window.pageYOffset * 1.2) / 100 - 55;
+			// console.log(window.pageYOffset);
+			console.log(leCharValue * 2.2 + 35);
+			console.log("offset: " + window.pageYOffset);
+			if (window.innerWidth >= 1280) {
+				if (window.pageYOffset <= 2700) {
+					leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
+				}
+				if (window.pageYOffset >= 2700) {
+					$("#le-char").animate(
+						{
+							marginRight: "-25vw",
+						},
+						300
+					);
+
+					// $(".voiture-m").children().style.marginRight =
+					// 	"-" + window.screenY / 1000 + "vw";
+					// css("margin-right", "-40vw");
+				}
+			}
+			if (window.innerWidth >= 1550) {
+				if (window.pageYOffset <= 3100) {
+					leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
+				}
+				if (window.pageYOffset >= 3100) {
+					$("#le-char").animate(
+						{
+							marginRight: "-25vw",
+						},
+						300
+					);
+
+					// $(".voiture-m").children().style.marginRight =
+					// 	"-" + window.screenY / 1000 + "vw";
+					// css("margin-right", "-40vw");
+				}
+			}
+			if (window.innerWidth >= 1600) {
+				if (window.pageYOffset <= 3100) {
+					leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
+				}
+				if (window.pageYOffset >= 3100) {
+					$("#le-char").animate(
+						{
+							marginRight: "-25vw",
+						},
+						300
+					);
+
+					// $(".voiture-m").children().style.marginRight =
+					// 	"-" + window.screenY / 1000 + "vw";
+					// css("margin-right", "-40vw");
+				}
+			}
+			// if (window.pageYOffset >= 2200) {
+			// 	console.log(e);
+			// 	$(".voiture-m").children().finish().animate(
+			// 		{
+			// 			"margin-right": "-30vw",
+			// 		},
+			// 		200
+			// 	);
+			// 	// css("margin-right", "-30vw");
+			// }
+			// if (window.pageYOffset >= 2300) {
+			// 	console.log(e);
+			// 	$(".voiture-m").children().finish().animate(
+			// 		{
+			// 			"margin-right": "-20vw",
+			// 		},
+			// 		200
+			// 	);
+			// 	// .css("margin-right", "-20vw");
+			// }
+			// if (window.pageYOffset >= 2400) {
+			// 	console.log(e);
+			// 	$(".voiture-m").children().finish().animate(
+			// 		{
+			// 			"margin-right": "-10vw",
+			// 		},
+			// 		200
+			// 	);
+			// 	// .css("margin-right", "-10vw");
+			// }
+			// if (window.pageYOffset >= 2500) {
+			// 	console.log(e);
+			// 	$(".voiture-m").children().finish().animate(
+			// 		{
+			// 			"margin-right": "0vw",
+			// 		},
+			// 		200
+			// 	);
+			// 	// .css("margin-right", "0vw");
+			// }
+			if (window.pageYOffset <= 2000) {
+				$(".voiture-m").children().css("margin-right", "-55vw");
+			}
 			if (window.pageYOffset !== 0) {
 				// console.log("plus bas de 10");
 				navM.classList.add("blanc-nav");
