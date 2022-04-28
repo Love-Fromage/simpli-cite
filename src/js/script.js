@@ -58,53 +58,45 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				if (window.pageYOffset <= 2700) {
 					leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
 				}
-				if (window.pageYOffset >= 2700) {
-					$("#le-char").animate(
-						{
-							marginRight: "-25vw",
-						},
-						300
-					);
-
-					// $(".voiture-m").children().style.marginRight =
-					// 	"-" + window.screenY / 1000 + "vw";
-					// css("margin-right", "-40vw");
-				}
+			}
+			if (window.pageYOffset >= 2700) {
+				$("#le-char").animate(
+					{
+						marginRight: "-25vw",
+					},
+					300
+				);
 			}
 			if (window.innerWidth >= 1550) {
 				if (window.pageYOffset <= 3100) {
 					leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
 				}
-				if (window.pageYOffset >= 3100) {
-					$("#le-char").animate(
-						{
-							marginRight: "-25vw",
-						},
-						300
-					);
-
-					// $(".voiture-m").children().style.marginRight =
-					// 	"-" + window.screenY / 1000 + "vw";
-					// css("margin-right", "-40vw");
-				}
 			}
-			if (window.innerWidth >= 1600) {
-				if (window.pageYOffset <= 3100) {
-					leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
-				}
-				if (window.pageYOffset >= 3100) {
-					$("#le-char").animate(
-						{
-							marginRight: "-25vw",
-						},
-						300
-					);
-
-					// $(".voiture-m").children().style.marginRight =
-					// 	"-" + window.screenY / 1000 + "vw";
-					// css("margin-right", "-40vw");
-				}
+			if (window.pageYOffset >= 3100) {
+				$("#le-char").animate(
+					{
+						marginRight: "-25vw",
+					},
+					300
+				);
 			}
+			// if (window.innerWidth >= 1600) {
+			// 	if (window.pageYOffset <= 3100) {
+			// 		leChar.style.marginRight = leCharValue * 2.2 + 30 + "vw";
+			// 	}
+			// 	if (window.pageYOffset >= 3100) {
+			// 		$("#le-char").animate(
+			// 			{
+			// 				marginRight: "-25vw",
+			// 			},
+			// 			300
+			// 		);
+
+			// 		// $(".voiture-m").children().style.marginRight =
+			// 		// 	"-" + window.screenY / 1000 + "vw";
+			// 		// css("margin-right", "-40vw");
+			// 	}
+			// }
 			// if (window.pageYOffset >= 2200) {
 			// 	console.log(e);
 			// 	$(".voiture-m").children().finish().animate(
