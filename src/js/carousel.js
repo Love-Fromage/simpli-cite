@@ -16,55 +16,60 @@ window.addEventListener("DOMContentLoaded", () => {
 	let next = document.getElementById("next");
 	let slides = document.getElementById("slides");
 	let pos = 0;
-	const tailleImage = 72.5;
+	const tailleImage = 32;
 	console.log($(".slides").css("margin-left"));
 	console.log(pos);
-	prev.addEventListener("click", () => {
-		console.log("prev");
-
-		if ($(".slides").css("margin-left") === "0px" || pos <= 0) {
-			pos = 6;
-			prev.removeEventListener("click", this);
-			console.log("0");
-		} else {
-			$(".slides")
-				.finish()
-				.animate(
-					{
-						marginLeft: "+=" + tailleImage + "vw",
-					},
-					300
-				);
-			pos--;
-			console.log(pos);
-			console.log($(".slides").css("margin-left"));
-		}
-	});
-
-	next.addEventListener("click", () => {
-		console.log("next");
-		if ($(".slides").css("margin-left") === "-1200px" || pos >= 6) {
-			pos = 0;
-			$(".slides").finish().animate(
-				{
-					marginLeft: "0px",
-				},
-				500
-			);
-			console.log("0");
-		} else {
-			$(".slides")
-				.finish()
-				.animate(
-					{
-						marginLeft: "-=" + tailleImage + "vw",
-					},
-					300
-				);
-			pos++;
-			console.log(pos);
-			console.log($(".slides").css("margin-left"));
-		}
-		//console.log($('.slides').css('margin-left'));
-	});
+	const styleBtn = [
+		{ filter: "grayscale(0)", opacity: 1 },
+		{
+			filter: "grayscale(1)",
+			opacity: 0.2,
+		},
+	];
+	if (window.innerWidth >= 1280) {
+		// prev.addEventListener("click", () => {
+		// 	console.log("prev");
+		// 	$("#prev").css(styleBtn[1]);
+		// 	if ($(".slides").css("margin-left") === "0px" || pos <= 0) {
+		// 		pos = 6;
+		// 		prev.removeEventListener("click", this);
+		// 		console.log("0");
+		// 	} else {
+		// 		$(".slides")
+		// 			.finish()
+		// 			.animate(
+		// 				{
+		// 					marginLeft: "+=" + tailleImage + "vw",
+		// 				},
+		// 				300
+		// 			);
+		// 		pos--;
+		// 		console.log(pos);
+		// 		console.log($(".slides").css("margin-left"));
+		// 	}
+		// });
+		// next.addEventListener("click", () => {
+		// 	console.log("next");
+		// 	$("#prev").css(styleBtn[0]);
+		// 	if ($(".slides").css("margin-left") === "-1200px" || pos >= 2) {
+		// 		pos = 0;
+		// 		$("#prev").css(styleBtn[0]);
+		// 		next.removeEventListener("click", this);
+		// 		console.log("0");
+		// 	} else {
+		// 		$(".slides")
+		// 			.finish()
+		// 			.animate(
+		// 				{
+		// 					marginLeft: "-=" + tailleImage + "vw",
+		// 				},
+		// 				300
+		// 			);
+		// 		pos++;
+		// 		console.log(pos);
+		// 		console.log($(".slides").css("margin-left"));
+		// 	}
+		// 	//console.log($('.slides').css('margin-left'));
+		// });
+	}
 });
