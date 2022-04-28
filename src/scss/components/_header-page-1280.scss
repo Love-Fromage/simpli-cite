@@ -48,6 +48,17 @@
 					// margin-right: 5vw;
 					nav {
 						display: flex;
+						.hover-blue {
+							display: flex;
+							align-items: center;
+							height: 13vh;
+							border-top: solid 10px $blue;
+
+							a {
+								font-weight: $fw-bold;
+								color: $blue;
+							}
+						}
 						.scrolled {
 							li {
 								a {
@@ -66,16 +77,70 @@
 							// height: 110px;
 							justify-content: center;
 							align-items: center;
+							position: relative;
 							// padding-top: 0;
 							// padding-bottom: 0;
 							padding-top: 3vh;
 							// margin-bottom: 0;
 							//ca c'est pour la tite barre bleu en haut
+							.magic-line {
+								position: absolute;
+								z-index: 180;
+								//left: 90px;
+								//background-color: $blue;
+								//top: -1.7vh;
+								//width: 69px;
+								//height: 4px;
+								transition: all ease 0.2s;
+								// transition-delay: 0.2s;
+							}
+							.magic-line1 {
+								position: absolute;
+								z-index: 180;
+								left: 90px;
+								background-color: $blue;
+								top: -1.7vh;
+								width: 69px;
+								height: 4px;
+								// transition: all ease 0.4s;
+							}
+							.magic-line2 {
+								position: absolute;
+								z-index: 180;
+								left: 209px;
+
+								background-color: $blue;
+								top: -1.7vh;
+								width: 162px;
+								// transition: all ease 0.4s;
+								height: 4px;
+							}
+							.magic-line3 {
+								position: absolute;
+								z-index: 180;
+								left: 421px;
+								// transition: all ease 0.4s;
+								background-color: $blue;
+								top: -1.7vh;
+								width: 87px;
+								height: 4px;
+							}
+							.magic-line4 {
+								position: absolute;
+								z-index: 180;
+								left: 558px;
+								// transition: all ease 0.4s;
+								background-color: $blue;
+								top: -1.7vh;
+								width: 73px;
+								height: 4px;
+							}
 							.active-nav {
 								// padding-top: 47px;
 								// padding-top: auto;
 								display: flex;
 								align-items: center;
+
 								height: 13vh;
 								border-top: solid 4px $blue;
 

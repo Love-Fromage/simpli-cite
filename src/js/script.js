@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const navM = document.querySelector(".nav-m");
 	const navD = document.querySelector(".nav-d");
 	const scrollD = document.querySelector("#scrolled");
+	const li1 = document.querySelector(".li-1");
+	const li2 = document.querySelector(".li-2");
+	const li3 = document.querySelector(".li-3");
+	const li4 = document.querySelector(".li-4");
+	//const magicLine = document.querySelector(".magic-line");
+	// $(".magic-line").finish().animate({
+	// 	left: "",
+	// });
 
 	const logoNav = document.querySelector("#logo-nav-m");
 	const logoNavD = document.querySelector("#logo-nav-d");
@@ -15,7 +23,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	let logoImg = logoNav.src.split("/").pop();
 	let logoImgD = logoNav.src.split("/").pop();
+
 	if (homeB !== null) {
+		//pour le blanc sur le hover
 		navD.addEventListener("mouseenter", () => {
 			if (window.pageYOffset == 0) {
 				navD.classList.add("blanc-nav");
@@ -74,6 +84,62 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		});
 		console.log(logoNav.src);
 	}
+	$(".magic-line").css({
+		opacity: 0,
+	});
+	navD.addEventListener("mouseleave", () => {
+		$(".magic-line").css({
+			opacity: 0,
+		});
+	});
+	//MOUSE ENTER DU PREMIER li
+	li1.addEventListener("mouseenter", () => {
+		$(".magic-line").finish().animate(
+			{
+				left: "90px",
+				width: "69px",
+				opacity: 1,
+			},
+			200
+		);
+	});
+
+	//MOUSE ENTER 2e li
+	li2.addEventListener("mouseenter", () => {
+		$(".magic-line").finish().animate(
+			{
+				left: "209px",
+				width: "162px",
+				opacity: 1,
+			},
+			200
+		);
+	});
+
+	//MOUSE ENTER 3e li
+	li3.addEventListener("mouseenter", () => {
+		$(".magic-line").finish().animate(
+			{
+				left: "421px",
+				width: "87px",
+				opacity: 1,
+			},
+			200
+		);
+	});
+
+	//MOUSE ENTER 4e li
+	li4.addEventListener("mouseenter", () => {
+		$(".magic-line").finish().animate(
+			{
+				left: "558px",
+				width: "73px",
+				opacity: 1,
+			},
+			200
+		);
+		// magicLine.classList.add("magic-line4");
+	});
 
 	const toggleLeMenu = () => {
 		console.log("cesame ouvre toi!");
