@@ -12,9 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	btnRadio1[0].addEventListener("click", () => {
 		$("#trans-a").prop("checked", true);
 		$("#trans-m").prop("checked", false);
+		// console.log("trans-a returns: " + $("#trans-a").prop("checked"));
+		// console.log("trans-m returns: " + $("#trans-m").prop("checked"));
 	});
 	btnRadio1[1].addEventListener("click", () => {
 		$("#trans-a").prop("checked", false);
 		$("#trans-m").prop("checked", true);
+		// console.log("trans-a returns: " + $("#trans-a").prop("checked"));
+		// console.log("trans-m returns: " + $("#trans-m").prop("checked"));
 	});
 });
