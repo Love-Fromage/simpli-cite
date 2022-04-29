@@ -7,6 +7,26 @@
 	h4 {
 		font-size: rem(50);
 	}
+	.lang-switch {
+		position: fixed;
+		left: auto;
+		right: 0;
+		cursor: pointer;
+		top: 50vh;
+		z-index: 15;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $blue;
+		width: 28px;
+		height: 69px;
+		color: white;
+		font-family: $ff-poppins;
+		font-weight: $fw-medium;
+		font-size: rem(10);
+		letter-spacing: 0.04em;
+	}
 
 	.bg-home {
 		background-image: url("../../images/bg-road-d.webp");
