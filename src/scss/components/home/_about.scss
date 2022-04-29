@@ -56,15 +56,15 @@
 			}
 			.col-droite {
 				position: absolute;
-				width: 10vw;
-				z-index: -1;
-				top: 40px;
+				width: 9.3vw;
+				z-index: 0;
+				top: 4px;
 				// height: 500vh;
-				@media screen and(min-height:667px) {
-					top: 5.5vh;
+				@media screen and(max-width:590px) {
+					width: 9.5vw;
 				}
 
-				right: 0;
+				right: -3.65vw;
 				left: auto;
 				height: 250vh;
 				background-color: $gray;
@@ -148,6 +148,9 @@
 			margin-top: 200px;
 			@media screen and(max-height:740px) {
 				margin-top: 280px;
+			}
+			@media screen and(max-width:372px) {
+				margin-top: 310px;
 			}
 
 			.voiture-m {
