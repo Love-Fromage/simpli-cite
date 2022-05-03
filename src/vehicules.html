@@ -458,6 +458,8 @@
 
 		<!-- Initialize Swiper -->
 		<script>
+			let prev = document.getElementById("prev");
+			let next = document.getElementById("next");
 			var swiper = new Swiper(".swiper", {
 				spaceBetween: 10,
 				navigation: {
@@ -471,11 +473,27 @@
 					},
 					768: {
 						slidesPerView: 3,
-						spaceBetween: 10,
+						spaceBetween: 25,
 					},
 					1280: {
-						slidesPerView: 4,
-						spaceBetween: 20,
+						slidesPerView: 3,
+						spaceBetween: 25,
+					},
+				},
+				on: {
+					reachBeginning: () => {
+						prev.classList.add("f-s");
+					},
+					reachEnd: () => {
+						next.classList.add("f-s");
+					},
+					slideChange: () => {
+						if (swiper.activeIndex > 0) {
+							prev.classList.remove("f-s");
+						}
+						if (swiper.activeIndex <= 2) {
+							next.classList.remove("f-s");
+						}
 					},
 				},
 			});

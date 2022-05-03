@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	let next = document.getElementById("next");
 	let slides = document.getElementById("slides");
 	let pos = 0;
+	let pressed = false;
 	const tailleImage = 32;
 	console.log($(".slides").css("margin-left"));
 	console.log(pos);
@@ -27,6 +28,25 @@ window.addEventListener("DOMContentLoaded", () => {
 		},
 	];
 	if (window.innerWidth >= 1280) {
+		// next.addEventListener("click", () => {
+		// 	//si le bouton de next na pas ete clicker
+		// 	pos++;
+		// 	if (!pressed) {
+		// 		pressed = true;
+		// 		prev.classList.remove("f-s");
+		// 	}
+		// 	if (pos >= 3) {
+		// 		next.classList.add("f-s");
+		// 	}
+		// });
+		// //bouton prev
+		// prev.addEventListener("click", () => {
+		// 	//si le bouton de next na pas ete clicker
+		// 	pos--;
+		// 	if (pos >= 3) {
+		// 		next.classList.remove("f-s");
+		// 	}
+		// });
 		// prev.addEventListener("click", () => {
 		// 	console.log("prev");
 		// 	$("#prev").css(styleBtn[1]);

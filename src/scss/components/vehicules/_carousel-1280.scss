@@ -97,11 +97,17 @@
 				}
 			}
 		}
+		.swiper {
+			width: 90%;
+			padding-right: 1vw;
+		}
+
 		.swiper-slide {
-			width: 20vw;
+			width: 15vw;
 			height: 300px;
 			position: relative;
-			margin-right: 10px;
+			// margin-inline: 20px;
+
 			// overflow-y: visible;
 			.cont-img {
 				border: 5px $gray solid;
@@ -111,7 +117,7 @@
 					display: block;
 					margin-left: auto;
 					margin-right: auto;
-					width: 20vw;
+					width: 15vw;
 					height: auto;
 					// margin-bottom: 50px;
 				}
