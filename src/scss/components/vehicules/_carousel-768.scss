@@ -124,6 +124,14 @@
 			position: relative;
 			margin-right: 10px;
 			// overflow-y: visible;
+			&:nth-child(5) {
+				.cont-img {
+					img {
+						position: relative;
+						top: 15px;
+					}
+				}
+			}
 			.cont-img {
 				border: 5px $gray solid;
 				width: inherit;
