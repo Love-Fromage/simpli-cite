@@ -62,14 +62,14 @@
 				position: absolute;
 				width: 25vw;
 				z-index: 0;
-				top: 6vh;
+				top: 6.1vh;
 				// height: 500vh;
 				@media screen and(min-height:1025px) {
 					top: 5.5vh;
 				}
 
 				right: 0;
-				left: 70.2vw;
+				left: 70.4vw;
 				height: 150vh;
 				background-color: $gray;
 			}
@@ -133,8 +133,8 @@
 							width: 12vw;
 							height: 4px;
 							position: relative;
-							top: 5vh;
-							left: 64vw;
+							top: 5.3vh;
+							left: 64.2vw;
 
 							&:first-child {
 								//test
