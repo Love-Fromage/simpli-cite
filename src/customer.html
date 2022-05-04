@@ -104,7 +104,7 @@
 				<span></span>
 				<h1>Nos clients</h1>
 			</div>
-			<div class="cont-slider-m">
+			<!-- <div class="cont-slider-m">
 				<div id="slides" class="slides">
 					<div class="cont-slide">
 						<div class="container">
@@ -163,11 +163,71 @@
 						</div>
 					</div>
 				</div>
+			</div> -->
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="carte carte1">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+							<div class="carte carte2">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+							<div class="carte carte3">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+							<div class="carte carte4">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="carte carte1">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+							<div class="carte carte2">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+							<div class="carte carte3">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+							<div class="carte carte4">
+								<img
+									src="../images/pomerleau.svg"
+									alt="pomerleau"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="cont-slider-d">
-				<div id="slides" class="slides">
-					<div class="cont-slide">
+			<div class="swiper2">
+				<div id="slides" class="swiper-wrapper">
+					<div class="swiper-slide">
 						<!-- contenu de la carte/slide -->
 						<div class="container">
 							<div class="carte1">
@@ -208,7 +268,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cont-slide">
+					<div class="swiper-slide">
 						<div class="container">
 							<div class="carte1">
 								<img
@@ -248,7 +308,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="cont-slide">
+					<div class="swiper-slide">
 						<div class="container">
 							<div class="carte1">
 								<img
@@ -449,6 +509,46 @@
 					behavior: "smooth",
 				});
 			};
+		</script>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			// let prev = document.getElementById("prev");
+			// let next = document.getElementById("next");
+			var swiper = new Swiper(".swiper", {
+				spaceBetween: 10,
+				loop: true,
+				navigation: {
+					nextEl: "#next",
+					prevEl: "#prev",
+				},
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 25,
+					},
+					1280: {
+						slidesPerView: 3,
+						spaceBetween: 25,
+					},
+				},
+			});
+			var swiper = new Swiper(".swiper2", {
+				spaceBetween: 10,
+				loop: true,
+				navigation: {
+					nextEl: "#next",
+					prevEl: "#prev",
+				},
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 25,
+					},
+				},
+			});
 		</script>
 	</body>
 </html>

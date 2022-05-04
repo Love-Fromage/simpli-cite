@@ -67,6 +67,41 @@
 				}
 			}
 		}
+		// .swiper {
+		// 	width: 90%;
+		// }
+		.swiper {
+			overflow: hidden;
+			// overflow-y: visible;
+			display: block;
+			width: 70vw;
+			margin: auto;
+			margin-top: 30px;
+			.swiper-wrapper {
+				display: flex;
+				width: 100vw;
+				.swiper-slide {
+					width: 70vw;
+					height: fit-content;
+					position: relative;
+					margin-right: 10px;
+					margin-bottom: 75px;
+					.container {
+						display: grid;
+						width: 70vw;
+						grid-template-columns: 1fr 1fr;
+						grid-template-rows: 1fr 1fr;
+						gap: 30px 70px;
+						.carte {
+							img {
+								height: auto;
+							}
+							// background-color: red;
+						}
+					}
+				}
+			}
+		}
 		.cont-nav-carou {
 			width: 100vw;
 			display: flex;
