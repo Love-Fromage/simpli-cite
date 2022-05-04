@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li2 = document.querySelector(".li-2");
 	const li3 = document.querySelector(".li-3");
 	const li4 = document.querySelector(".li-4");
-	const li5 = document.querySelector(".li-5");
+	// const li5 = document.querySelector(".li-5");
 	let past = false;
 	const leChar = document.getElementById("leChar");
 	// btnHam.classList.add("animate-ham2");
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		window.addEventListener("scroll", (e) => {
 			let leCharValue = (window.pageYOffset * 1.2) / 100 - 55;
 			// console.log(window.pageYOffset);
-			console.log(leCharValue * 2.2 + 35);
-			console.log("offset: " + window.pageYOffset);
+			// console.log(leCharValue * 2.2 + 35);
+			// console.log("offset: " + window.pageYOffset);
 			if (!past) {
 				if (window.innerWidth >= 1280) {
 					if (window.pageYOffset <= 2700) {
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				// hamPain2.classList.remove("pain2");
 				if (
 					menuHam.classList.contains("toggle-off") &&
-					window.screenY <= 10
+					window.pageYOffset <= 10
 				) {
 					logoImg = "logo-blanc.svg";
 					logoNav.src = "../images/" + logoImg;
@@ -190,17 +190,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		);
 		// magicLine.classList.add("magic-line4");
 	});
-	li5.addEventListener("mouseenter", () => {
-		$(".magic-line").finish().animate(
-			{
-				left: "680px",
-				width: "179px",
-				opacity: 1,
-			},
-			200
-		);
-		// magicLine.classList.add("magic-line4");
-	});
+	// li5.addEventListener("mouseenter", () => {
+	// 	$(".magic-line").finish().animate(
+	// 		{
+	// 			left: "680px",
+	// 			width: "179px",
+	// 			opacity: 1,
+	// 		},
+	// 		200
+	// 	);
+	// 	// magicLine.classList.add("magic-line4");
+	// });
 
 	const toggleLeMenu = () => {
 		console.log("cesame ouvre toi!");
