@@ -213,6 +213,9 @@
 									font-size: rem(13);
 									letter-spacing: 0.04em;
 									color: white;
+									&:hover {
+										text-decoration: none;
+									}
 								}
 							}
 							.last-li-d {
