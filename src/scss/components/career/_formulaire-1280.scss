@@ -104,6 +104,9 @@
 						letter-spacing: 4%;
 						margin-bottom: 50px;
 					}
+					$transition-bezier: 1, 0, 0, 1;
+					$transition-len: 0.35s;
+					$pink: #f93195;
 					.carr-send-btn {
 						display: block;
 
@@ -113,6 +116,7 @@
 						// margin-right: auto;
 						background-color: transparent;
 						border: 2px solid $blue;
+						position: relative;
 
 						font-family: $ff-poppins;
 						font-weight: $fw-medium;
@@ -120,6 +124,55 @@
 						letter-spacing: 4%;
 						padding-top: 20px;
 						padding-bottom: 20px;
+						z-index: 20;
+						transition: all $transition-len
+							cubic-bezier($transition-bezier);
+						&:hover {
+							color: $black;
+							z-index: 5;
+							text-decoration: none;
+						}
+						&::before,
+						&::after {
+							content: "";
+							position: absolute;
+							z-index: -1;
+							transition: all $transition-len
+								cubic-bezier($transition-bezier);
+						}
+					}
+					.btn-color {
+						// border-color: $pink;
+						// color: $pink;
+
+						&::before,
+						&::after {
+							background: $blue;
+						}
+					}
+					.btn-l-r {
+						&::after {
+							height: 58px;
+							width: 0;
+							top: 0px;
+						}
+						&:hover::after {
+							// background-color: red;
+							// @media screen and(min-width:1280px) {
+							// 	width: 15.8vw;
+							// }
+							// @media screen and(min-width:1350px) {
+							// 	width: 15.2vw;
+							// }
+							// @media screen and(min-width:1500px) {
+							// 	width: 15.7vw;
+							// }
+							width: 100%;
+							z-index: -1;
+						}
+						&::after {
+							left: 00px;
+						}
 					}
 				}
 			}
