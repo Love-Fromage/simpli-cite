@@ -50,6 +50,98 @@
 					height: auto;
 					// filter: blur(-5px);
 				}
+				.animate-hamOn1 {
+					animation: on1 forwards ease 500ms;
+				}
+				.animate-hamOn2 {
+					animation: on2 forwards ease 500ms;
+				}
+				.animate-hamOff1 {
+					animation: off1 forwards ease 500ms;
+				}
+				.animate-hamOff2 {
+					animation: off2 forwards ease 500ms;
+				}
+				@keyframes on1 {
+					0% {
+						top: 0px;
+						transform: rotate(0deg);
+					}
+					50% {
+						// background-color: red;
+						top: 10px;
+						transform: rotate(0deg);
+					}
+					90% {
+						top: 10px;
+					}
+					100% {
+						top: 10px;
+						transform: rotate(45deg) translateY(-2.5px);
+					}
+				}
+				@keyframes on2 {
+					0% {
+						top: 0px;
+						transform: rotate(0deg);
+					}
+					50% {
+						// background-color: red;
+						top: -5px;
+						transform: rotate(0deg);
+					}
+					90% {
+						top: -5px;
+					}
+					100% {
+						top: -5px;
+						transform: rotate(-45deg) translateY(2.5px);
+					}
+				}
+				@keyframes off1 {
+					0% {
+						top: 10px;
+						transform: rotate(45deg) translateY(-2.5px);
+					}
+
+					50% {
+						top: 10px;
+						transform: rotate(0deg) translateY(0px);
+						// transform: rotate(45deg);
+					}
+
+					// 70% {
+					// 	top: 10px;
+					// }
+
+					100% {
+						top: 0px;
+						transform: rotate(0deg) translateY(0px);
+						// transform: rotate(0deg) translateY(0px);
+					}
+				}
+				@keyframes off2 {
+					0% {
+						top: -5px;
+						transform: rotate(-45deg) translateY(2.5px);
+					}
+
+					50% {
+						top: -5px;
+						transform: rotate(0deg) translateY(0px);
+						// transform: rotate(45deg);
+					}
+
+					// 70% {
+					// 	top: 10px;
+					// }
+
+					100% {
+						top: 0px;
+						transform: rotate(0deg) translateY(0px);
+						// transform: rotate(0deg) translateY(0px);
+					}
+				}
 				.cont-ham {
 					// display: block;
 					width: 30px;
@@ -62,6 +154,7 @@
 						display: block;
 						width: 30px;
 						height: 2px;
+						position: relative;
 						background-color: white;
 						&:first-child {
 							margin-bottom: 10px;

@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const homeB = document.querySelector(".home-cont-about");
 	const menuHam = document.querySelector("#ham");
 	const btnHam = document.querySelector(".cont-ham");
+	const pain1 = document.querySelector("#pain1");
+	const pain2 = document.querySelector("#pain2");
 	const navM = document.querySelector(".nav-m");
 	const navD = document.querySelector(".nav-d");
 	const scrollD = document.querySelector("#scrolled");
@@ -13,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li4 = document.querySelector(".li-4");
 	let past = false;
 	const leChar = document.getElementById("leChar");
-
+	// btnHam.classList.add("animate-ham2");
+	pain1.classList.add("animate-hamOff1");
+	pain2.classList.add("animate-hamOff2");
 	//const magicLine = document.querySelector(".magic-line");
 	// $(".magic-line").finish().animate({
 	// 	left: "",
@@ -189,6 +193,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const toggleLeMenu = () => {
 		console.log("cesame ouvre toi!");
 
+		// $(".pain2").animate(
+		// 	{
+		// 		transform: "translateY(-10px)",
+		// 	},
+		// 	300
+		// );
 		if (!menuHam.classList.contains("toggle-off")) {
 			menuHam.classList.add("toggle-off");
 		} else if (menuHam.classList.contains("toggle-off")) {
@@ -196,9 +206,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		}
 
 		if (!menuHam.classList.contains("toggle-on")) {
+			if (
+				pain1.classList.contains("animate-hamOff1") &&
+				pain2.classList.contains("animate-hamOff2")
+			) {
+				pain1.classList.remove("animate-hamOff1");
+				pain2.classList.remove("animate-hamOff2");
+			}
+			if (
+				!pain1.classList.contains("animate-hamOn1") &&
+				!pain2.classList.contains("animate-hamOn2")
+			) {
+				pain1.classList.add("animate-hamOn1");
+				pain2.classList.add("animate-hamOn2");
+			}
 			menuHam.classList.add("toggle-on");
 		} else if (menuHam.classList.contains("toggle-on")) {
 			menuHam.classList.remove("toggle-on");
+			if (
+				pain1.classList.contains("animate-hamOn1") &&
+				pain2.classList.contains("animate-hamOn2")
+			) {
+				pain1.classList.remove("animate-hamOn1");
+				pain2.classList.remove("animate-hamOn2");
+			}
+			if (
+				!pain1.classList.contains("animate-hamOff1") &&
+				!pain2.classList.contains("animate-hamOff2")
+			) {
+				pain1.classList.add("animate-hamOff1");
+				pain2.classList.add("animate-hamOff2");
+			}
 		}
 
 		if (homeB !== null) {
