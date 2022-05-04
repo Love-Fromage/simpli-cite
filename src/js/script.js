@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li2 = document.querySelector(".li-2");
 	const li3 = document.querySelector(".li-3");
 	const li4 = document.querySelector(".li-4");
+	const li5 = document.querySelector(".li-5");
 	let past = false;
 	const leChar = document.getElementById("leChar");
 	// btnHam.classList.add("animate-ham2");
@@ -183,6 +184,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			{
 				left: "558px",
 				width: "73px",
+				opacity: 1,
+			},
+			200
+		);
+		// magicLine.classList.add("magic-line4");
+	});
+	li5.addEventListener("mouseenter", () => {
+		$(".magic-line").finish().animate(
+			{
+				left: "680px",
+				width: "179px",
 				opacity: 1,
 			},
 			200

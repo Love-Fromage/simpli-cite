@@ -155,6 +155,16 @@
 								width: 73px;
 								height: 4px;
 							}
+							.magic-line5 {
+								position: absolute;
+								z-index: 180;
+								left: 827px;
+								// transition: all ease 0.4s;
+								background-color: $blue;
+								top: -1.7vh;
+								width: 179px;
+								height: 4px;
+							}
 							.active-nav {
 								// padding-top: 47px;
 								// padding-top: auto;
