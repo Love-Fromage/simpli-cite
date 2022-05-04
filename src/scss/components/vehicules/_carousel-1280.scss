@@ -10,15 +10,7 @@
 
 			span {
 				width: 50%;
-				@media screen and(min-width:1350px) {
-					// width: 55vw;
-				}
-				//@media screen and(min-width:1500px) {
-				//	width: 50vw;
-				//}
-				//@media screen and(min-width:1700px) {
-				//	width: 55vw;
-				//}
+
 				height: 4px;
 				background-color: $blue;
 			}
