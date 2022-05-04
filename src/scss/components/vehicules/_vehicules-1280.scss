@@ -45,9 +45,12 @@
 				height: 2px;
 			}
 		}
+		$transition-bezier: 1, 0, 0, 1;
+		$transition-len: 0.35s;
+		$pink: #f93195;
 		div.veh-btn-contact {
 			display: flex;
-			width: 30%;
+			width: 30vw;
 			margin-left: auto;
 			margin-right: auto;
 			justify-content: center;
@@ -59,7 +62,23 @@
 			left: -5vw;
 			border: solid 2px $blue;
 			box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
-
+			z-index: 20;
+			transition: all $transition-len cubic-bezier($transition-bezier);
+			&:hover {
+				a {
+					color: white;
+					// background-color: red;
+				}
+				z-index: 5;
+				text-decoration: none;
+			}
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				transition: all $transition-len cubic-bezier($transition-bezier);
+			}
 			a.veh-btn-contact {
 				margin: auto;
 				color: $black;
@@ -68,6 +87,39 @@
 				font-size: rem(16);
 				letter-spacing: 4%;
 				text-transform: uppercase;
+				&:hover {
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+		.btn-color {
+			// border-color: $pink;
+			// color: $pink;
+
+			&::before,
+			&::after {
+				background: $blue;
+			}
+		}
+		.btn-l-r {
+			&::after {
+				height: 158px;
+				width: 0;
+				top: 0px;
+			}
+			&:hover::after {
+				// @media screen and(min-width:1350px) {
+				// 	width: 15.2vw;
+				// }
+				// @media screen and(min-width:1500px) {
+				// 	width: 15.7vw;
+				// }
+				width: 26.9vw;
+				z-index: -1;
+			}
+			&::after {
+				left: 0vw;
 			}
 		}
 	}
