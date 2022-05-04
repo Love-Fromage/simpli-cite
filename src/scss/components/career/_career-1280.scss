@@ -4,7 +4,9 @@
 		margin-top: 20px;
 		background-image: url("../../../images/carr-bg-d.webp");
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
+		background-position: 75% 10%;
+		background-attachment: fixed;
 
 		width: 90%;
 		margin-left: auto;
