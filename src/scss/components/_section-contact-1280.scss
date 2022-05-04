@@ -87,7 +87,7 @@
 				z-index: 20;
 				transition: all $transition-len cubic-bezier($transition-bezier);
 				&:hover {
-					color: $black;
+					color: white;
 					z-index: 5;
 					text-decoration: none;
 				}

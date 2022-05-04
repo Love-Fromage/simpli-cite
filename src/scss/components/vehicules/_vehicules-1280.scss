@@ -65,7 +65,7 @@
 			z-index: 20;
 			transition: all $transition-len cubic-bezier($transition-bezier);
 			&:hover {
-				a {
+				a.veh-btn-contact {
 					color: white;
 					// background-color: red;
 				}

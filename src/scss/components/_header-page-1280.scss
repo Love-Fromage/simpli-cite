@@ -228,7 +228,35 @@
 									background-color: $blue;
 									padding-left: 15px;
 									padding-right: 5vw;
+									//hover sur le bleu de contact
+									&:hover {
+										img {
+											position: relative;
+											left: 0;
+											animation: swoop forwards ease
+												1000ms;
+										}
+									}
+									@keyframes swoop {
+										0% {
+											left: 0;
+											opacity: 1;
+										}
 
+										50% {
+											left: 10px;
+											opacity: 0;
+										}
+										51% {
+											left: -15px;
+											opacity: 0;
+										}
+
+										100% {
+											left: 0;
+											opacity: 1;
+										}
+									}
 									img {
 										display: block;
 										margin: auto;
