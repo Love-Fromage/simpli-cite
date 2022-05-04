@@ -69,6 +69,8 @@
 				line-height: rem(40);
 				color: $black;
 			}
+			$transition-bezier: 1, 0, 0, 1;
+			$transition-len: 0.35s;
 			a {
 				display: flex;
 				justify-content: center;
@@ -80,7 +82,46 @@
 				font-family: $ff-poppins;
 				font-weight: $fw-medium;
 				letter-spacing: 4%;
+				position: relative;
 				font-size: rem(12);
+				z-index: 20;
+				transition: all $transition-len cubic-bezier($transition-bezier);
+				&:hover {
+					color: $black;
+					z-index: 5;
+					text-decoration: none;
+				}
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+					z-index: -1;
+					transition: all $transition-len
+						cubic-bezier($transition-bezier);
+				}
+			}
+			.btn-color {
+				// border-color: $pink;
+				// color: $pink;
+
+				&::before,
+				&::after {
+					background: $blue;
+				}
+			}
+			.btn-l-r {
+				&::after {
+					height: 58px;
+					width: 0;
+					top: 0px;
+				}
+				&:hover::after {
+					width: 100%;
+					z-index: -1;
+				}
+				&::after {
+					left: 00px;
+				}
 			}
 		}
 		.separator {
