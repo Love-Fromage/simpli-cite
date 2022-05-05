@@ -1,11 +1,4 @@
 <?php
-$page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'],'/') + 1);
-$page = str_replace('.php', '', $page);
-
-$lang = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'en' : 'fr';
-function lang($frn, $eng) {
-    echo ($GLOBALS['lang'] == 'en') ?  $eng : $frn;
-}
 include("./header.php");
 ?>
 <!DOCTYPE html>
@@ -38,11 +31,11 @@ include("./header.php");
 				<div class="cont-droit-d">
 					<h1><?php lang('Location de véhicules à moyens termes','anglais'); ?></h1>
 					<span class="ligne"></span>
-					<a href="./home.html">Consulter</a>
-					<h1><?php echo $page2 ?></h1>
-					<!-- <h1>Remarketing</h1> -->
+					<a href="./home.html"><?php lang('Consulter','Consult'); ?></a>
+					
+					<h1><?php lang('Remarketing','Remarketing'); ?></h1>
 					<span class="ligne"></span>
-					<a href="./remarketing.html">Consulter</a>
+					<a href="./remarketing.html"><?php lang('Consulter','Consult'); ?></a>
 				</div>
 			</div>
 		</div>
