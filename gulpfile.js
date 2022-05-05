@@ -2,8 +2,8 @@
 
 // modules
 const gulp = require("gulp");
-
-const browserSync = require("browser-sync").create();
+const php = require("gulp-connect-php");
+const browserSync = require("browser-sync");
 const newer = require("gulp-newer"); // https://www.npmjs.com/package/gulp-newer
 const imagemin = require("gulp-imagemin"); // https://www.npmjs.com/package/gulp-imagemin
 const htmlclean = require("gulp-htmlclean"); // https://www.npmjs.com/package/gulp-htmlclean
@@ -106,7 +106,10 @@ const watch = function () {
 
 	// html changes
 	gulp.watch(folder.src + "**/*", gulp.parallel(optimiser_html));
-	gulp.watch(folder.src + "**/*", gulp.parallel(optimiser_php));
+	gulp.watch(
+		folder.src + "**/*",
+		gulp.series(optimiser_php, browserSyncReload)
+	);
 
 	// javascript changes
 	gulp.watch(folder.src + "js/**/*", gulp.parallel(optimiser_js));
@@ -114,6 +117,29 @@ const watch = function () {
 	// css changes
 	gulp.watch(folder.src + "scss/**/*", gulp.parallel(optimiser_css));
 };
+
+//Php connect
+function connectsync() {
+	php.server(
+		{
+			// a standalone PHP server that browsersync connects to via proxy
+			port: 8000,
+			keepalive: true,
+			base: "dist",
+		},
+		function () {
+			browserSync({
+				proxy: "127.0.0.1:8000",
+			});
+		}
+	);
+}
+
+// BrowserSync Reload
+function browserSyncReload(done) {
+	browserSync.reload();
+	done();
+}
 
 //Processus qui lance le serveur Web local et qui recharge la page lorsqu'il y a un changement avec les fichiers CSS, HTML et JS
 const serveur = function () {
@@ -130,6 +156,7 @@ const serveur = function () {
 		port: 3000,
 		server: "./dist/",
 		ghostMode: false,
+		// keepalive: true,
 		notify: false,
 		browser: navigateur,
 	});
@@ -166,5 +193,5 @@ gulp.task(
 // Processus par dÃ©faut qui exÃ©cute chaque tÃ¢che une aprÃ¨s l'autre
 gulp.task(
 	"default",
-	gulp.series("execution", gulp.parallel("watch", "serveur"))
+	gulp.series("execution", gulp.parallel("watch", connectsync))
 );

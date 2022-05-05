@@ -1,5 +1,5 @@
 <?php
-include("./header.php");
+include("./header2.php");
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang; ?>">
@@ -31,7 +31,7 @@ include("./header.php");
 				<div class="cont-droit-d">
 					<h1><?php lang('Location de véhicules à moyens termes','anglais'); ?></h1>
 					<span class="ligne"></span>
-					<a href="./home.html"><?php lang('Consulter','Consult'); ?></a>
+					<a href="./home.php"><?php lang('Consulter','Consult'); ?></a>
 					
 					<h1><?php lang('Remarketing','Remarketing'); ?></h1>
 					<span class="ligne"></span>

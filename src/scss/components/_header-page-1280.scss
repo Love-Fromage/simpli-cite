@@ -22,14 +22,18 @@
 		width: 28px;
 		height: 69px;
 		color: white;
-		font-family: $ff-poppins;
-		font-weight: $fw-medium;
-		font-size: rem(10);
-		letter-spacing: 0.04em;
+
+		a {
+			font-family: $ff-poppins;
+			font-weight: $fw-medium;
+			font-size: rem(10);
+			letter-spacing: 0.04em;
+			color: white;
+		}
 	}
 
 	.bg-home {
-		background-image: url("../../images/bg-road-d.webp");
+		background-image: url("../images/bg-road-d.webp");
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 
