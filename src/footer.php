@@ -187,4 +187,46 @@
     });
 </script>
 <?php endif ?>
+<?php if($customer): ?>
+    <!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    // let prev = document.getElementById("prev");
+    // let next = document.getElementById("next");
+    var swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: "#next",
+            prevEl: "#prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 25,
+            },
+            1280: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+        },
+    });
+    var swiper = new Swiper(".swiper2", {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: "#next",
+            prevEl: "#prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 25,
+            },
+        },
+    });
+</script>
+<?php endif ?>
 	</body>
