@@ -90,25 +90,25 @@
 								<ul id="scrolled">
 									<li class="magic-line magic-line1"></li>
 									<li class="active-nav li-1">
-										<a href="./home.php"><?php lang('à propos','About us'); ?></a>
+										<a href="./home.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('à propos','About us'); ?></a>
 									</li>
 
 									<li class="li-2">
-										<a href="./vehicules.php"
+										<a href="./vehicules.php<?php lang('?lang=fr','?lang=en') ?>"
 											>véhicules disponibles</a
 										>
 									</li>
 									<li class="li-3">
-										<a href="./customer.html"
+										<a href="./customer.php<?php lang('?lang=fr','?lang=en') ?>"
 											>nos clients</a
 										>
 									</li>
 									<li class="li-4">
-										<a href="./career.html">carrières</a>
+										<a href="./career.php<?php lang('?lang=fr','?lang=en') ?>">carrières</a>
 									</li>
 
 									<li class="last-li-d li-5">
-										<a href="./contact.html"
+										<a href="./contact.php<?php lang('?lang=fr','?lang=en') ?>"
 											><div>
 												<img
 													src="./images/contact.svg"

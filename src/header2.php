@@ -8,6 +8,35 @@ $lang = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'en' : 'fr';
 function lang($frn, $eng) {
     echo ($GLOBALS['lang'] == 'en') ?  $eng : $frn;
 }
-    // echo $page2;
+
+$vehicules = false;
+$home = false;
+$career = false;
+$customer = false;
+if($page2== "vehicules"){
+    $vehicules = true;
+    $home = false;
+$career = false;
+$customer = false;
+}
+if($page2== "home"){
+    $home = true;
+    $vehicules = false;
+$career = false;
+$customer = false;
+}
+if($page2== "customer"){
+    $customer = true;
+    $home = false;
+$career = false;
+$vehicules = false;
+}
+if($page2== "career"){
+    $career = true;
+    $home = false;
+$vehicules = false;
+$customer = false;
+}
+    
 
 ?>

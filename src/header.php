@@ -102,24 +102,26 @@ $customer = false;
 					<div class="cont-nav">
 						<nav>
 							<ul id="scrolled" class="scrolled">
-								<li class="magic-line magic-line2"></li>
+								<li class="magic-line <?php if($vehicules): ?>magic-line2 <?php endif ?>
+                                    <?php if($customer): ?> magic-line3<?php endif ?>
+                                    <?php if($career): ?> magic-line4 <?php endif; ?>"></li>
 								<li class="<?php if($home): ?> active-nav<?php endif; ?> li-1">
-									<a href="./home.html">à propos</a>
+									<a href="./home.php<?php lang('?lang=fr','?lang=en'); ?>"><?php lang('à propos','about us'); ?></a>
 								</li>
 
 								<li class="<?php if($vehicules): ?> active-nav<?php endif; ?> li-2">
-									<a href="./vehicules.html"
-										>véhicules disponibles</a
+									<a href="./vehicules.php<?php lang('?lang=fr','?lang=en'); ?>"
+										><?php lang('véhicules disponibles','available vehicules'); ?></a
 									>
 								</li>
-								<li class="li-3">
-									<a href="./customer.html">nos clients</a>
+								<li class="<?php if($customer): ?> active-nav<?php endif; ?> li-3">
+									<a href="./customer.php<?php lang('?lang=fr','?lang=en'); ?>"><?php lang('nos clients','our clients'); ?></a>
 								</li>
-								<li class="li-4">
-									<a href="./career.html">carrières</a>
+								<li class="<?php if($career): ?> active-nav<?php endif; ?> li-4">
+									<a href="./career.php<?php lang('?lang=fr','?lang=en'); ?>"><?php lang('carrières','careers'); ?></a>
 								</li>
 								<li class="last-li-d">
-									<a href="./contact.html"
+									<a href="./contact.php<?php lang('?lang=fr','?lang=en'); ?>"
 										><div>
 											<img
 												src="../images/contact.svg"
@@ -135,3 +137,4 @@ $customer = false;
 				</div>
 			</nav>
 		</header>
+        <?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch'>EN</div></a>","<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch'>FR</div></a>"); ?>
