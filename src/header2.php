@@ -1,4 +1,6 @@
 <?php 
+//la fonction qui sert à traduire la page + afficher du 
+//contenu selon sur quelle âge on est rendu
    
    $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'],'/') + 1);
    $page2 = substr($page, 0, strrpos($page,'.'));

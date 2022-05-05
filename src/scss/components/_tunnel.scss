@@ -1,5 +1,5 @@
 @media screen and(max-width:767px) {
-	.lang-switch {
+	.lang-switch2 {
 		position: fixed;
 		left: 0;
 		right: auto;
@@ -53,11 +53,12 @@
 				flex-direction: column;
 				justify-content: center;
 				margin-top: 5vh;
+				margin-left: 20vw;
 				margin-bottom: auto;
 				h1 {
 					// text-align: center;
 
-					margin-left: 25vw;
+					margin-left: 0vw;
 					display: block;
 					width: 45%;
 					font-family: $ff-raleway;
@@ -79,17 +80,21 @@
 				a {
 					margin-top: 5vh;
 					margin-bottom: 5vh;
-					display: block;
-					margin-left: 25vw;
-					padding: 5% 20%;
-					width: fit-content;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-left: 0vw;
+					width: 65vw;
+					height: 70px;
+					// padding: 5% 20%;
+					// width: fit-content;
 					border: 1px solid $blue;
 					color: white;
 				}
 				span {
 					display: block;
 					background-color: $blue;
-					width: 75vw;
+					width: 80vw;
 					height: 2px;
 					margin-left: auto;
 				}
@@ -100,7 +105,7 @@
 
 //version pour la tablette ici
 @media screen and(min-width:768px) {
-	.lang-switch {
+	.lang-switch2 {
 		position: fixed;
 		left: 0;
 		right: auto;
