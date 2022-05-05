@@ -2,6 +2,7 @@
 
 // modules
 const gulp = require("gulp");
+
 const browserSync = require("browser-sync").create();
 const newer = require("gulp-newer"); // https://www.npmjs.com/package/gulp-newer
 const imagemin = require("gulp-imagemin"); // https://www.npmjs.com/package/gulp-imagemin
@@ -50,6 +51,14 @@ const optimiser_html = function () {
 		.pipe(gulp.dest(out)); //Copie tous les fichiers optimisÃ©s vers la destination.
 };
 
+const optimiser_php = function () {
+	var out = folder.dist;
+
+	return gulp
+		.src(folder.src + "/**/*.php") //RÃ©cupÃ¨re tous les fichiers du dossier et des sous-dossiers.
+		.pipe(newer(out)) //Permets de traiter seulement les nouveaux fichiers ou ceux qui ont Ã©tÃ© modifiÃ©s.
+		.pipe(gulp.dest(out)); //Copie tous les fichiers optimisÃ©s vers la destination.
+};
 // Processus dâ€™optimisation du CSS
 const optimiser_css = function () {
 	var postCssOpts = [
@@ -97,6 +106,7 @@ const watch = function () {
 
 	// html changes
 	gulp.watch(folder.src + "**/*", gulp.parallel(optimiser_html));
+	gulp.watch(folder.src + "**/*", gulp.parallel(optimiser_php));
 
 	// javascript changes
 	gulp.watch(folder.src + "js/**/*", gulp.parallel(optimiser_js));
@@ -133,8 +143,11 @@ const serveur = function () {
 gulp.task("copier_normalize", copier_normalize);
 gulp.task("optimiser_images", optimiser_images);
 gulp.task("optimiser_html", gulp.series("optimiser_images", optimiser_html));
+gulp.task("optimiser_php", optimiser_php);
 gulp.task("optimiser_css", gulp.series("optimiser_images", optimiser_css));
 gulp.task("optimiser_js", optimiser_js);
+
+// gulp.task("default", ["connect", "watch"]);
 gulp.task("watch", watch);
 gulp.task("serveur", serveur);
 
@@ -143,6 +156,7 @@ gulp.task(
 	"execution",
 	gulp.parallel(
 		"optimiser_html",
+		"optimiser_php",
 		"optimiser_css",
 		"optimiser_js",
 		"copier_normalize"
