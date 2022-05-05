@@ -5,7 +5,7 @@ include("./header.php");
 		<section class="cus-carousel">
 			<div class="cus-cont-title">
 				<span></span>
-				<h1>Nos clients</h1>
+				<h1><?php lang('Nos clients','Our clients'); ?></h1>
 			</div>
 			<!-- <div class="cont-slider-m">
 				<div id="slides" class="slides">
