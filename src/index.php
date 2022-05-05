@@ -18,7 +18,7 @@ include("./header2.php");
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-		<script src="js/script.js" defer></script>
+		<!-- <script src="js/script.js" defer></script> -->
 	</head>
 	<body>
     <!-- <a class="lnk<?= ($lang == 'fr')? ' active' : ''; ?> fr" href="?lang=fr">FR</a>/ -->
@@ -32,11 +32,11 @@ include("./header2.php");
 				<div class="cont-droit-d">
 					<h1><?php lang('Location de véhicules à moyens termes','anglais'); ?></h1>
 					<span class="ligne"></span>
-					<a href="./home.php"><?php lang('Consulter','Consult'); ?></a>
+					<a href="./home.php<?php lang('?lang=fr','?lang=en'); ?>" class="btn-color btn-l-r"><?php lang('Consulter','Consult'); ?></a>
 					
 					<h1><?php lang('Remarketing','Remarketing'); ?></h1>
 					<span class="ligne"></span>
-					<a href="./remarketing.html"><?php lang('Consulter','Consult'); ?></a>
+					<a href="./remarketing.php<?php lang('?lang=fr','?lang=en'); ?>" class="btn-color btn-l-r2"><?php lang('Consulter','Consult'); ?></a>
 				</div>
 			</div>
 		</div>

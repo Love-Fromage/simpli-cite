@@ -44,6 +44,7 @@
 						display: none;
 					}
 				}
+
 				a {
 					margin-top: 5vh;
 					margin-bottom: 5vh;
@@ -71,7 +72,7 @@
 	.gros-background {
 		width: 100%;
 		overflow: hidden;
-		background-image: url("/dist/images/bg-road.webp");
+		background-image: url("../images/bg-road.webp");
 		background-color: black;
 		background-repeat: no-repeat;
 		background-position: 0 0;
@@ -146,7 +147,7 @@
 	.gros-background {
 		width: 100%;
 		overflow: hidden;
-		background-image: url("/dist/images/bg-road-d.webp");
+		background-image: url("../images/bg-road-d.webp");
 		background-color: black;
 		background-repeat: no-repeat;
 		background-position: 0 0;
@@ -188,20 +189,81 @@
 					color: white;
 					line-height: rem(26);
 				}
+				$transition-bezier: 1, 0, 0, 1;
+				$transition-len: 0.35s;
 				a {
 					margin-top: 5vh;
 					margin-bottom: 5vh;
-					display: block;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					margin-left: 0vw;
-					padding: 2% 5%;
-					width: fit-content;
+					position: relative;
+					height: 70px;
+					// padding: 2% 5%;
+					width: 12vw;
 					border: 1px solid $blue;
 					color: white;
+					z-index: 20;
+					transition: all $transition-len
+						cubic-bezier($transition-bezier);
+					&:hover {
+						color: white;
+						z-index: 5;
+						text-decoration: none;
+					}
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						z-index: -1;
+						transition: all $transition-len
+							cubic-bezier($transition-bezier);
+					}
 				}
+				.btn-color {
+					// border-color: $pink;
+					// color: $pink;
+
+					&::before,
+					&::after {
+						background: $blue;
+					}
+				}
+				.btn-l-r {
+					&::after {
+						height: 69px;
+						width: 0;
+						top: 0;
+					}
+					&:hover::after {
+						width: 12vw;
+						z-index: -1;
+					}
+					&::after {
+						left: 0;
+					}
+				}
+				.btn-l-r2 {
+					&::after {
+						height: 69px;
+						width: 0;
+						top: 0;
+					}
+					&:hover::after {
+						width: 12vw;
+						z-index: -1;
+					}
+					&::after {
+						left: 0;
+					}
+				}
+
 				span {
 					display: block;
 					background-color: $blue;
 					width: 70vw;
+					position: relative;
 					height: 2px;
 					margin-left: auto;
 				}
