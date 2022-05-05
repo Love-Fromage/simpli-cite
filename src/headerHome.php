@@ -130,13 +130,13 @@
 				<div class="hero-d">
 					<div class="frame-d">
 						<h1>
-							Choisir Simpli-Cité, c’est choisir la tranquillité
-							d’esprit.
+							<?php lang("Choisir Simpli-Cité, c’est choisir la tranquillité
+							d’esprit.","To choose us"); ?>
 						</h1>
 						<a
 							href="tel:4509071596"
 							class="home-call btn-color btn-l-r"
-							>Appelez-nous</a
+							><?php lang('Appelez-nous','CALL US'); ?></a
 						>
 					</div>
 					<span class="home-scroll-down"></span>
