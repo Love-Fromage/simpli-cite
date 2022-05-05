@@ -21,8 +21,9 @@ include("./header2.php");
 		<script src="js/script.js" defer></script>
 	</head>
 	<body>
-    <a class="lnk<?= ($lang == 'fr')? ' active' : ''; ?> fr" href="?lang=fr">FR</a>/
-    <a class="lnk<?= ($lang == 'en')? ' active' : ''; ?> en" href="?lang=en">EN</a>
+    <!-- <a class="lnk<?= ($lang == 'fr')? ' active' : ''; ?> fr" href="?lang=fr">FR</a>/ -->
+    <!-- <a class="lnk<?= ($lang == 'en')? ' active' : ''; ?> en" href="?lang=en">EN</a> -->
+	<?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch'>EN</div></a>","<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch'>FR</div></a>"); ?>
 		<div class="gros-background">
 			<div class="bg-noir">
 				<div class="cont-logo">
