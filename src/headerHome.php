@@ -90,17 +90,17 @@
 								<ul id="scrolled">
 									<li class="magic-line magic-line1"></li>
 									<li class="active-nav li-1">
-										<a href="./home.html">à propos</a>
+										<a href="./home.php"><?php lang('à propos','About us'); ?></a>
 									</li>
 
 									<li class="li-2">
-										<a href="./vehicules.html"
+										<a href="./vehicules.php"
 											>véhicules disponibles</a
 										>
 									</li>
 									<li class="li-3">
 										<a href="./customer.html"
-											>nos s clients</a
+											>nos clients</a
 										>
 									</li>
 									<li class="li-4">
@@ -125,7 +125,7 @@
 					</div>
 				</nav>
 			</header>
-			<?php lang("<div class='lang-switch'><a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\">EN</a></div>","<div class='lang-switch'><a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\">FR</a></div>"); ?>
+			<?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch'>EN</div></a>","<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch'>FR</div></a>"); ?>
 			<div class="hero">
 				<div class="hero-d">
 					<div class="frame-d">
