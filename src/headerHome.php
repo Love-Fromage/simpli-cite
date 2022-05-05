@@ -53,27 +53,27 @@
 						<nav>
 							<ul>
 								<li class="activePage">
-									<a href="./home.html">À propos</a>
+									<a href="./home.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('À propos','About us'); ?></a>
 								</li>
 								<li>
-									<a href="./vehicules.html"
-										>Véhicules disponibles</a
+									<a href="./vehicules.php<?php lang('?lang=fr','?lang=en'); ?>"
+										><?php lang('Véhicules disponibles','veh en'); ?></a
 									>
 								</li>
 								<li>
-									<a href="./customer.html"
-										>customer services</a
+									<a href="./customer.php<?php lang('?lang=fr','?lang=en') ?>"
+										><?php lang('nos clients','customer'); ?></a
 									>
 								</li>
 								<li>
-									<a href="./career.html">carrières</a>
+									<a href="./career.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('carrières','careers'); ?></a>
 								</li>
 								<li>
-									<a href="./contact.html">contact</a>
+									<a href="./contact.php<?php lang('?lang=fr','?lang=en') ?>">contact</a>
 								</li>
 							</ul>
 						</nav>
-						<a href="#" class="lang">EN</a>
+						<?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang'>EN</div></a>","<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang'>FR</div></a>"); ?>
 					</div>
 					<div class="nav-d">
 						<div class="cont-logo">
