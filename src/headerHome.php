@@ -56,13 +56,14 @@
 									<a href="./home.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('À propos','About us'); ?></a>
 								</li>
 								<li>
+									
 									<a href="./vehicules.php<?php lang('?lang=fr','?lang=en'); ?>"
-										><?php lang('Véhicules disponibles','veh en'); ?></a
+										><?php lang('Véhicules disponibles','Available vehicules'); ?></a
 									>
 								</li>
 								<li>
 									<a href="./customer.php<?php lang('?lang=fr','?lang=en') ?>"
-										><?php lang('nos clients','customer'); ?></a
+										><?php lang('nos clients','Our customers'); ?></a
 									>
 								</li>
 								<li>
@@ -95,16 +96,16 @@
 
 									<li class="li-2">
 										<a href="./vehicules.php<?php lang('?lang=fr','?lang=en') ?>"
-											>véhicules disponibles</a
+											><?php lang('véhicules disponibles','Available vehicules'); ?></a
 										>
 									</li>
 									<li class="li-3">
 										<a href="./customer.php<?php lang('?lang=fr','?lang=en') ?>"
-											>nos clients</a
+											><?php lang('nos clients','our clients'); ?></a
 										>
 									</li>
 									<li class="li-4">
-										<a href="./career.php<?php lang('?lang=fr','?lang=en') ?>">carrières</a>
+										<a href="./career.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('carrières','careers'); ?></a>
 									</li>
 
 									<li class="last-li-d li-5">
@@ -131,7 +132,7 @@
 					<div class="frame-d">
 						<h1>
 							<?php lang("Choisir Simpli-Cité, c’est choisir la tranquillité
-							d’esprit.","To choose us"); ?>
+							d’esprit.","To choose Simpli-Cité, is to choose peace of mind."); ?>
 						</h1>
 						<a
 							href="tel:4509071596"

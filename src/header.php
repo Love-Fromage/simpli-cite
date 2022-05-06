@@ -1,33 +1,6 @@
 <?php
 include("./header2.php");
-$vehicules = false;
-$home = false;
-$career = false;
-$customer = false;
-if($page2== "vehicules"){
-    $vehicules = true;
-    $home = false;
-$career = false;
-$customer = false;
-}
-if($page2== "home"){
-    $home = true;
-    $vehicules = false;
-$career = false;
-$customer = false;
-}
-if($page2== "customer"){
-    $customer = true;
-    $home = false;
-$career = false;
-$vehicules = false;
-}
-if($page2== "career"){
-    $career = true;
-    $home = false;
-$vehicules = false;
-$customer = false;
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
@@ -69,22 +42,22 @@ $customer = false;
 				<div class="toggle-off" id="ham">
 					<nav>
 						<ul>
-							<li class="active-nav">
+							<li>
 								<a href="./home.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('À propos','About us'); ?></a>
 							</li>
-							<li>
+							<li class="<?php if($vehicules): ?>activePage<?php endif; ?>">
 								<a href="./vehicules.php<?php lang('?lang=fr','?lang=en') ?>"
 									><?php lang('Véhicules disponibles','Available vehicules'); ?></a
 								>
 							</li>
-							<li>
-								<a href="./customer.php">customer services</a>
+							<li class="<?php if($customer): ?> activePage<?php endif; ?>">
+								<a href="./customer.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('nos clients','our clients'); ?></a>
+							</li>
+							<li class="<?php if($career): ?> activePage<?php endif; ?>">
+								<a href="./career.php<?php lang('?lang=fr','?lang=en') ?>"><?php lang('carrières','careers'); ?></a>
 							</li>
 							<li>
-								<a href="./career.html">carrières</a>
-							</li>
-							<li>
-								<a href="./contact.html">contact</a>
+								<a href="./contact.php<?php lang('?lang=fr','?lang=en') ?>">contact</a>
 							</li>
 						</ul>
 					</nav>

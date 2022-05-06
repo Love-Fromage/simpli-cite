@@ -4,15 +4,15 @@ include("./header.php");
 <div class="carr-hero"></div>
 		<div class="carr-cont-title">
 			<span></span>
-			<h1>Rejoignez-nous</h1>
+			<h1><?php lang("Rejoignez-nous","Join us"); ?></h1>
 		</div>
 
 		<section class="carr-info-cpt">
 			<div class="carr-petite-boite-grise">
 				<h1>
-					nous <span>recherchons</span> <br />
+					<?php lang("nous <span>recherchons</span> <br />
 					constamment de <br />
-					nouveaux talents !
+					nouveaux talents !","We are always <br /> on the <span>lookout</span> <br /> for new talent."); ?>
 				</h1>
 				<div class="carr-cont-croix">
 					<span class="horizontal"></span>
@@ -58,38 +58,46 @@ include("./header.php");
 		<section class="formulaire">
 			<div class="carr-para-form">
 				<p>
-					L’équipe de Simpli-Cité est toujours à la recherche de
+					<?php lang("L’équipe de Simpli-Cité est toujours à la recherche de
 					nouveaux talents. Nous sommes fiers de savoir recruter des
 					gens d’exceptions issus de tous les milieux et de différents
 					champs de compétence. Envoyez-nous votre C.V. si vous voulez
 					faire partie d’une équipe dynamique et atteindre votre plein
-					potentiel.
+					potentiel.","We are proud to be able to recruit exceptional people from all walks of life and from different fields of expertise.
+					Send us your resume if you want to be part of a dynamic team and reach your full potential
+					"); ?>
 				</p>
 				<p>
-					Chez Simpli-Cité nous offrons beaucoup d’avantages aux
+					<?php lang("Chez Simpli-Cité nous offrons beaucoup d’avantages aux
 					membres de notre équipe. En plus de d’offrir l’accès à un
 					programme d’assurance collective, nous offrons l’accès à une
 					salle d’entraînement et les services d’un entraîneur
 					personnel pour vous aider à atteindre vos objectifs santé.
 					Vous pourrez également profiter des services de notre chef
-					cuisinier pour vos dîners.
+					cuisinier pour vos dîners.","At Simpli-Cité, we offer many benefits to our team members. 
+					In addition to offering access to a group insurance program, we offer access to a training room and the services of a personal trainer to help you achieve your health and fitness goals. 
+					You can also take advantage of the services of our chef for your dinners.
+					"); ?>
 				</p>
 				<p>
-					Nous savons également que dans la vie il n’y a pas que le
+					<?php lang("Nous savons également que dans la vie il n’y a pas que le
 					travail qui compte et c’est pourquoi nous organisons souvent
 					des activités telles que des 5 à 7, BBQ, activités de groupe
 					et party pour les fêtes saisonnières. Une équipe soudé est
-					le secret du succès.
+					le secret du succès.","We know that in life it is not only work that counts! That is why we often organize activities such as 5 to 7, BBQ, group activities, and parties for seasonal holidays.
+
+					A close-knit team is the secret to our success.
+					"); ?>
 				</p>
 			</div>
 			<div class="carr-cont-form">
 				<form action="">
-					<label for="name">Nom et prénom *</label>
+					<label for="name"><?php lang("Nom et prénom","First and last name"); ?> *</label>
 					<input type="text" name="name" id="name" required />
 
-					<label for="email">courriel *</label>
+					<label for="email"><?php lang("courriel","e-mail"); ?> *</label>
 					<input type="email" name="email" id="email" required />
-					<label for="phone">numéro de téléphone *</label>
+					<label for="phone"><?php lang("numéro de téléphone","phone number"); ?> *</label>
 					<input type="tel" name="phone" id="phone" required />
 					<label for="message">MESSAGE</label>
 					<textarea name="message" id="message"></textarea>
@@ -97,8 +105,8 @@ include("./header.php");
 						<div class="carr-last-bit">
 							<div class="carr-last-bit-t">
 								<p>
-									Veuillez joindre votre CV et lettre de
-									présentation
+									<?php lang("Veuillez joindre votre CV et lettre de
+									présentation","Please attach your resume and presentation letter"); ?>
 								</p>
 								<label for="file" class="file-label"
 									><input
@@ -106,7 +114,7 @@ include("./header.php");
 										type="file"
 										id="file"
 										accept=".pdf, .docx, .txt"
-									/>AJOUTER
+									/><?php lang("AJOUTER","ADD"); ?>
 								</label>
 							</div>
 
@@ -115,7 +123,7 @@ include("./header.php");
 								value="ENVOYER"
 								class="carr-send-btn btn-color btn-l-r"
 							>
-								ENVOYER
+								<?php lang("ENVOYER","SEND"); ?>
 							</button>
 						</div>
 					</div>
