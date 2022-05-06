@@ -215,6 +215,7 @@
 						margin-right: auto;
 						width: 80%;
 						z-index: 2;
+						$slideS: 300ms;
 
 						li {
 							width: 80%;
@@ -224,32 +225,32 @@
 							&:nth-child(1) {
 								left: 100%;
 								opacity: 0;
-								animation: slideIn forwards ease-in 300ms;
-								animation-delay: 600ms;
+								animation: slideIn forwards ease $slideS;
+								animation-delay: 500ms;
 							}
 							&:nth-child(2) {
 								left: 100%;
 								opacity: 0;
-								animation: slideIn forwards ease-in 300ms;
-								animation-delay: 900ms;
+								animation: slideIn forwards ease $slideS;
+								animation-delay: 650ms;
 							}
 							&:nth-child(3) {
 								left: 100%;
 								opacity: 0;
-								animation: slideIn forwards ease-in 300ms;
-								animation-delay: 1200ms;
+								animation: slideIn forwards ease $slideS;
+								animation-delay: 800ms;
 							}
 							&:nth-child(4) {
 								left: 100%;
 								opacity: 0;
-								animation: slideIn forwards ease-in 300ms;
-								animation-delay: 1500ms;
+								animation: slideIn forwards ease $slideS;
+								animation-delay: 950ms;
 							}
 							&:nth-child(5) {
 								left: 100%;
 								opacity: 0;
-								animation: slideIn forwards ease-in 300ms;
-								animation-delay: 1800ms;
+								animation: slideIn forwards ease $slideS;
+								animation-delay: 1100ms;
 							}
 							@keyframes slideIn {
 								0% {
