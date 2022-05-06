@@ -55,6 +55,7 @@ $customer = false;
 		<header>
 			<nav>
 				<div class="nav-m blanc-nav">
+					<a href="./home.php<?php lang('?lang=fr','?lang=en'); ?>"></a>
 					<img
 						src="../images/logo-noir.svg"
 						alt="logo-noir"
@@ -92,7 +93,7 @@ $customer = false;
 				</div>
 				<div class="nav-d blanc-nav">
 					<div class="cont-logo">
-						<a href="./home.html">
+						<a href="./home.php<?php lang('?lang=fr','?lang=en') ?>">
 							<img
 								src="../images/logo-noir-d.svg"
 								alt="logo-blanc"

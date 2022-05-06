@@ -37,7 +37,7 @@
 			<header>
 				<nav>
 					<div class="nav-m">
-						<a href="./home.html">
+						<a href="./home.php<?php lang('?lang=fr','?lang=en') ?>">
 							<img
 								src="./images/logo-blanc.svg"
 								alt="logo-blanc"
@@ -77,7 +77,7 @@
 					</div>
 					<div class="nav-d">
 						<div class="cont-logo">
-							<a href="./home.html">
+							<a href="./home.php<?php lang('?lang=fr','?lang=en'); ?>">
 								<img
 									src="./images/logo-blanc.svg"
 									alt="logo-blanc"
