@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li2 = document.querySelector(".li-2");
 	const li3 = document.querySelector(".li-3");
 	const li4 = document.querySelector(".li-4");
+	$li1TW = $(".li-1").width();
+	$li2TW = $(".li-2").width();
+	$li3TW = $(".li-3").width();
+	$li4TW = $(".li-4").width();
+	let li1Width = 90;
+	let li2Width = li1Width + $li1TW + 50;
+	let li3Width = li2Width + $li2TW + 50;
+	let li4Width = li3Width + $li3TW + 50;
+	let li5Width;
 	// const li5 = document.querySelector(".li-5");
 	let past = false;
 	const leChar = document.getElementById("leChar");
@@ -136,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}
 	$(".magic-line").css({
 		opacity: 0,
+		left: 0,
 	});
 	navD.addEventListener("mouseleave", () => {
 		$(".magic-line").css({
@@ -144,50 +154,61 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	});
 	//MOUSE ENTER DU PREMIER li
 	li1.addEventListener("mouseenter", () => {
-		$(".magic-line").finish().animate(
-			{
-				left: "90px",
-				width: "69px",
-				opacity: 1,
-			},
-			200
-		);
+		console.log("");
+		$(".magic-line")
+			.finish()
+			.animate(
+				{
+					left: "" + li1Width + "px",
+					width: $li1TW,
+					opacity: 1,
+				},
+				200
+			);
 	});
 
 	//MOUSE ENTER 2e li
 	li2.addEventListener("mouseenter", () => {
-		$(".magic-line").finish().animate(
-			{
-				left: "209px",
-				width: "162px",
-				opacity: 1,
-			},
-			200
-		);
+		console.log($(".magic-line").css("left"));
+
+		$(".magic-line")
+			.finish()
+			.animate(
+				{
+					left: li2Width + "px", // "" + li2Width + "px",
+					width: $li2TW,
+					opacity: 1,
+				},
+				200
+			);
 	});
 
 	//MOUSE ENTER 3e li
 	li3.addEventListener("mouseenter", () => {
-		$(".magic-line").finish().animate(
-			{
-				left: "421px",
-				width: "87px",
-				opacity: 1,
-			},
-			200
-		);
+		$(".magic-line")
+			.finish()
+			.animate(
+				{
+					left: "" + li3Width + "px",
+					width: $li3TW,
+					opacity: 1,
+				},
+				200
+			);
 	});
 
 	//MOUSE ENTER 4e li
 	li4.addEventListener("mouseenter", () => {
-		$(".magic-line").finish().animate(
-			{
-				left: "558px",
-				width: "73px",
-				opacity: 1,
-			},
-			200
-		);
+		$(".magic-line")
+			.finish()
+			.animate(
+				{
+					left: "" + li4Width + "px",
+					width: $li4TW,
+					opacity: 1,
+				},
+				200
+			);
 		// magicLine.classList.add("magic-line4");
 	});
 	// li5.addEventListener("mouseenter", () => {
