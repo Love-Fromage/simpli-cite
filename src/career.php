@@ -1,5 +1,55 @@
 <?php
 include("./header.php");
+function test_input($data)
+{
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+$name = $message = $phone = $visitor_email = '';
+$phoneError = $nameError = $formError = $emailError = "";
+if (empty($_POST['name'])) {
+	$nameError = 'Ce champ est requis';
+} else {
+	$name = trim(htmlspecialchars($_POST['name']));
+}
+
+
+if (empty($_POST['email'])) {
+	$emailError = 'Ce champ est requis';
+} else {
+	//$visitor_email = trim(htmlspecialchars($_POST['email']));
+	$visitor_email = test_input($_POST["email"]);
+	if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL)) {
+		$emailErr = "Invalid email format";
+	}
+}
+
+
+
+if (empty($_POST['phone'])) {
+	$phoneError = "Ce champ est requis";
+} else {
+	$phone = $_POST['phone'];
+}
+
+if (empty($_POST['message'])) {
+
+	$message = "";
+} else {
+
+	$message = $_POST['message'];
+}
+
+if (empty($visitor_email) || empty($name) || empty($phone)) {
+	$formError = "Veuillez remplir les champs requis.";
+} else {
+	include("./mailer.php");
+	$mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 12vh'>
+<p style='color:white; margin: auto; font-size: 1.5rem; text-transform: uppercase;'>Merci de nous avoir contactés.</p>
+</div>";
+}
 ?>
 <div class="carr-hero"></div>
 <div class="carr-cont-title">
