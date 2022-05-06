@@ -13,10 +13,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li2 = document.querySelector(".li-2");
 	const li3 = document.querySelector(".li-3");
 	const li4 = document.querySelector(".li-4");
+
+	//ici on defini des variables pour utiliser la valeur en width des li
+	//pour faciliter le codage
 	$li1TW = $(".li-1").width();
 	$li2TW = $(".li-2").width();
 	$li3TW = $(".li-3").width();
 	$li4TW = $(".li-4").width();
+	//ici on defini le "left" de la magic line de facon dynamique
+	//e.g: on prend la valeur du dernier left + la valeur en width du precedent
+	//et on ajoute 50 (a cause du margin)
 	let li1Width = 90;
 	let li2Width = li1Width + $li1TW + 50;
 	let li3Width = li2Width + $li2TW + 50;
