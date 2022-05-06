@@ -15,9 +15,10 @@
 				background-color: $blue;
 				width: 55vw;
 				height: 4px;
-				margin-right: 10vw;
+				// margin-right: 10vw;
 				margin-top: auto;
 				margin-bottom: auto;
+				margin-left: 0;
 			}
 			h1 {
 				font-family: $ff-raleway;
@@ -27,7 +28,10 @@
 				color: $blue;
 				display: inline-block;
 				width: fit-content;
-				margin-right: auto;
+				margin-right: 2.5vw;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				margin-left: auto;
 			}
 		}
 		.home-cont-about {
