@@ -145,10 +145,10 @@
 			}
 		}
 
-		[type="submit"] {
+		button#submit {
 			background-color: #fff;
 			border: $blue 2px solid;
-
+			width: 100%;
 			font-size: rem(12);
 			font-weight: $fw-medium;
 			letter-spacing: 4%;
