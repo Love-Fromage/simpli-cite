@@ -329,7 +329,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
             </div>
             <div class="cont-footer-line">
                 <span class="footer-line-rm"></span>
-                <a href="./remarketing.html">REMARKETING</a>
+                <a href="./remarketing.php<?php lang("?lang=fr", "?lang=en"); ?>">REMARKETING</a>
             </div>
             <div class="cont-linkedin">
                 <a href="#"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
