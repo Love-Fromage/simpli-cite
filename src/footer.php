@@ -7,18 +7,18 @@
 				<h2><?php lang('Contactez-nous','Contact-us'); ?></h2>
 				<ul>
 					<li>
-						<img src="../images/location.svg" alt="location-icon" />
+						<img src="./images/location.svg" alt="location-icon" />
 						<p>
 							1410 Boul. Taschereau, <br />
 							La Prairie, QC J5R 4E8
 						</p>
 					</li>
 					<li>
-						<img src="../images/phone.svg" alt="phone-icon" />
+						<img src="./images/phone.svg" alt="phone-icon" />
 						<p><a href="tel:4509071596">(450) 907-1596</a></p>
 					</li>
 					<li>
-						<img src="../images/email.svg" alt="email-icon" />
+						<img src="./images/email.svg" alt="email-icon" />
 						<p>info@simplicitelocation.com</p>
 					</li>
 				</ul>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="cont-linkedin">
 					<a href="#"
-						><img src="../images/linkedin.svg" alt="linkedin-icon"
+						><img src="./images/linkedin.svg" alt="linkedin-icon"
 					/></a>
 					<span></span>
 				</div>
@@ -43,7 +43,7 @@
 					<ul>
 						<li>
 							<img
-								src="../images/location.svg"
+								src="./images/location.svg"
 								alt="location-icon"
 							/>
 							<p>
@@ -52,11 +52,11 @@
 							</p>
 						</li>
 						<li>
-							<img src="../images/phone.svg" alt="phone-icon" />
+							<img src="./images/phone.svg" alt="phone-icon" />
 							<p><a href="tel:4509071596">(450) 907-1596</a></p>
 						</li>
 						<li>
-							<img src="../images/email.svg" alt="email-icon" />
+							<img src="./images/email.svg" alt="email-icon" />
 							<p>info@simplicitelocation.com</p>
 						</li>
 					</ul>
@@ -73,7 +73,7 @@
 					<div class="cont-linkedin">
 						<a href="#"
 							><img
-								src="../images/linkedin.svg"
+								src="./images/linkedin.svg"
 								alt="linkedin-icon"
 						/></a>
 					</div>
@@ -106,7 +106,7 @@
 				</div>
 				<div class="flex-mobile">
 					<img
-						src="../images/simplicite-logo.svg"
+						src="./images/simplicite-logo.svg"
 						alt="logo-footer"
 						onclick="gotoTop()"
 					/>
@@ -124,7 +124,7 @@
 					</p>
 				</div>
 				<img
-					src="../images/simplicite-logo.svg"
+					src="./images/simplicite-logo.svg"
 					alt="logo-footer"
 					onclick="gotoTop()"
 					class="tablette"

@@ -71,7 +71,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 	</div>
 	<div class="carr-actual-content">
 		<div class="chapeau"></div>
-		<img src="../images/madame-phone-d.webp" alt="madame-phone" />
+		<img src="./images/madame-phone-d.webp" alt="madame-phone" />
 		<div class="carr-cont-cpt">
 			<div class="carr-cpt-bloc">
 				<h4>Lorem ipsum H/F</h4>

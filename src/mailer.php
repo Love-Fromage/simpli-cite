@@ -5,7 +5,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-include("./info.php");
 
 function redirect($redirect, $success)
 {
@@ -104,7 +103,7 @@ HTML;
         // Server settings
         // 		$mail->SMTPDebug = SMTP::DEBUG_OFF; // Enable verbose debug output
         // 		$mail->isSMTP(); // Send using SMTP
-        // 		$mail->Host       = ''; // Set the SMTP server to send through
+        // 		$mail->Host       = 'mail.mathieuguerin.ca'; // Set the SMTP server to send through
         // 		$mail->SMTPAuth   = true; // Enable SMTP authentication
         // 		$mail->Username   = 'info@blackduckagency.com'; // SMTP username
         // 		$mail->Password   = 'BDAmazurette2017'; // SMTP password
@@ -112,12 +111,12 @@ HTML;
         // 		$mail->Port       = 465; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
         $mail->SMTPDebug = 2;                                       // Enable verbose debug output
         $mail->isSMTP();                                            // Set mailer to use SMTP
-        $mail->Host       = $smtp;  // Specify main and backup SMTP servers
+        $mail->Host       = 'mail.mathieuguerin.ca';  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = $smtpUser;                     // SMTP username
-        $mail->Password   = $stmpPass;                               // SMTP password
+        $mail->Username   = 'testform@mathieuguerin.ca';                     // SMTP username
+        $mail->Password   = '!Banane22';                               // SMTP password
         $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
-        $mail->Port       = $smtpPort;                                    // TCP port to connect to
+        $mail->Port       = 465;                                    // TCP port to connect to
 
         //Recipients
         $mail->setFrom('testform@mathieuguerin.ca', 'matheo');

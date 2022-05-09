@@ -23,7 +23,7 @@ include("./header2.php");
 		<nav>
 			<div class="nav-m blanc-nav">
 				<a href="./home.php<?php lang('?lang=fr', '?lang=en'); ?>"></a>
-				<img src="../images/logo-noir.svg" alt="logo-noir" id="logo-nav-m" />
+				<img src="./images/logo-noir.svg" alt="logo-noir" id="logo-nav-m" />
 				<div class="cont-ham">
 					<span id="pain1" class="pain2"></span>
 					<span id="pain2" class="pain2"></span>
@@ -55,7 +55,7 @@ include("./header2.php");
 			<div class="nav-d blanc-nav">
 				<div class="cont-logo">
 					<a href="./home.php<?php lang('?lang=fr', '?lang=en') ?>">
-						<img src="../images/logo-noir-d.svg" alt="logo-blanc" id="logo-nav-d" />
+						<img src="./images/logo-noir-d.svg" alt="logo-blanc" id="logo-nav-d" />
 					</a>
 				</div>
 				<div class="cont-nav">
@@ -80,7 +80,7 @@ include("./header2.php");
 							<li class="last-li-d">
 								<a href="./contact.php<?php lang('?lang=fr', '?lang=en'); ?>">
 									<div>
-										<img src="../images/contact.svg" alt="contact" />
+										<img src="./images/contact.svg" alt="contact" />
 										contact
 									</div>
 								</a>
