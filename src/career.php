@@ -7,7 +7,7 @@ function test_input($data)
 	$data = htmlspecialchars($data);
 	return $data;
 }
-$name = $message = $phone = $visitor_email = '';
+$name = $message = $phone = $visitor_email = "";
 $phoneError = $nameError = $formError = $emailError = "";
 if (empty($_POST['name'])) {
 	$nameError = 'Ce champ est requis';

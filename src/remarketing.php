@@ -1,5 +1,88 @@
 <?php
 include("./header2.php");
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+$name = $message = $phone = $visitor_email = $mark = $model = $km = $transmission = $year = $numId = "";
+$phoneError = $nameError = $formError = $emailError = $markError = $modelError = $kmError = $transmissionError = $yearError = $numIdError = "";
+if (empty($_POST['name'])) {
+    $nameError = 'Ce champ est requis';
+} else {
+    $name = trim(htmlspecialchars($_POST['name']));
+}
+
+
+if (empty($_POST['email'])) {
+    $emailError = 'Ce champ est requis';
+} else {
+    //$visitor_email = trim(htmlspecialchars($_POST['email']));
+    $visitor_email = test_input($_POST["email"]);
+    if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Invalid email format";
+    }
+}
+
+
+
+if (empty($_POST['phone'])) {
+    $phoneError = "Ce champ est requis";
+} else {
+    $phone = $_POST['phone'];
+}
+
+if (empty($_POST['year'])) {
+    $yearError = "Ce champ est requis";
+} else {
+    $year = $_POST['year'];
+}
+
+if (empty($_POST['marque'])) {
+    $markError = "Ce champ est requis";
+} else {
+    $mark = $_POST['marque'];
+}
+
+if (empty($_POST['modele'])) {
+    $modelError = "Ce champ est requis";
+} else {
+    $model = $_POST['modele'];
+}
+
+if (empty($_POST['km'])) {
+    $kmError = "Ce champ est requis";
+} else {
+    $kmError = $_POST['km'];
+}
+
+if (empty($_POST['check_list'])) {
+    $transmissionError = "Ce champ est requis";
+} else {
+    foreach ($_POST['check_list'] as $selected) {
+
+        $transmission = $selected;
+    }
+}
+
+if (empty($_POST['message'])) {
+
+    $message = "";
+} else {
+
+    $message = $_POST['message'];
+}
+
+if (empty($visitor_email) || empty($name) || empty($phone)) {
+    $formError = "Veuillez remplir les champs requis.";
+} else {
+    include("./mailer2.php");
+    $mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 12vh'>
+<p style='color:white; margin: auto; font-size: 1.5rem; text-transform: uppercase;'>Merci de nous avoir contactés.</p>
+</div>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -49,7 +132,7 @@ include("./header2.php");
                     formulaire ci-dessous et obtenez le meilleur prix sur le
                     marché.", "You wish to sell your vehicule ? Fill this form and obtain the best price in the market."); ?>
                 </p>
-                <form action="" class="leform">
+                <form action="./mailer2.php<?php lang('?lang=fr', '?lang=en'); ?>" method="post" class="leform">
                     <label for="nom"><?php lang("nom et prénom ", "first and last name"); ?>*</label>
                     <input type="text" name="nom" id="nom" />
 
@@ -166,13 +249,13 @@ include("./header2.php");
                     <div class="cont-radio">
                         <div class="cont-radio-1">
                             <label class="container"><?php lang("Automatique", "Automatic"); ?>
-                                <input type="checkbox" checked="checked" id="trans-a" />
+                                <input type="checkbox" name="check_list[]" checked="checked" value="<?php lang('Automatique', 'Automatic'); ?>" id="trans-a" />
                                 <span class="checkmark"></span>
                             </label>
                         </div>
                         <div class="cont-radio-2">
                             <label class="container"><?php lang("Manuelle", "Manual"); ?>
-                                <input type="checkbox" id="trans-m" />
+                                <input type="checkbox" name="check_list[]" value="<?php lang('Manuelle', 'Manual'); ?>" id="trans-m" />
                                 <span class="checkmark"></span>
                             </label>
                         </div>
@@ -281,7 +364,7 @@ include("./header2.php");
                 </div>
                 <div class="cont-footer-line">
                     <span class="footer-line-rm"></span>
-                    <a href="./remarketing.html">REMARKETING</a>
+                    <a href="./remarketing.php<?php lang("?lang=fr", "?lang=en"); ?>">REMARKETING</a>
                 </div>
                 <div class="cont-linkedin">
                     <a href="#"><img src="../images/linkedin.svg" alt="linkedin-icon" /></a>
