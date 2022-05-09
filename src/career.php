@@ -141,7 +141,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 		</p>
 	</div>
 	<div class="carr-cont-form">
-		<form action="">
+		<form action="./mailer.php?form=career&<?php lang('lang=fr', 'lang=en'); ?>" method="POST">
 			<label for="name"><?php lang("Nom et prénom", "First and last name"); ?> *</label>
 			<input type="text" name="name" id="name" required />
 
