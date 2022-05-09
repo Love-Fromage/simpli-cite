@@ -104,7 +104,7 @@ HTML;
         // Server settings
         // 		$mail->SMTPDebug = SMTP::DEBUG_OFF; // Enable verbose debug output
         // 		$mail->isSMTP(); // Send using SMTP
-        // 		$mail->Host       = 'mail.mathieuguerin.ca'; // Set the SMTP server to send through
+        // 		$mail->Host       = ''; // Set the SMTP server to send through
         // 		$mail->SMTPAuth   = true; // Enable SMTP authentication
         // 		$mail->Username   = 'info@blackduckagency.com'; // SMTP username
         // 		$mail->Password   = 'BDAmazurette2017'; // SMTP password
