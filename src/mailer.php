@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+include("./info.php");
 
 function redirect($redirect, $success)
 {
@@ -111,12 +112,12 @@ HTML;
         // 		$mail->Port       = 465; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
         $mail->SMTPDebug = 2;                                       // Enable verbose debug output
         $mail->isSMTP();                                            // Set mailer to use SMTP
-        $mail->Host       = 'mail.mathieuguerin.ca';  // Specify main and backup SMTP servers
+        $mail->Host       = $smtp;  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'testform@mathieuguerin.ca';                     // SMTP username
-        $mail->Password   = '!Banane22';                               // SMTP password
+        $mail->Username   = $smtpUser;                     // SMTP username
+        $mail->Password   = $stmpPass;                               // SMTP password
         $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
-        $mail->Port       = 465;                                    // TCP port to connect to
+        $mail->Port       = $smtpPort;                                    // TCP port to connect to
 
         //Recipients
         $mail->setFrom('testform@mathieuguerin.ca', 'matheo');
