@@ -63,13 +63,19 @@
 				}
 				.carr-last-bit {
 					.carr-last-bit-t {
-						display: flex;
+						display: block;
+						div {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							height: 65px;
+							&:last-child {
+								margin-bottom: 50px;
+							}
+						}
 						width: 60%;
-						justify-content: space-between;
-						align-items: center;
-						margin-bottom: 50px;
 						p {
-							width: 45%;
+							width: 100%;
 							font-size: rem(12);
 						}
 						.file-label {
@@ -85,9 +91,11 @@
 						line-height: rem(26);
 						color: #16191b;
 					}
-					#file {
+					#file,
+					#file2 {
 						display: none;
 					}
+
 					.file-label {
 						display: flex;
 						justify-content: center;

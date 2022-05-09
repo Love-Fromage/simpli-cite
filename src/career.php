@@ -141,7 +141,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 		</p>
 	</div>
 	<div class="carr-cont-form">
-		<form action="./mailer.php?form=career&<?php lang('lang=fr', 'lang=en'); ?>" method="POST">
+		<form action="./mailer.php?form=career&<?php lang('lang=fr', 'lang=en'); ?>" method="POST" enctype="multipart/form-data">
 			<label for="name"><?php lang("Nom et prénom", "First and last name"); ?> *</label>
 			<input type="text" name="name" id="name" required />
 
@@ -154,12 +154,21 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 			<div class="carr-cont-last-bit">
 				<div class="carr-last-bit">
 					<div class="carr-last-bit-t">
-						<p>
-							<?php lang("Veuillez joindre votre CV et lettre de
-									présentation", "Please attach your resume and presentation letter"); ?>
-						</p>
-						<label for="file" class="file-label"><input name="file" type="file" id="file" accept=".pdf, .docx, .txt" /><?php lang("AJOUTER", "ADD"); ?>
-						</label>
+						<div>
+							<p>
+								<?php lang("Veuillez joindre votre CV", "Please attach your resume"); ?>
+							</p>
+							<label for="file" class="file-label"><input name="file-upload-cv" type="file" id="file" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
+							</label>
+						</div>
+						<div>
+							<p>
+								<?php lang("Veuillez joindre votre lettre de
+									présentation", "Please attach your presentation letter"); ?>
+							</p>
+							<label for="file2" class="file-label"><input name="file-upload-letter" type="file" id="file2" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
+							</label>
+						</div>
 					</div>
 
 					<button type="submit" value="ENVOYER" class="carr-send-btn btn-color btn-l-r">
