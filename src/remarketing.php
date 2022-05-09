@@ -295,7 +295,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                 </form>
             </div>
             <div class="rm-cont-link">
-                <a href="./home.html">visitez notre site web</a>
+                <a href="./home.php<?php lang("?lang=fr", "?lang=en"); ?>">visitez notre site web</a>
             </div>
         </div>
     </div>
