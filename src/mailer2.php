@@ -93,9 +93,9 @@ $mail->Subject = "Formulaire de Remarketing";
 $mail->Body .= <<<HTML
 
 <tr>
-  <td width='42%' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>{$label}</td>
+  <td width='42%' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>Nom</td>
   <td width='1%' align='center' valign='middle'>:</td>
-  <td width='57%' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>{$value}</td>
+  <td width='57%' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>$name</td>
 </tr>
 
 HTML;
