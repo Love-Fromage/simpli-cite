@@ -144,8 +144,10 @@
 				margin-bottom: 55px;
 			}
 		}
+		$transition-bezier: 1, 0, 0, 1;
+		$transition-len: 0.35s;
 
-		button#submit {
+		.rm-sub {
 			background-color: #fff;
 			border: $blue 2px solid;
 			width: 100%;
