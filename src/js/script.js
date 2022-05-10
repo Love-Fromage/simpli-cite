@@ -28,6 +28,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	let li3Width = li2Width + $li2TW + 50;
 	let li4Width = li3Width + $li3TW + 50;
 	let li5Width;
+
+	$("#file").change(() => {
+		$("#fichier1").html(
+			$("#file")
+				.val()
+				.replace(/C:\\fakepath\\/i, "")
+		);
+		console.log(
+			$("#file")
+				.val()
+				.replace(/C:\\fakepath\\/i, "")
+		);
+	});
+	$("#file2").change(() => {
+		$("#fichier2").html(
+			$("#file2")
+				.val()
+				.replace(/C:\\fakepath\\/i, "")
+		);
+		console.log(
+			$("#file2")
+				.val()
+				.replace(/C:\\fakepath\\/i, "")
+		);
+	});
 	// const li5 = document.querySelector(".li-5");
 	let past = false;
 	const leChar = document.getElementById("leChar");

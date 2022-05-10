@@ -9,6 +9,14 @@ function test_input($data)
 	$data = htmlspecialchars($data);
 	return $data;
 }
+
+if (substr($_SERVER['REQUEST_URI'], strpos($_SERVER['REQUEST_URI'], '&') + 1) === 'success=true') {
+	// error_log('yes');
+	$mailEnvoyer = "<div class='mail-sent' style='margin: auto;'>
+<p style='color:black; margin-inline: auto; font-size: 1.5rem; text-transform: uppercase;'>";
+} else {
+	// error_log(substr($_SERVER['REQUEST_URI'], strpos($_SERVER['REQUEST_URI'], '&') + 1));
+}
 // $val = strval('&');
 // $mailing = "./mailer.php?form=career" . $val . "";
 // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -54,13 +62,21 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 
 
 	// include("./mailer.php?form=career&lang=fr");
-	$mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 12vh'>
+	$mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 5vh; position:absolute'>
 <p style='color:white; margin: auto; font-size: 1.5rem; text-transform: uppercase;'>Merci de nous avoir contactés.</p>
 </div>";
 }
 // }
 ?>
 <div class="carr-hero"></div>
+<?php if (isset($mailEnvoyer)) : ?>
+	<div id="cont-confirm">
+		<?php echo $mailEnvoyer; ?>
+		<?php lang('Merci de nous avoir contactés.', 'Thank you for contacting us.'); ?>
+		</p>
+	</div>
+<?php endif ?>
+</div>
 <div class="carr-cont-title">
 	<span></span>
 	<h1><?php lang("Rejoignez-nous", "Join us"); ?></h1>
@@ -171,7 +187,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 							<div id="fichier1" style="
 							position:absolute;
 							top:25px;
-							left:0%;">Ficher1.jpeg</div>
+							left:0%;"></div>
 							<label for="file" class="file-label"><input name="file-upload-cv" type="file" id="file" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
@@ -183,19 +199,16 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 							<div id="fichier2" style="
 							position:absolute;
 							top:25px;
-							left:0%;">Ficher2.jpeg</div>
+							left:0%;"></div>
 							<label for="file2" class="file-label"><input name="file-upload-letter" type="file" id="file2" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
 					</div>
 
-					<?php if (isset($mailEnvoyer)) : ?>
-						<?php echo $mailEnvoyer; ?>
-					<?php else : ?>
-						<button id="submit1" type="submit" value="ENVOYER" class="carr-send-btn btn-color btn-l-r">
-							<?php lang("ENVOYER", "SEND"); ?>
-						</button>
-					<?php endif ?>
+					<button id="submit1" type="submit" value="ENVOYER" class="carr-send-btn btn-color btn-l-r">
+						<?php lang("ENVOYER", "SEND"); ?>
+					</button>
+
 				</div>
 			</div>
 		</form>
