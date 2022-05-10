@@ -1,4 +1,7 @@
 //version pour le mobile ici
+a:link {
+	text-decoration: none;
+}
 @media screen and(max-width:767px) {
 	//c'est ici le code pour faire le form
 	.leform {
@@ -20,7 +23,7 @@
 			margin-top: 10px;
 			margin-bottom: 10px;
 			border: none;
-			border-right: solid 4px $blue;
+			border-right: solid 3px $blue;
 		}
 		.select-selected {
 			// -webkit-appearance: none;
