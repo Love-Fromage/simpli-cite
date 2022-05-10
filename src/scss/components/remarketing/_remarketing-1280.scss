@@ -93,11 +93,11 @@
 				margin-right: auto;
 				height: fit-content;
 				h2 {
-					width: 65%;
+					width: 75%;
 					// display: block;
 					margin-left: auto;
 					margin-right: auto;
-					margin-top: 50px;
+					margin-top: 80px;
 					font-family: $ff-raleway;
 					font-weight: $fw-extra-bold;
 					font-size: rem(30);
@@ -105,15 +105,16 @@
 					color: $black;
 					text-transform: uppercase;
 					br {
-						&:first-child {
-							display: none;
-						}
+						// &:first-child {
+						display: none;
+
+						// }
 						// display: block;
 						// display: none;
-						// &:nth-child(2) {
-						// 	background-color: red;
-						// 	// display: block;
-						// }
+						&:nth-child(2) {
+							// 	background-color: red;
+							display: none;
+						}
 					}
 					span {
 						color: $blue;
@@ -125,7 +126,7 @@
 					font-size: rem(16);
 					line-height: rem(26);
 					color: $black;
-					width: 65%;
+					width: 75%;
 					// margin-left: 5vw;
 					&:nth-child(3) {
 						font-weight: $fw-bold;
