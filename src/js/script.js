@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				navD.classList.add("blanc-nav");
 				scrollD.classList.add("scrolled");
 				logoImgD = "logo-noir-d.svg";
-				logoNavD.src = "../images/" + logoImgD;
+				logoNavD.src = "./images/" + logoImgD;
 			}
 		});
 		navD.addEventListener("mouseleave", () => {
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				navD.classList.remove("blanc-nav");
 				scrollD.classList.remove("scrolled");
 				logoImgD = "logo-blanc.svg";
-				logoNavD.src = "../images/" + logoImgD;
+				logoNavD.src = "./images/" + logoImgD;
 			}
 		});
 
@@ -155,8 +155,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				logoImg = "logo-noir.svg";
 
 				logoImgD = "logo-noir-d.svg";
-				logoNav.src = "../images/" + logoImg;
-				logoNavD.src = "../images/" + logoImgD;
+				logoNav.src = "./images/" + logoImg;
+				logoNavD.src = "./images/" + logoImgD;
 			} else {
 				// logoImg = "logo-blanc.svg";
 				// logoNav.src = "../images/" + logoImg;
@@ -168,8 +168,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 					window.pageYOffset <= 10
 				) {
 					logoImg = "logo-blanc.svg";
-					logoNav.src = "../images/" + logoImg;
-					logoNavD.src = "../images/" + logoImg;
+					logoNav.src = "./images/" + logoImg;
+					logoNavD.src = "./images/" + logoImg;
 					navM.classList.remove("blanc-nav");
 					navD.classList.remove("blanc-nav");
 					scrollD.classList.remove("scrolled");
@@ -314,11 +314,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			if (logoImg === "logo-blanc.svg") {
 				console.log("change l'image!");
 				logoImg = "logo-noir.svg";
-				logoNav.src = "../images/" + logoImg;
+				logoNav.src = "./images/" + logoImg;
 				//sinon si l'image est noir...
 			} else if (logoImg === "logo-noir.svg" && window.scrollY <= 10) {
 				logoImg = "logo-blanc.svg";
-				logoNav.src = "../images/" + logoImg;
+				logoNav.src = "./images/" + logoImg;
 			}
 			if (!navM.classList.contains("blanc-nav")) {
 				navM.classList.add("blanc-nav");
