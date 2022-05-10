@@ -140,6 +140,9 @@
 				margin-top: 0;
 				position: relative;
 				top: -425px;
+				@media screen and(min-width:820px) {
+					top: -525px;
+				}
 
 				text-align: center;
 				text-transform: uppercase;
