@@ -75,7 +75,7 @@ $mail->Host = "mail.blackduckagency.com";
 $mail->SMTPAuth = true;
 //Provide username and password     
 $mail->Username = "testdev@blackduckagency.com";
-$mail->Password = "!Blackduck1234";
+$mail->Password = "";
 //If SMTP requires TLS encryption then set it
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 //Set TCP port to connect to
