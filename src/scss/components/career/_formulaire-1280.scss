@@ -1,7 +1,7 @@
 //version pour le desktop
 @media screen and(min-width:1280px) {
 	.formulaire {
-		background-image: url("../../../images/carr-form-bg-d.webp");
+		background-image: url("../images/carr-form-bg-d.webp");
 		background-size: 80%;
 		background-position: -30vw 100%;
 		background-repeat: no-repeat;
@@ -82,6 +82,7 @@
 							position: relative;
 							top: 20px;
 							width: 25%;
+							cursor: pointer;
 						}
 					}
 					p {

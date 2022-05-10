@@ -7,6 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 
 include("./info.php");
 
+ob_start();
 function redirect($redirect, $success)
 {
     $success = var_export($success, true);

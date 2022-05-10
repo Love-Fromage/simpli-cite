@@ -1,5 +1,7 @@
 <?php
 include("./header.php");
+
+
 function test_input($data)
 {
 	$data = trim($data);
@@ -7,6 +9,9 @@ function test_input($data)
 	$data = htmlspecialchars($data);
 	return $data;
 }
+// $val = strval('&');
+// $mailing = "./mailer.php?form=career" . $val . "";
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $name = $message = $phone = $visitor_email = "";
 $phoneError = $nameError = $formError = $emailError = "";
 if (empty($_POST['name'])) {
@@ -45,11 +50,15 @@ if (empty($_POST['message'])) {
 if (empty($visitor_email) || empty($name) || empty($phone)) {
 	$formError = "Veuillez remplir les champs requis.";
 } else {
-	include("./mailer.php");
+	// ./mailer.php?form=career&lang=fr
+
+
+	// include("./mailer.php?form=career&lang=fr");
 	$mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 12vh'>
 <p style='color:white; margin: auto; font-size: 1.5rem; text-transform: uppercase;'>Merci de nous avoir contactés.</p>
 </div>";
 }
+// }
 ?>
 <div class="carr-hero"></div>
 <div class="carr-cont-title">
@@ -74,8 +83,9 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 		<img src="./images/madame-phone-d.webp" alt="madame-phone" />
 		<div class="carr-cont-cpt">
 			<div class="carr-cpt-bloc">
-				<h4>Lorem ipsum H/F</h4>
-				<p>
+
+				<!-- <h4>Lorem ipsum H/F</h4> -->
+				<!-- <p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing
 					elit, sed do eiusmod tempor incididunt ut labore et
 					dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -85,11 +95,11 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 					eu fugiat nulla pariatur. Excepteur sint occaecat
 					cupidatat non proident, sunt in culpa qui officia
 					deserunt mollit anim id est laborum.
-				</p>
+				</p> -->
 			</div>
-			<span class="ligne-dotted"></span>
+			<!-- <span class="ligne-dotted"></span> -->
 			<div class="carr-cpt-bloc">
-				<h4>Lorem ipsum H/F</h4>
+				<!-- <h4>Lorem ipsum H/F</h4>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing
 					elit, sed do eiusmod tempor incididunt ut labore et
@@ -100,7 +110,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 					eu fugiat nulla pariatur. Excepteur sint occaecat
 					cupidatat non proident, sunt in culpa qui officia
 					deserunt mollit anim id est laborum.
-				</p>
+				</p> -->
 			</div>
 		</div>
 	</div>
@@ -141,7 +151,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 		</p>
 	</div>
 	<div class="carr-cont-form">
-		<form action="./mailer.php?form=career&<?php lang('lang=fr', 'lang=en'); ?>" method="POST" enctype="multipart/form-data">
+		<form id="form1" action="./mailer.php?form=career<?php lang('&lang=fr', '&lang=en'); ?>" method="POST" enctype="multipart/form-data">
 			<label for="name"><?php lang("Nom et prénom", "First and last name"); ?> *</label>
 			<input type="text" name="name" id="name" required />
 
@@ -154,31 +164,44 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 			<div class="carr-cont-last-bit">
 				<div class="carr-last-bit">
 					<div class="carr-last-bit-t">
-						<div>
+						<div style="position: relative;">
 							<p>
 								<?php lang("Veuillez joindre votre CV", "Please attach your resume"); ?>
 							</p>
+							<div id="fichier1" style="
+							position:absolute;
+							top:25px;
+							left:0%;">Ficher1.jpeg</div>
 							<label for="file" class="file-label"><input name="file-upload-cv" type="file" id="file" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
-						<div>
+						<div style="position: relative;">
 							<p>
 								<?php lang("Veuillez joindre votre lettre de
 									présentation", "Please attach your presentation letter"); ?>
 							</p>
+							<div id="fichier2" style="
+							position:absolute;
+							top:25px;
+							left:0%;">Ficher2.jpeg</div>
 							<label for="file2" class="file-label"><input name="file-upload-letter" type="file" id="file2" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
 					</div>
 
-					<button type="submit" value="ENVOYER" class="carr-send-btn btn-color btn-l-r">
-						<?php lang("ENVOYER", "SEND"); ?>
-					</button>
+					<?php if (isset($mailEnvoyer)) : ?>
+						<?php echo $mailEnvoyer; ?>
+					<?php else : ?>
+						<button id="submit1" type="submit" value="ENVOYER" class="carr-send-btn btn-color btn-l-r">
+							<?php lang("ENVOYER", "SEND"); ?>
+						</button>
+					<?php endif ?>
 				</div>
 			</div>
 		</form>
 	</div>
 </section>
+
 <?php
 include("./footer.php");
 ?>
