@@ -216,11 +216,17 @@
 					overflow: hidden;
 					display: block;
 					width: 45vw;
+					@media screen and(min-width:1500px) {
+						width: 50vw;
+					}
+					@media screen and(min-width:1920px) {
+						width: 55vw;
+					}
+					height: 4px;
 					top: -250px;
 					left: auto;
 					right: 0;
 					background-color: $blue;
-					height: 2px;
 				}
 			}
 		}
