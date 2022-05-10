@@ -1,5 +1,5 @@
 node_modules/
 dist/
 info.php
-mailer2.php
+src/mailer2.php
 dist.zip
