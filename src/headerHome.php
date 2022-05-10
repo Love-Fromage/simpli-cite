@@ -104,7 +104,7 @@ include("./header2.php");
 			<div class="hero-d">
 				<div class="frame-d">
 					<h1>
-						<?php lang("Choisir Simpli-Cité, c’est choisir la tranquillité
+						<?php lang("Choisir Simpli-Cité, <br /> c’est choisir la tranquillité
 							d’esprit.", "To choose Simpli-Cité, is to choose peace of mind."); ?>
 					</h1>
 					<a href="tel:4509071596" class="home-call btn-color btn-l-r"><?php lang('Appelez-nous', 'CALL US'); ?></a>
