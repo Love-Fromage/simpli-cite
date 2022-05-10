@@ -123,6 +123,33 @@
 			height: 300px;
 			position: relative;
 			margin-right: 10px;
+			&:nth-child(4),
+			&:nth-child(2) {
+				.cont-img {
+					img {
+						top: 20px;
+					}
+				}
+				// top: 20px;
+				// background-color: red;
+			}
+			&:nth-child(5) {
+				.cont-img {
+					img {
+						top: 20px;
+					}
+				}
+			}
+			&:nth-child(6) {
+				// background-color: red;
+				.cont-img {
+					img {
+						position: relative;
+						// background-color: red;
+						top: -30px;
+					}
+				}
+			}
 			// overflow-y: visible;
 			&:nth-child(5) {
 				.cont-img {
@@ -136,6 +163,7 @@
 				border: 5px $gray solid;
 				width: inherit;
 				height: 218px;
+
 				img {
 					display: block;
 					margin-left: auto;
@@ -145,20 +173,47 @@
 					// margin-bottom: 50px;
 				}
 			}
+			// .carte-grise {
+			// 	background-color: $gray;
+			// 	padding: 10px;
+			// 	position: absolute;
+			// 	top: 150px;
+			// 	z-index: 5;
+
+			// 	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+			// 	h4 {
+			// 		margin: 0;
+			// 		font-family: $ff-poppins;
+			// 		font-weight: $fw-bold;
+			// 		font-size: rem(18);
+			// 		line-height: rem(40);
+			// 	}
+			// }
 			.carte-grise {
 				background-color: $gray;
-				padding: 10px;
+				padding: 7px;
 				position: absolute;
-				top: 150px;
+				width: 35vw;
+				top: 200px;
 				z-index: 5;
+				border: none;
+				border-right: solid 2px $blue;
 
 				box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
 				h4 {
 					margin: 0;
+					margin-left: 2vw;
 					font-family: $ff-poppins;
 					font-weight: $fw-bold;
-					font-size: rem(18);
+					font-size: rem(25);
 					line-height: rem(40);
+					text-transform: uppercase;
+				}
+				p {
+					margin-left: 2vw;
+					margin-top: 0;
+					margin-bottom: 0;
+					font-size: rem(20);
 				}
 			}
 		}
