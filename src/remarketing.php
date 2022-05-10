@@ -1,87 +1,94 @@
 <?php
 include("./header2.php");
-function test_input($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-$name = $message = $phone = $visitor_email = $mark = $model = $km = $transmission = $year = $numId = "";
-$phoneError = $nameError = $formError = $emailError = $markError = $modelError = $kmError = $transmissionError = $yearError = $numIdError = "";
-if (empty($_POST['name'])) {
-    $nameError = 'Ce champ est requis';
-} else {
-    $name = trim(htmlspecialchars($_POST['name']));
-}
+// function test_input($data)
+// {
+//     $data = trim($data);
+//     $data = stripslashes($data);
+//     $data = htmlspecialchars($data);
+//     return $data;
+// }
+// $transmission = '';
+$name = $message = $phone = $visitor_email = $transmission =
+    $year = $marque = $modele = $km = $numId = $process = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // request method is post
+    // now handle the form data
+
+    // declare name and email variables
+    // $name = $message = $phone = $visitor_email = $transmission =
+    //     $year = $marque = $modele = $km = $numId = $process = '';
+    $phoneError = $nameError = $formError = $emailError = "";
 
 
-if (empty($_POST['email'])) {
-    $emailError = 'Ce champ est requis';
-} else {
-    //$visitor_email = trim(htmlspecialchars($_POST['email']));
-    $visitor_email = test_input($_POST["email"]);
-    if (!filter_var($visitor_email, FILTER_VALIDATE_EMAIL)) {
-        $emailErr = "Invalid email format";
+    if (!empty($_POST['nom'])) {
+        $name = $_POST['nom'];
     }
-}
-
-
-
-if (empty($_POST['phone'])) {
-    $phoneError = "Ce champ est requis";
-} else {
-    $phone = $_POST['phone'];
-}
-
-if (empty($_POST['year'])) {
-    $yearError = "Ce champ est requis";
-} else {
-    $year = $_POST['year'];
-}
-
-if (empty($_POST['marque'])) {
-    $markError = "Ce champ est requis";
-} else {
-    $mark = $_POST['marque'];
-}
-
-if (empty($_POST['modele'])) {
-    $modelError = "Ce champ est requis";
-} else {
-    $model = $_POST['modele'];
-}
-
-if (empty($_POST['km'])) {
-    $kmError = "Ce champ est requis";
-} else {
-    $kmError = $_POST['km'];
-}
-
-if (empty($_POST['check_list'])) {
-    $transmissionError = "Ce champ est requis";
-} else {
-    foreach ($_POST['check_list'] as $selected) {
-
-        $transmission = $selected;
+    if (!empty($_POST['phone'])) {
+        $phone = $_POST['phone'];
     }
-}
+    if (!empty($_POST['email'])) {
+        $visitor_email = $_POST['email'];
+    }
+    if (!empty($_POST['check_list'])) {
+        foreach ($_POST['check_list'] as $value) {
 
-if (empty($_POST['message'])) {
+            $transmission = strval($value);
+        }
+    }
+    if (!empty($_POST['year'])) {
+        $year = $_POST['year'];
+    }
+    if (!empty($_POST['marque'])) {
+        $marque = $_POST['marque'];
+    }
+    if (!empty($_POST['modele'])) {
+        $modele = $_POST['modele'];
+    }
+    if (!empty($_POST['km'])) {
+        $km = $_POST['km'];
+    }
+    if (!empty($_POST['num-id'])) {
+        $numId = $_POST['num-id'];
+    }
+    if (!empty($_POST['process'])) {
+        $process = $_POST['process'];
+    }
+    //$namef = $_POST['name'];
+    //$visitor_email = $_POST['email'];
+    //$message = $_POST['message'];
 
-    $message = "";
-} else {
+    $email_from = 'mathieu@blackduckagency.com';
 
-    $message = $_POST['message'];
-}
+    $email_subject = "a subject";
 
-if (empty($visitor_email) || empty($name) || empty($phone)) {
-    $formError = "Veuillez remplir les champs requis.";
-} else {
-    include("./mailer2.php");
-    $mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 12vh'>
+    $email_body = "Nom : $name.\n" .
+        "Courriel : $visitor_email.\n" .
+        "Téléphone: $phone.\n" .
+        "Année de la voiture: $year.\n" .
+        "Marque de la voiture: $marque.\n" .
+        "Modele de la voiture: $modele.\n" .
+        "Kilométrage de la voiture: $km.\n" .
+        "Kilométrage de la voiture: $transmission.\n" .
+        "Kilométrage de la voiture: $numId.\n" .
+        "Kilométrage de la voiture: $process.\n";
+
+    $to = "mathecool22@gmail.com";
+
+    $headers = "From: $email_from \r\n";
+
+    $headers .= "Reply-To $visitor_email \r\n";
+
+    if (empty($visitor_email) || empty($name) || empty($phone)) {
+        $formError = "Veuillez remplir les champs requis.";
+    } else {
+        // error_log("envoi?");
+        mail($to, $email_subject, $email_body, $headers);
+        $mailEnvoyer = "<div class='mail-sent' style='margin: auto; margin-top: 12vh'>
 <p style='color:white; margin: auto; font-size: 1.5rem; text-transform: uppercase;'>Merci de nous avoir contactés.</p>
 </div>";
+    }
+} else {
+    $formError = "what the fuck";
 }
 ?>
 <!DOCTYPE html>
@@ -109,6 +116,8 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                 <img src="./images/logo-blanc.svg" alt="" />
                 <span class="ligne-bleue"></span>
                 <h1>Remarketing</h1>
+
+
             </div>
         </div>
         <div class="rm-bg">
@@ -132,7 +141,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                     formulaire ci-dessous et obtenez le meilleur prix sur le
                     marché.", "You wish to sell your vehicule ? Fill this form and obtain the best price in the market."); ?>
                 </p>
-                <form action="./mailer2.php<?php lang('?lang=fr', '?lang=en'); ?>" method="post" class="leform">
+                <form id="formRM" method="post" action="./mailer2.php?form=remarketing<?php lang('&lang=fr', '&lang=en') ?>" class="leform" enctype="multipart/form-data">
                     <label for="nom"><?php lang("nom et prénom ", "first and last name"); ?>*</label>
                     <input type="text" name="nom" id="nom" />
 
@@ -140,7 +149,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                     <input type="email" name="email" id="email" />
 
                     <label for="phone"><?php lang("Numéro de téléphone", "phone number"); ?> *</label>
-                    <input type="tel" />
+                    <input type="tel" name="phone" id="phone" />
 
                     <label for="year"><?php lang("année de la voiture", "year of the car"); ?> *</label>
                     <select name="year" id="year" onfocus="this.size=10;" onblur="this.size=1;" onchange="this.size=1; this.blur();" style="height: auto">
@@ -261,6 +270,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                         </div>
                     </div>
 
+
                     <div class="cont-partie-2">
                         <label for="num-id"><?php lang("numéro d'identification", "identification number"); ?> *</label>
                         <p class="partie-2-p">
@@ -289,7 +299,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                             <option value="3"><?php lang("Simplement curieux", "Simple curiosity"); ?></option>
                         </select>
                     </div>
-                    <button type="submit" name="submit" id="submit" value="ENVOYER" class="rm-sub btn-color btn-l-r">
+                    <button type="submit" name="submit" id="submit3" value="ENVOYER" class="rm-sub btn-color btn-l-r">
                         <?php lang("ENVOYER", "SEND"); ?>
                     </button>
                 </form>
@@ -417,6 +427,11 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
                 behavior: "smooth",
             });
         };
+    </script>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
     </script>
 </body>
 

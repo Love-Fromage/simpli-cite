@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	btnRadio1.push(document.getElementById("trans-a"));
 	btnRadio1.push(document.getElementById("trans-m"));
 	// console.log(btnRadio1[0]);
+	// if (document.querySelector("#submit3") !== null) {
+	// 	console.log("test");
+	// 	document.querySelector("#submit3").addEventListener("click", () => {
+	// 		// console.log("send");
+	// 		document.querySelector("#formRM").submit();
+	// 	});
+	// }
 
 	//btnRadio1[0] = la checkbox pour la transmission automatique
 	//btnRadio1[1] = la checkbox pour la transmission manuelle

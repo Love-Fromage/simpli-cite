@@ -5,79 +5,92 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-include("./info.php");
 
 
+ob_start();
 function redirect($redirect, $success)
 {
     $success = var_export($success, true);
     header("Location: {$redirect}&success={$success}");
     exit;
 }
-$base_url = 'https://mathieuguerin.ca/simpli/';
+$base_url = 'https://blackduckagency.com/simpli/';
 
 $form = filter_var($_GET['form'] ?? '', FILTER_SANITIZE_STRING);
 $lang = filter_var($_GET['lang'] ?? '', FILTER_SANITIZE_STRING);
 
-$redirect  = $base_url . ($form === 'career' ? 'career.php' : '');
+$redirect  = $base_url . ($form === 'remarketing' ? 'remarketing.php' : '');
 $redirect .= "?lang={$lang}";
 
+$name = $message = $phone = $visitor_email = $transmission =
+    $year = $marque = $modele = $km = $numId = $process = '';
+
+if (!empty($_POST['nom'])) {
+    $name = $_POST['nom'];
+}
+if (!empty($_POST['phone'])) {
+    $phone = $_POST['phone'];
+}
+if (!empty($_POST['email'])) {
+    $visitor_email = $_POST['email'];
+}
+if (!empty($_POST['check_list'])) {
+    foreach ($_POST['check_list'] as $value) {
+
+        $transmission = strval($value);
+    }
+}
+if (!empty($_POST['year'])) {
+    $year = $_POST['year'];
+}
+if (!empty($_POST['marque'])) {
+    $marque = $_POST['marque'];
+}
+if (!empty($_POST['modele'])) {
+    $modele = $_POST['modele'];
+}
+if (!empty($_POST['km'])) {
+    $km = $_POST['km'];
+}
+if (!empty($_POST['num-id'])) {
+    $numId = $_POST['num-id'];
+}
+if (!empty($_POST['process'])) {
+    $process = $_POST['process'];
+}
+
+require './PHPMailer/src/PHPMailer.php';
+require './PHPMailer/src/Exception.php';
+require './PHPMailer/src/SMTP.php';
+
+$mail = new PHPMailer(true);
+
+//Enable SMTP debugging.
+$mail->SMTPDebug = 2;
+//Set PHPMailer to use SMTP.
+$mail->isSMTP();
+//Set SMTP host name                          
+$mail->Host = "mail.blackduckagency.com";
+//Set this to true if SMTP host requires authentication to send email
+$mail->SMTPAuth = true;
+//Provide username and password     
+$mail->Username = "testdev@blackduckagency.com";
+$mail->Password = "!Blackduck1234";
+//If SMTP requires TLS encryption then set it
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+//Set TCP port to connect to
+$mail->Port = 465;
+
+$mail->From = "testdev@blackduckagency.com";
+$mail->FromName = $name;
+
+$mail->addAddress("mathecool22@gmail.com", $name);
+
+$mail->isHTML(true);
 
 
-$translations = [
-    'name'                  => $lang === 'fr' ? 'Prénom'              : 'First Name',
-    'last_name'             => $lang === 'fr' ? 'Nom de famille'      : 'Last Name',
-    'email'                 => $lang === 'fr' ? 'Courriel'            : 'Email',
-    'phone'                 => $lang === 'fr' ? 'Téléphone'           : 'Phone',
-    'file-upload-cv'        => $lang === 'fr' ? 'CV'                  : 'CV',
-    'file-upload-portfolio' => $lang === 'fr' ? 'Portfolio'           : 'Portfolio',
-    'message'               => $lang === 'fr' ? 'Mot d\'introduction' : 'Introductory Word',
-    'company'               => $lang === 'fr' ? 'Nom de la compagnie' : 'Company Name',
-    'budget'                => $lang === 'fr' ? 'Votre budget'        : 'Your budget',
-    'project'               => $lang === 'fr' ? 'Votre projet'        : 'Your project',
-];
-
-$options = $form === 'career'
-    ? [
-        'name'      => FILTER_SANITIZE_STRING,
-        'last_name' => FILTER_SANITIZE_STRING,
-        'email'     => FILTER_VALIDATE_EMAIL,
-        'phone'     => FILTER_SANITIZE_STRING,
-        'message'   => FILTER_SANITIZE_STRING,
-    ]
-    : [
-        'name'      => FILTER_SANITIZE_STRING,
-        'last_name' => FILTER_SANITIZE_STRING,
-        'email'     => FILTER_VALIDATE_EMAIL,
-        'phone'     => FILTER_SANITIZE_STRING,
-        'company'   => FILTER_SANITIZE_STRING,
-        'budget'    => FILTER_SANITIZE_STRING,
-        'project'   => FILTER_SANITIZE_STRING,
-    ];
-
-$required = $form === 'contact' ? [
-    'name',
-    'last_name',
-    'email',
-    'phone',
-    'company',
-    'budget',
-    'project',
-] : [];
-
-$post = filter_var_array($_POST, $options);
-if (!empty($post)) {
-    // file-upload-cv
-    // file-upload-portfolio
-
-
-    $html = $plain = '';
-    foreach ($post as $key => $value) {
-        if (in_array($key, $required) && strlen($value) < 1) {
-            redirect($redirect, false);
-        }
-        $label = $translations[$key];
-        $html .= <<<HTML
+$mail->Subject = "Formulaire de Remarketing";
+$mail->Body .= <<<HTML
 
 <tr>
   <td width='42%' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>{$label}</td>
@@ -86,70 +99,28 @@ if (!empty($post)) {
 </tr>
 
 HTML;
-        $plain .= "{$label}: {$value}" . PHP_EOL;
-    }
 
-    if (empty($html)) {
-        redirect($redirect, false);
-    }
 
-    //Load required files only
-    require './PHPMailer/src/PHPMailer.php';
-    require './PHPMailer/src/Exception.php';
-    require './PHPMailer/src/SMTP.php';
+$mail->AltBody = "Nom : $name\n" .
+    "Courriel : $visitor_email.\n" .
+    "Téléphone: $phone.\n" .
+    "Année de la voiture: $year.\n" .
+    "Marque de la voiture: $marque.\n" .
+    "Modele de la voiture: $modele.\n" .
+    "Kilométrage de la voiture: $km.\n" .
+    "Kilométrage de la voiture: $transmission.\n" .
+    "Kilométrage de la voiture: $numId.\n" .
+    "Kilométrage de la voiture: $process.\n";
+// $plain .= "{$label}: {$value}" . PHP_EOL;
 
-    //Instantiation and passing `true` enables exceptions
-    $mail = new PHPMailer(true);
+try {
 
-    try {
-        // Server settings
-        // 		$mail->SMTPDebug = SMTP::DEBUG_OFF; // Enable verbose debug output
-        // 		$mail->isSMTP(); // Send using SMTP
-        // 		$mail->Host       = 'mail.mathieuguerin.ca'; // Set the SMTP server to send through
-        // 		$mail->SMTPAuth   = true; // Enable SMTP authentication
-        // 		$mail->Username   = 'info@blackduckagency.com'; // SMTP username
-        // 		$mail->Password   = 'BDAmazurette2017'; // SMTP password
-        // 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-        // 		$mail->Port       = 465; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-        $mail->SMTPDebug = 2;                                       // Enable verbose debug output
-        $mail->isSMTP();                                            // Set mailer to use SMTP
-        $mail->Host       = $smtp;  // Specify main and backup SMTP servers
-        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = $smtpUser;                     // SMTP username
-        $mail->Password   = $stmpPass;                               // SMTP password
-        $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
-        $mail->Port       = 465;                                    // TCP port to connect to
 
-        //Recipients
-        $mail->setFrom('testform@mathieuguerin.ca', 'matheo');
-        $mail->addAddress('mathecool22@gmail.com', 'matheo');
-
-        //Content
-        $mail->isHTML(true);
-        $mail->Subject = 'matheo - ' . ucfirst($form);
-        $mail->Body    = <<<HTML
-
-<table width='100%' border='0' cellspacing='0' cellpadding='0'>
-  <tr>
-    <td height='25' colspan='3' bgcolor='#E39924' style='padding-left:5px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>{$mail->Subject}</td>
-  </tr>
-  <tr>
-    <td height='25' colspan='3' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>&nbsp;</td>
-  </tr>
-  {$html}
-  <tr>
-    <td height='25' colspan='3' align='left' valign='middle' style='padding-left:5px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>&nbsp;</td>
-  </tr>
-</table>
-
-HTML;
-        $mail->AltBody = $plain;
-
-        $mail->send();
-        redirect($redirect, true);
-    } catch (\Exception $e) {
-        error_log("Message could not be sent. Mailer Error: {$mail->ErrorInfo}" . PHP_EOL);
-        redirect($redirect, false);
-    }
+    $mail->send();
+    // redirect($redirect, true);
+} catch (\Exception $e) {
+    error_log("Message could not be sent. Mailer Error: {$mail->ErrorInfo}" . PHP_EOL);
+    // redirect($redirect, false);
 }
-redirect($redirect, false);
+
+// redirect($redirect, false);
