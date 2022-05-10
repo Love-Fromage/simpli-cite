@@ -84,7 +84,13 @@
 			.rm-cont-form {
 				display: flex;
 				position: relative;
-				top: -55vh;
+				top: -50vh;
+				@media screen and(min-width:912px) {
+					top: -40vh;
+				}
+				@media screen and(min-width:1024px) {
+					top: -50vh;
+				}
 				width: 80%;
 				background-color: white;
 				flex-direction: column;
