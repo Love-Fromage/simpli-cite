@@ -3,7 +3,7 @@ include("./header.php");
 ?>
 <div class="cus-hero"></div>
 <section class="cus-carousel">
-	<div class="cus-cont-title">
+	<div class="<?php lang("cus-cont-title", "cus-cont-title-en"); ?>">
 		<span></span>
 		<h1><?php lang('Nos clients', 'Our clients'); ?></h1>
 	</div>

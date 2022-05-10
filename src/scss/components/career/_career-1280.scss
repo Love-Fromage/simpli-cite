@@ -22,6 +22,36 @@
 			display: block;
 			background-color: $blue;
 			width: 55vw;
+			@media screen and(min-width:1500px) {
+				width: 60vw;
+			}
+			height: 4px;
+			margin-left: 0;
+		}
+		h1 {
+			font-family: $ff-raleway;
+			font-weight: $fw-light;
+			font-size: rem(100);
+			color: $blue;
+			text-transform: none;
+			margin-left: 5vw;
+			margin-right: 5vw;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
+	.carr-cont-title-en {
+		margin-top: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		span {
+			display: block;
+			background-color: $blue;
+			width: 65vw;
+			@media screen and(min-width:1500px) {
+				width: 75vw;
+			}
 			height: 4px;
 			margin-left: 0;
 		}

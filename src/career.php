@@ -77,7 +77,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 	</div>
 <?php endif ?>
 </div>
-<div class="carr-cont-title">
+<div class="<?php lang("carr-cont-title", "carr-cont-title-en"); ?>">
 	<span></span>
 	<h1><?php lang("Rejoignez-nous", "Join us"); ?></h1>
 </div>

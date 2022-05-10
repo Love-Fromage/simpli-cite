@@ -35,6 +35,38 @@
 				margin-left: 5vw;
 			}
 		}
+		.cus-cont-title-en {
+			width: 100%;
+			display: flex;
+			margin-top: 25px;
+			align-items: center;
+
+			span {
+				width: 35vw;
+				@media screen and(min-width:400px) {
+					width: 45vw;
+				}
+				@media screen and(min-width:500px) {
+					width: 50vw;
+				}
+				@media screen and(min-width:600px) {
+					width: 55vw;
+				}
+				height: 2px;
+				background-color: $blue;
+			}
+			h1 {
+				color: $blue;
+				font-family: $ff-raleway;
+				font-weight: $fw-light;
+				font-size: rem(40);
+				text-transform: none;
+				margin-right: 5vw;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				margin-left: auto;
+			}
+		}
 		.cont-slider-m {
 			overflow: hidden;
 			// overflow-y: visible;

@@ -35,6 +35,38 @@
 				margin-left: 5vw;
 			}
 		}
+		.cus-cont-title-en {
+			width: 100%;
+			display: flex;
+			margin-top: 25px;
+			align-items: center;
+
+			span {
+				width: 45vw;
+				@media screen and(min-width:900px) {
+					width: 50vw;
+				}
+				@media screen and(min-width:1100px) {
+					width: 55vw;
+				}
+				// @media screen and(min-width:600px) {
+				// 	width: 55vw;
+				// }
+				height: 2px;
+				background-color: $blue;
+			}
+			h1 {
+				color: $blue;
+				font-family: $ff-raleway;
+				font-weight: $fw-light;
+				font-size: rem(70);
+				text-transform: none;
+				margin-right: 5vw;
+				margin-left: auto;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		}
 		.cont-slider-m {
 			overflow: hidden;
 			// overflow-y: visible;
