@@ -12,6 +12,11 @@
 			font-size: rem(12);
 			line-height: rem(24);
 		}
+		.label-n {
+			display: inline-block;
+			margin-top: 25px;
+			// background-color: red;
+		}
 		input,
 		select {
 			width: 100%;
@@ -155,6 +160,7 @@
 			font-weight: $fw-medium;
 			letter-spacing: 4%;
 			height: 60px;
+			margin-bottom: 30px;
 		}
 		padding-bottom: 50px;
 		margin-bottom: 0;

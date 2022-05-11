@@ -12,6 +12,10 @@
 			font-size: rem(12);
 			line-height: rem(24);
 		}
+		.label-trans {
+			display: inline-block;
+			margin-top: 25px;
+		}
 		input,
 		select {
 			width: 100%;
@@ -22,6 +26,7 @@
 			border: none;
 			border-right: solid 3px $blue;
 		}
+
 		.select-selected {
 			// -webkit-appearance: none;
 			// background-color: red;
@@ -43,6 +48,7 @@
 			.cont-radio-1,
 			.cont-radio-2 {
 				display: flex;
+
 				.container {
 					display: flex;
 					position: relative;
@@ -125,6 +131,10 @@
 		}
 
 		.cont-partie-2 {
+			label:first-child {
+				display: inline-block;
+				margin-top: 25px;
+			}
 			p.partie-2-p {
 				margin-right: 0;
 				&:nth-child(2) {
@@ -132,7 +142,7 @@
 					margin-left: 0;
 					font-family: $ff-poppins;
 					font-weight: $fw-medium;
-					font-size: rem(9);
+					font-size: rem(10);
 					color: $black;
 					line-height: normal;
 				}

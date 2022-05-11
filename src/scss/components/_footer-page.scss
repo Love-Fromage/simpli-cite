@@ -151,6 +151,7 @@
 			}
 		}
 		.cont-petit-lien {
+			margin-bottom: 50px;
 			.flex-t {
 				display: none;
 			}
@@ -172,13 +173,15 @@
 					&:first-child {
 						margin-right: 10px;
 					}
-					&:last-child {
-						margin-left: 0px;
+					&:nth-child(3) {
+						margin-left: 10px;
 					}
 				}
 			}
 			.bda {
 				a {
+					margin-left: 0;
+					margin-right: 0;
 					color: $blue;
 					&:visited {
 						color: $blue;
@@ -198,7 +201,7 @@
 			}
 			img {
 				display: block;
-				margin-top: 50px;
+				margin-top: 10px;
 				width: 30vw;
 				// text-align: center;
 				margin-left: auto;

@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="cont-rm">
         <div class="rm-bg-img">
-            <?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch2'>EN</div></a>", "<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch'>FR</div></a>"); ?>
+            <?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch2'>EN</div></a>", "<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch2'>FR</div></a>"); ?>
             <div class="rm-black">
                 <img src="./images/logo-blanc.svg" alt="" />
                 <span class="ligne-bleue"></span>
@@ -123,12 +123,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="rm-bg">
             <div class="rm-cont-form">
                 <h2>
-                    <?php lang("Vendre son véhicule <br />
-						n'aura <br />
-						jamais été si <br />
-						<span>simple</span> !", "Selling your vehicule <br />
+                    <?php lang("Vendre son véhicule	n'aura 
+						jamais été si 
+						<span>simple</span> !", "Selling your vehicule 
                         never has been this
-                        <br /> <span>easy</span> !"); ?>
+                        <span>easy</span> !"); ?>
                 </h2>
                 <p>
                     <?php lang("Chez Simpli-cité, nous donnons une seconde vie aux
@@ -142,16 +141,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     marché.", "You wish to sell your vehicule ? Fill this form and obtain the best price in the market."); ?>
                 </p>
                 <form id="formRM" method="post" action="./mailer2.php?form=remarketing<?php lang('&lang=fr', '&lang=en') ?>" class="leform" enctype="multipart/form-data">
-                    <label for="nom"><?php lang("nom et prénom ", "first and last name"); ?>*</label>
+                    <label class="label-n" for="nom"><?php lang("nom et prénom ", "first and last name"); ?>*</label>
                     <input type="text" name="nom" id="nom" />
 
-                    <label for="email"><?php lang("Courriel", "E-mail"); ?> *</label>
+                    <label class="label-n" for="email"><?php lang("Courriel", "E-mail"); ?> *</label>
                     <input type="email" name="email" id="email" />
 
-                    <label for="phone"><?php lang("Numéro de téléphone", "phone number"); ?> *</label>
+                    <label class="label-n" for="phone"><?php lang("Numéro de téléphone", "phone number"); ?> *</label>
                     <input type="tel" name="phone" id="phone" />
 
-                    <label for="year"><?php lang("année de la voiture", "year of the car"); ?> *</label>
+                    <label class="label-n" for="year"><?php lang("année de la voiture", "year of the car"); ?> *</label>
                     <select name="year" id="year" onfocus="this.size=10;" onblur="this.size=1;" onchange="this.size=1; this.blur();" style="height: auto">
                         <option value="" selected disabled hidden></option>
 
@@ -198,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <option value="2000">2000</option>
                     </select>
 
-                    <label for="marque"><?php lang("marque", "brand"); ?> *</label>
+                    <label class="label-n" for="marque"><?php lang("marque", "brand"); ?> *</label>
                     <select name="marque" id="marque" onfocus="this.size=10;" onblur="this.size=1;" onchange="this.size=1; this.blur();" style="height: auto">
                         <option value="" selected disabled hidden></option>
                         <option value="Acura">Acura</option>
@@ -248,13 +247,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <option value="Volvo">Volvo</option>
                     </select>
 
-                    <label for="modele"><?php lang("modèle", "model"); ?> *</label>
+                    <label class="label-n" for="modele"><?php lang("modèle", "model"); ?> *</label>
                     <input type="text" name="modele" id="modele" />
 
-                    <label for="km"><?php lang("kilométrage", "kilometers"); ?> *</label>
+                    <label class="label-n" for="km"><?php lang("kilométrage", "kilometers"); ?> *</label>
                     <input type="number" name="km" id="km" />
 
-                    <label for="transmission">Transmission *</label>
+                    <label class="label-trans" for="transmission">Transmission *</label>
                     <div class="cont-radio">
                         <div class="cont-radio-1">
                             <label class="container"><?php lang("Automatique", "Automatic"); ?>
@@ -283,10 +282,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             (Ce numéro ne nous donne accès à aucune de vos
                             informations personnelles. Il nous permet
                             uniquement de vérifier l'historique des
-                            accidents associés à votre véhicule.)", "please give us number vehicule"); ?>
+                            accidents associés à votre véhicule.)", "In order to serve you better, please provide us with your vehicle identification number. It's a 17-digit serial number that is located on the registration paper of your vehicle. <br /> <br />(This number does not give us access to any of your personal information. It allows us only to check the history of accidents associated with your vehicle.)"); ?>
                         </p>
                         <input type="text" name="num-id" id="num-id" />
-                        <label for="process"><?php lang("Où en êtes vous dans votre processus de vente ?", "Where are you at in the process of selling your vehicule ?"); ?>
+                        <label class="label-last" for="process"><?php lang("Où en êtes vous dans votre processus de vente ?", "Where are you at in the process of selling your vehicule ?"); ?>
                         </label>
                         <select name="process" id="process" class="select-selected" onfocus="this.size=3; this.style='height: auto;'" onblur="this.size=1;" onchange="this.size=1; this.blur();">
                             <option value="" selected disabled hidden></option>

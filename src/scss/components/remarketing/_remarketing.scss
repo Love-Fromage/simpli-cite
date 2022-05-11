@@ -99,7 +99,10 @@
 					font-size: rem(15);
 					line-height: rem(22);
 					color: $black;
+					width: 75%;
+
 					text-transform: uppercase;
+
 					span {
 						color: $blue;
 					}
@@ -110,10 +113,11 @@
 					font-size: rem(12);
 					line-height: rem(20);
 					color: $black;
-					width: 62%;
-					margin-left: 5vw;
+					width: 75%;
+					// margin-left: 5vw;
 					&:nth-child(3) {
 						font-weight: $fw-bold;
+						margin-bottom: 25px;
 					}
 				}
 			}
@@ -226,6 +230,8 @@
 					line-height: rem(30);
 					color: $black;
 					text-transform: uppercase;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 					br {
 						display: none;
 						&:nth-child(2) {
