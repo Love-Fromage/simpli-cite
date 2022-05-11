@@ -31,7 +31,7 @@
 			<a href="./remarketing.php<?php lang('?lang=fr', '?lang=en'); ?>">REMARKETING</a>
 		</div>
 		<div class="cont-linkedin">
-			<a href="#"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
+			<a href="https://www.linkedin.com/company/simplicityfleet/"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
 			<span></span>
 		</div>
 	</div>
@@ -66,7 +66,7 @@
 				<a href="./remarketing.php<?php lang('?lang=fr', '?lang=en') ?>">REMARKETING</a>
 			</div>
 			<div class="cont-linkedin">
-				<a href="#"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
+				<a href="https://www.linkedin.com/company/simplicityfleet/"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
 			</div>
 		</div>
 	</div>

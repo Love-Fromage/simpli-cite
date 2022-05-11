@@ -80,7 +80,7 @@ include("./header.php");
 		<span class="veh-sep"></span>
 	</div>
 	<div class="veh-btn-contact btn-color btn-l-r">
-		<a href="/contact.html" class="veh-btn-contact"><?php lang('contactez-nous', 'contact us'); ?></a>
+		<a href="./contact.php<?php lang('?lang=fr', '?lang=en'); ?>" class="veh-btn-contact"><?php lang('contactez-nous', 'contact us'); ?></a>
 	</div>
 </section>
 <?php include("./footer.php");
