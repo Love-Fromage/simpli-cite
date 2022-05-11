@@ -296,8 +296,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </option>
                             <option value="3"><?php lang("Simplement curieux", "Simple curiosity"); ?></option>
                         </select>
-                        <label for="more-info"><?php lang("Informations supplémentaires sur le véhicule", "Additionnal informations about the vehicule"); ?></label>
-                        <textarea name="more-info" id="more-info"></textarea>
+                        <div class="info-rm-supp">
+                            <label for="more-info"><?php lang("Informations supplémentaires sur le véhicule", "Additionnal informations about the vehicule"); ?></label>
+                            <textarea name="more-info" id="more-info"></textarea>
+                        </div>
                     </div>
                     <button type="submit" name="submit" id="submit3" value="ENVOYER" class="rm-sub btn-color btn-l-r">
                         <?php lang("ENVOYER", "SEND"); ?>

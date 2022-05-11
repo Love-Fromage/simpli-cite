@@ -130,6 +130,21 @@
 		}
 
 		.cont-partie-2 {
+			.info-rm-supp {
+				display: flex;
+				flex-direction: column;
+				label {
+				}
+				textarea {
+					width: 90%;
+					border-radius: 0;
+					background-color: $gray;
+					border: none;
+					border-right: 4px solid $blue;
+					margin-bottom: 30px;
+					resize: none;
+				}
+			}
 			p.partie-2-p {
 				margin-right: 0;
 				&:nth-child(2) {

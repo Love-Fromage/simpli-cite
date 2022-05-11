@@ -131,6 +131,23 @@
 		}
 
 		.cont-partie-2 {
+			.info-rm-supp {
+				display: flex;
+				flex-direction: column;
+				label {
+					margin-bottom: 10px;
+				}
+				textarea {
+					width: 100%;
+					border-radius: 0;
+					background-color: $gray;
+					border: none;
+					height: 200px;
+					border-right: 4px solid $blue;
+					margin-bottom: 30px;
+					resize: none;
+				}
+			}
 			label:first-child {
 				display: inline-block;
 				margin-top: 25px;

@@ -144,6 +144,21 @@ a:link {
 					line-height: normal;
 				}
 			}
+			.info-rm-supp {
+				display: flex;
+				flex-direction: column;
+				label {
+				}
+				textarea {
+					width: 90%;
+					border-radius: 0;
+					background-color: $gray;
+					border: none;
+					border-right: 4px solid $blue;
+					margin-bottom: 30px;
+					resize: none;
+				}
+			}
 		}
 		.rm-sub {
 			margin-top: 50px;
