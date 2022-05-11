@@ -1,28 +1,29 @@
 //version pour la tablette ici
 @media screen and(min-width:768px) {
 	.lang-switch {
-		position: fixed;
-		left: auto;
-		right: 0;
-		cursor: pointer;
-		top: 50vh;
-		z-index: 15;
+		// position: fixed;
+		// left: auto;
+		// right: 0;
+		// cursor: pointer;
+		// top: 50vh;
+		// z-index: 15;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: $blue;
-		width: 28px;
-		height: 69px;
-		color: white;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		// background-color: $blue;
+		// width: 28px;
+		// height: 69px;
+		// color: white;
 
-		font-family: $ff-poppins;
-		font-weight: $fw-medium;
-		font-size: rem(10);
-		letter-spacing: 0.04em;
-		a {
-			color: white;
-		}
+		// font-family: $ff-poppins;
+		// font-weight: $fw-medium;
+		// font-size: rem(10);
+		// letter-spacing: 0.04em;
+		// a {
+		// 	color: white;
+		// }
+		display: none;
 	}
 	//content
 	.cont-rm {

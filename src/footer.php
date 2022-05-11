@@ -207,7 +207,7 @@
 	</script>
 <?php endif ?>
 <?php if ($contact) : ?><script defer>
-		if (window.innerWidth <= 767) {
+		if (window.innerWidth <= 1279) {
 			console.log("on est sur moobile");
 			document.querySelector(".last-li").classList.add("activePage");
 		}
