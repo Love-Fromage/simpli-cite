@@ -10,6 +10,7 @@
 				display: block;
 				background-color: $blue;
 				width: 40vw;
+
 				height: 2px;
 
 				margin-top: auto;
@@ -43,10 +44,10 @@
 				p {
 					font-family: $ff-poppins;
 					font-weight: $fw-regular;
-					line-height: rem(20);
-					font-size: rem(12);
-					width: 70%;
-					margin-left: auto;
+					line-height: rem(24);
+					font-size: rem(14);
+					width: 75%;
+					margin-left: 10vw;
 					margin-right: auto;
 					color: $black;
 					&:last-child {
@@ -57,7 +58,7 @@
 			.col-droite {
 				position: absolute;
 				width: 9.3vw;
-				z-index: 0;
+				z-index: -1;
 				top: 4px;
 				// height: 500vh;
 				@media screen and(max-width:590px) {
@@ -110,8 +111,8 @@
 						width: 80%;
 						font-family: $ff-poppins;
 						font-weight: $fw-regular;
-						font-size: rem(12);
-						line-height: rem(20);
+						font-size: rem(14);
+						line-height: rem(22);
 						color: #16191b;
 					}
 
@@ -203,7 +204,7 @@
 					align-items: center;
 					img {
 						width: 10vw;
-						max-height: 39px;
+						max-height: 48px;
 						margin-right: 2vw;
 					}
 				}
@@ -217,17 +218,20 @@
 						color: $black;
 						font-family: $ff-poppins;
 						font-weight: $fw-bold;
-						font-size: rem(14);
+						font-size: rem(16);
 						line-height: rem(22);
 						margin-left: 10vw;
+						margin-bottom: 5px;
 					}
 					.last-p {
 						color: $black;
 						font-family: $ff-poppins;
-						font-size: rem(12);
+						font-size: rem(14);
+
 						font-weight: $fw-regular;
 						line-height: rem(20);
 						margin-left: 10vw;
+						margin-top: 0;
 						//test
 					}
 				}

@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const li3 = document.querySelector(".li-3");
 	const li4 = document.querySelector(".li-4");
 
+	//
+
 	//ici on defini des variables pour utiliser la valeur en width des li
 	//pour faciliter le codage
 	$li1TW = $(".li-1").width();
