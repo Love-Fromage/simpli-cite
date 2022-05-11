@@ -16,6 +16,7 @@ include("./header2.php");
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<script src="js/script.js" defer></script>
 	<script src="js/carousel.js" defer></script>
+
 </head>
 
 <body>
@@ -44,7 +45,7 @@ include("./header2.php");
 						<li class="<?php if ($career) : ?> activePage<?php endif; ?>">
 							<a href="./career.php<?php lang('?lang=fr', '?lang=en') ?>"><?php lang('carrières', 'careers'); ?></a>
 						</li>
-						<li>
+						<li class="last-li">
 							<a href="./contact.php<?php lang('?lang=fr', '?lang=en') ?>">contact</a>
 						</li>
 					</ul>
