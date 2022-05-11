@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="cont-rm">
         <div class="rm-bg-img">
-            <?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch lang-switch2'>EN</div></a>", "<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch'>FR</div></a>"); ?>
+            <?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang-switch2'>EN</div></a>", "<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang-switch'>FR</div></a>"); ?>
             <div class="rm-black">
                 <img src="./images/logo-blanc.svg" alt="" />
                 <span class="ligne-bleue"></span>
