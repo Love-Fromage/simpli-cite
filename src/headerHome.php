@@ -107,7 +107,7 @@ include("./header2.php");
 						<?php lang("Choisir Simpli-Cité, <br /> c’est choisir la tranquillité
 							d’esprit.", "To choose Simpli-Cité, is to choose peace of mind."); ?>
 					</h1>
-					<a href="tel:4509071596" class="home-call btn-color btn-l-r"><?php lang('Appellez-nous', 'CALL US'); ?></a>
+					<a href="tel:4509073411" class="home-call btn-color btn-l-r">(450) 907-3411</a>
 				</div>
 				<span class="home-scroll-down"></span>
 			</div>

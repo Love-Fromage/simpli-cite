@@ -16,7 +16,7 @@ include("./header.php");
 				</div>
 				<div class="carte-grise">
 					<h4>DODGE</h4>
-					<p>VUS, Lorem, Ipsum</p>
+					<p><?php lang("VUS", "SUV"); ?></p>
 				</div>
 			</div>
 			<div class="swiper-slide">
@@ -25,7 +25,7 @@ include("./header.php");
 				</div>
 				<div class="carte-grise">
 					<h4>chevrolet</h4>
-					<p>VUS, Lorem, Ipsum</p>
+					<p><?php lang("VUS, Pick-Up", "SUV, Pick-Up"); ?></p>
 				</div>
 			</div>
 			<div class="swiper-slide">
@@ -34,16 +34,16 @@ include("./header.php");
 				</div>
 				<div class="carte-grise">
 					<h4>jeep</h4>
-					<p>VUS, Lorem, Ipsum</p>
+					<p><?php lang("VUS", "SUV"); ?></p>
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="cont-img">
-					<img src="./images/mercedes-benz.webp" alt="mercedes" class="veh-carou-img" />
+					<img src="./images/ram.webp" alt="mercedes" class="veh-carou-img" />
 				</div>
 				<div class="carte-grise">
-					<h4>mercedes-benz</h4>
-					<p>VUS, Lorem, Ipsum</p>
+					<h4>ram</h4>
+					<p><?php lang("Pick-Up, Fourgons Utilitaires", "Pick-Up, Commercials Trucks"); ?></p>
 				</div>
 			</div>
 			<div class="swiper-slide">
@@ -52,7 +52,7 @@ include("./header.php");
 				</div>
 				<div class="carte-grise">
 					<h4>hyundai</h4>
-					<p>VUS, Lorem, Ipsum</p>
+					<p><?php lang("VUS, Compact, Berline", "SUV, Compact, Berline"); ?></p>
 				</div>
 			</div>
 			<div class="swiper-slide">
@@ -61,7 +61,7 @@ include("./header.php");
 				</div>
 				<div class="carte-grise">
 					<h4>gmc</h4>
-					<p>VUS, Lorem, Ipsum</p>
+					<p><?php lang("VUS, Pick-up", "SUV, Pick-Up"); ?></p>
 				</div>
 			</div>
 		</div>
@@ -80,7 +80,7 @@ include("./header.php");
 		<span class="veh-sep"></span>
 	</div>
 	<div class="veh-btn-contact btn-color btn-l-r">
-		<a href="./contact.php<?php lang('?lang=fr', '?lang=en'); ?>" class="veh-btn-contact"><?php lang('contactez-nous', 'contact us'); ?></a>
+		<a href="tel:4509073411" class="veh-btn-contact"><?php lang('contactez-nous', 'contact us'); ?></a>
 	</div>
 </section>
 <?php include("./footer.php");

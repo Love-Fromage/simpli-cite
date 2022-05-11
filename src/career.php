@@ -188,7 +188,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 							position:absolute;
 							top:25px;
 							left:0%;"></div>
-							<label for="file" class="file-label"><input name="file-upload-cv" type="file" id="file" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
+							<label for="file" class="file-label"><input name="file-upload-cv" type="file" id="file" accept=".pdf, .docx, .txt" required><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
 						<div style="position: relative;">

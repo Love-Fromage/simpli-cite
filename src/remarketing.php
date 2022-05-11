@@ -271,10 +271,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
                     <div class="cont-partie-2">
-                        <label for="num-id"><?php lang("numéro d'identification", "identification number"); ?> *</label>
+                        <label for="num-id"><?php lang("niv (numéro d'identification du véhicule)", "vin (vehicule identification's number)"); ?> *</label>
                         <p class="partie-2-p">
-                            <?php lang("Afin de mieux vous servir, veuillez nous fournir
-                            votre numéro d'identification de véhicule. Il
+                            <?php lang("Il
                             s'agit d'un numéro de série à 17 chiffres qui se
                             trouve sur le papier d'immatriculation de votre
                             véhicule. <br />
@@ -282,7 +281,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             (Ce numéro ne nous donne accès à aucune de vos
                             informations personnelles. Il nous permet
                             uniquement de vérifier l'historique des
-                            accidents associés à votre véhicule.)", "In order to serve you better, please provide us with your vehicle identification number. It's a 17-digit serial number that is located on the registration paper of your vehicle. <br /> <br />(This number does not give us access to any of your personal information. It allows us only to check the history of accidents associated with your vehicle.)"); ?>
+                            accidents associés à votre véhicule.)", "It's a 17-digit serial number that is located on the registration paper of your vehicle. <br /> <br />(This number does not give us access to any of your personal information. It allows us only to check the history of accidents associated with your vehicle.)"); ?>
                         </p>
                         <input type="text" name="num-id" id="num-id" />
                         <label class="label-last" for="process"><?php lang("Où en êtes vous dans votre processus de vente ?", "Where are you at in the process of selling your vehicule ?"); ?>
@@ -297,6 +296,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </option>
                             <option value="3"><?php lang("Simplement curieux", "Simple curiosity"); ?></option>
                         </select>
+                        <label for="more-info"><?php lang("Informations supplémentaires sur le véhicule", "Additionnal informations about the vehicule"); ?></label>
+                        <textarea name="more-info" id="more-info"></textarea>
                     </div>
                     <button type="submit" name="submit" id="submit3" value="ENVOYER" class="rm-sub btn-color btn-l-r">
                         <?php lang("ENVOYER", "SEND"); ?>
@@ -304,17 +305,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
             </div>
             <div class="rm-cont-link">
-                <a href="./home.php<?php lang("?lang=fr", "?lang=en"); ?>">visitez notre site web</a>
+                <a href="./home.php<?php lang("?lang=fr", "?lang=en"); ?>"><?php lang("visitez notre site web", "visit our website"); ?></a>
             </div>
         </div>
     </div>
     <footer class="footer-rm">
         <div class="cont-scroll" onclick="gotoTop()">
             <span></span>
-            <p id="scroll-btn">RETOUR</p>
+            <p id="scroll-btn"><?php lang("RETOUR", "RETURN"); ?></p>
         </div>
         <div class="rm-cont-mobile">
-            <h2>Contactez-nous</h2>
+            <h2><?php lang("Contactez-nous", "Contact us"); ?></h2>
             <ul>
                 <li>
                     <img src="./images/location.svg" alt="location-icon" />
@@ -325,16 +326,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </li>
                 <li>
                     <img src="./images/phone.svg" alt="phone-icon" />
-                    <p><a href="tel:4509071596">(450) 907-1596</a></p>
+                    <p><a href="tel:4509071899">(450) 907-1899</a></p>
                 </li>
                 <li>
                     <img src="./images/email.svg" alt="email-icon" />
-                    <p>info@simplicitelocation.com</p>
+                    <p>nrobitaille@simpliciteremarketing.com</p>
                 </li>
             </ul>
             <div class="hour">
-                <h2>Heures d'ouverture</h2>
-                <p>Lundi/ Vendredi : 9am - 5pm</p>
+                <h2><?php lang("Heures d'ouvertures", "Opening hours"); ?></h2>
+                <p><?php lang("Lundi/ Vendredi", "Monday/ Friday"); ?> : 9am - 5pm</p>
             </div>
             <div class="cont-footer-line">
                 <span class="footer-line-rm"></span>
@@ -347,7 +348,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="cont-flex-t">
             <div class="col-1">
-                <h2>Contactez-nous</h2>
+                <h2><?php lang("Contactez-nous", "Contact Us"); ?></h2>
                 <ul>
                     <li>
                         <img src="./images/location.svg" alt="location-icon" />
@@ -358,18 +359,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </li>
                     <li>
                         <img src="./images/phone.svg" alt="phone-icon" />
-                        <p><a href="tel:4509071596">(450) 907-1596</a></p>
+                        <p><a href="tel:4509071899">(450) 907-1899</a></p>
                     </li>
                     <li>
                         <img src="./images/email.svg" alt="email-icon" />
-                        <p>info@simplicitelocation.com</p>
+                        <p>nrobitaille@simpliciteremarketing.com</p>
                     </li>
                 </ul>
             </div>
             <div class="col-2">
                 <div class="hour">
-                    <h2>Heures d'ouverture</h2>
-                    <p>Lundi/ Vendredi : 9am - 5pm</p>
+                    <h2><?php lang("Heures d'ouvertures", "Opening hours"); ?></h2>
+                    <p><?php lang("Lundi/ Vendredi", "Monday/ Friday"); ?> : 9am - 5pm</p>
                 </div>
                 <div class="cont-footer-line">
                     <span class="footer-line-rm"></span>
@@ -386,18 +387,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="flex-t">
                 <div class="row-1">
                     <div>
-                        <a href="#">Mentions légales</a><span>&nbsp | &nbsp </span>
-                        <a href="#">Politique de confidentialité</a>
+                        <a href="#"><?php lang('Mentions légales', 'Legal mentions'); ?></a><span>&nbsp | &nbsp </span>
+                        <a href="#"><?php lang('Politique de confidentialité', 'Privacy policy'); ?></a>
                         <span>&nbsp | &nbsp</span>
                     </div>
 
                     <p>
-                        @2022 - Simpli-Cité Location - Tous droits réservés
+                        @2022 - Simpli-Cité Location - <?php lang('Tous droits réservés', 'All rights reserved'); ?>
                     </p>
                 </div>
                 <div class="row-2">
                     <p class="bda">
-                        Site réalisé par
+                        <?php lang('Site réalisé par', 'Website made by'); ?>
                         <a href="https://blackduckagency.com">Black Duck Agency</a>
                     </p>
                 </div>
@@ -405,13 +406,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="flex-mobile">
                 <img src="./images/simplicite-logo.svg" alt="logo-footer" onclick="gotoTop()" />
                 <div>
-                    <a href="#">Mentions légales</a> <span>|</span>
-                    <a href="#">Politique de confidentialité</a>
+                    <a href="#"><?php lang('Mentions légales', 'Legal mentions'); ?></a> <span>|</span>
+                    <a href="#"><?php lang('Politique de confidentialité', 'Privacy policy'); ?></a>
                 </div>
 
-                <p>@2022 - Simpli-Cité Location - Tous droits réservés</p>
+                <p>@2022 - Simpli-Cité Location - <?php lang('Tous droits réservés', 'All rights reserved'); ?></p>
                 <p class="bda">
-                    Site réalisé par
+                    <?php lang('Site réalisé par', 'Website made by'); ?>
                     <a href="https://blackduckagency.com">Black Duck Agency</a>
                 </p>
             </div>
