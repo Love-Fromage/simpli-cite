@@ -148,12 +148,14 @@ a:link {
 				display: flex;
 				flex-direction: column;
 				label {
+					margin-bottom: 20px;
 				}
 				textarea {
-					width: 90%;
+					width: 100%;
 					border-radius: 0;
 					background-color: $gray;
 					border: none;
+					height: 150px;
 					border-right: 4px solid $blue;
 					margin-bottom: 30px;
 					resize: none;
