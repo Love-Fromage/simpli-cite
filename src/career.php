@@ -21,6 +21,7 @@ if (substr($_SERVER['REQUEST_URI'], strpos($_SERVER['REQUEST_URI'], '&') + 1) ==
 // $mailing = "./mailer.php?form=career" . $val . "";
 // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $name = $message = $phone = $visitor_email = "";
+$cvError = false;
 $phoneError = $nameError = $formError = $emailError = "";
 if (empty($_POST['name'])) {
 	$nameError = 'Ce champ est requis';
@@ -39,6 +40,9 @@ if (empty($_POST['email'])) {
 	}
 }
 
+if (empty($_POST['file-upload-cv'])) {
+	$cvError = true;
+}
 
 
 if (empty($_POST['phone'])) {
