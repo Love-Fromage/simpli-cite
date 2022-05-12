@@ -191,8 +191,12 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 							<div id="fichier1" style="
 							position:absolute;
 							top:25px;
-							left:0%;"></div>
-							<label for="file" class="file-label"><input name="file-upload-cv" type="file" id="file" accept=".pdf, .docx, .txt" required><?php lang("AJOUTER", "ADD"); ?>
+							left:0%;"><?php if ($cvError) : echo "<p><?php lang(\"Veuillez joindre votre CV\", \"Please attach your resume\"); ?></p>" ?>
+
+								<?php else :  echo ""; ?>
+								<?php endif ?>
+							</div>
+							<label for="file-upload-cv" class="file-label"><input name="file-upload-cv" type="file" id="file-upload-cv" accept=".pdf, .docx, .txt" required><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
 						<div style="position: relative;">
@@ -204,7 +208,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 							position:absolute;
 							top:25px;
 							left:0%;"></div>
-							<label for="file2" class="file-label"><input name="file-upload-letter" type="file" id="file2" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
+							<label for="file-upload-letter" class="file-label"><input name="file-upload-letter" type="file" id="file-upload-letter" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>
 					</div>

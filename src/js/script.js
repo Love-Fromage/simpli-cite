@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				.replace(/C:\\fakepath\\/i, "")
 		);
 	});
-	if (document.getElementById("submit1") !== null) {
-		document.getElementById("submit1").onclick = () => {
-			document.getElementById("formRM").submit();
-		};
-	}
+	// if (document.getElementById("submit1") !== null) {
+	// 	document.getElementById("submit1").onclick = () => {
+	// 		document.getElementById("formRM").submit();
+	// 	};
+	// }
 
 	// const li5 = document.querySelector(".li-5");
 	let past = false;

@@ -84,9 +84,12 @@
 						line-height: rem(26);
 						color: #16191b;
 					}
-					#file,
-					#file2 {
-						display: none;
+					#file-upload-cv,
+					#file-upload-letter {
+						display: block;
+						opacity: 0;
+						border: none;
+						width: 1px;
 					}
 					.file-label {
 						display: flex;
