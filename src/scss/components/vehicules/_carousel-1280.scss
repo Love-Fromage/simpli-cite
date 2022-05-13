@@ -124,10 +124,25 @@
 				// top: 20px;
 				// background-color: red;
 			}
+			&:nth-child(2) {
+				.cont-img {
+					img {
+						top: 30px;
+						width: 13vw;
+						@media screen and(max-width:1290px) {
+							top: 45px;
+						}
+					}
+				}
+			}
+
 			&:nth-child(4) {
 				.cont-img {
 					img {
 						width: 8vw;
+						@media screen and(max-width:1290px) {
+							width: 10vw;
+						}
 					}
 				}
 				.carte-grise {
@@ -139,6 +154,10 @@
 				.cont-img {
 					img {
 						top: 20px;
+						@media screen and(max-width:1290px) {
+							width: 15vw;
+							top: 50px;
+						}
 					}
 				}
 			}
@@ -147,6 +166,32 @@
 					img {
 						position: relative;
 						top: 10px;
+						@media screen and(max-width:1290px) {
+							width: 15vw;
+							top: 30px;
+						}
+					}
+				}
+			}
+			&:nth-child(1) {
+				.cont-img {
+					// background-color: red;
+					img {
+						top: -20px;
+						width: 20vw;
+						@media screen and(max-width:1290px) {
+							top: 0px;
+						}
+					}
+				}
+			}
+			&:nth-child(3) {
+				.cont-img {
+					img {
+						@media screen and(max-width:1290px) {
+							width: 15vw;
+							top: 30px;
+						}
 					}
 				}
 			}
@@ -206,7 +251,7 @@
 					padding-top: 5px;
 					font-family: $ff-poppins;
 					font-weight: $fw-bold;
-					font-size: rem(25);
+					font-size: rem(18);
 					line-height: rem(40);
 					text-transform: uppercase;
 				}
@@ -214,7 +259,7 @@
 					margin-left: 2vw;
 					margin-top: 0;
 					margin-bottom: 0;
-					font-size: rem(20);
+					font-size: rem(16);
 				}
 			}
 		}
