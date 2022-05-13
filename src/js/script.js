@@ -80,6 +80,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	let logoImg = logoNav.src.split("/").pop();
 	let logoImgD = logoNav.src.split("/").pop();
 
+	if (homeB === null) {
+		document.addEventListener("scroll", () => {
+			console.log("not home");
+			if (window.pageYOffset <= 0) {
+				navD.classList.remove("box");
+				navM.classList.remove("box");
+			} else if (window.pageYOffset > 0) {
+				navD.classList.add("box");
+				navM.classList.add("box");
+			}
+		});
+	}
 	if (homeB !== null) {
 		//pour le blanc sur le hover
 		navD.addEventListener("mouseenter", () => {
