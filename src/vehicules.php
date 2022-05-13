@@ -68,7 +68,7 @@ include("./header.php");
 	</div>
 	<div class="cont-nav-carou">
 		<img src="./images/fleche-carou.svg" alt="prev" class="f-s" id="prev" />
-		<img src="./images/fleche-carou.svg" alt="next" id="next" />
+		<img src="./images/fleche-carou.svg" alt="next" class="" id="next" />
 	</div>
 </section>
 <section class="veh-extra">
