@@ -123,16 +123,20 @@
 					height: fit-content;
 					position: relative;
 					margin-right: 10px;
+					margin-top: 50px;
 					margin-bottom: 155px;
 					.container {
 						display: grid;
 						width: 100%;
+						margin-left: 5%;
 						grid-template-columns: 1fr 1fr 1fr;
 						grid-template-rows: 1f 1fr;
-						gap: 200px 15vw;
+						gap: 150px 10vw;
 						.carte {
 							img {
 								height: auto;
+								display: block;
+								width: 12vw;
 							}
 							// background-color: red;
 						}
@@ -149,6 +153,13 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 100px;
+			#prev,
+			#next {
+				@media screen and(max-width:1290px) {
+					width: 4vw;
+				}
+				width: 3vw;
+			}
 			span {
 				background-color: $gray;
 				width: 40%;

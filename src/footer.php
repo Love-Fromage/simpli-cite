@@ -172,38 +172,48 @@
 	<script>
 		// let prev = document.getElementById("prev");
 		// let next = document.getElementById("next");
-		var swiper = new Swiper(".swiper", {
-			spaceBetween: 10,
-			loop: true,
-			navigation: {
-				nextEl: "#next",
-				prevEl: "#prev",
-			},
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 25,
+		if (window.innerWidth <= 1279) {
+
+			var swiper = new Swiper(".swiper", {
+				spaceBetween: 10,
+				loop: true,
+				navigation: {
+					nextEl: "#next",
+					prevEl: "#prev",
 				},
-				1280: {
-					slidesPerView: 3,
-					spaceBetween: 25,
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 25,
+					},
+					1280: {
+						slidesPerView: 3,
+						spaceBetween: 25,
+					},
 				},
-			},
-		});
-		var swiper = new Swiper(".swiper2", {
-			spaceBetween: 10,
-			loop: true,
-			navigation: {
-				nextEl: "#next",
-				prevEl: "#prev",
-			},
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 25,
+			});
+		} else {
+
+			// alert("bonsoir");
+			var swiper = new Swiper(".swiper2", {
+				// spaceBetween: 10,
+				loop: true,
+				navigation: {
+					nextEl: "#next",
+					prevEl: "#prev",
 				},
-			},
-		});
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					},
+					1280: {
+						slidesPerView: 1,
+						spaceBetween: 100,
+					},
+				},
+			});
+		}
 	</script>
 <?php endif ?>
 <?php if ($contact) : ?><script defer>

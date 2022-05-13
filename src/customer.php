@@ -50,66 +50,66 @@ include("./header.php");
 			<div class="swiper-slide">
 				<!-- contenu de la carte/slide -->
 				<div class="container">
-					<div class="carte1">
+					<div class="carte carte1">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte2">
+					<div class="carte carte2">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte3">
+					<div class="carte carte3">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte4">
+					<div class="carte carte4">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte5">
+					<div class="carte carte5">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte6">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="container">
-					<div class="carte1">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
-					</div>
-					<div class="carte2">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
-					</div>
-					<div class="carte3">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
-					</div>
-					<div class="carte4">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
-					</div>
-					<div class="carte5">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
-					</div>
-					<div class="carte6">
+					<div class="carte carte6">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="container">
-					<div class="carte1">
+					<div class="carte carte1">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte2">
+					<div class="carte carte2">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte3">
+					<div class="carte carte3">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte4">
+					<div class="carte carte4">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte5">
+					<div class="carte carte5">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
-					<div class="carte6">
+					<div class="carte carte6">
+						<img src="./images/pomerleau.svg" alt="pomerleau" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="carte carte1">
+						<img src="./images/pomerleau.svg" alt="pomerleau" />
+					</div>
+					<div class="carte carte2">
+						<img src="./images/pomerleau.svg" alt="pomerleau" />
+					</div>
+					<div class="carte carte3">
+						<img src="./images/pomerleau.svg" alt="pomerleau" />
+					</div>
+					<div class="carte carte4">
+						<img src="./images/pomerleau.svg" alt="pomerleau" />
+					</div>
+					<div class="carte carte5">
+						<img src="./images/pomerleau.svg" alt="pomerleau" />
+					</div>
+					<div class="carte carte6">
 						<img src="./images/pomerleau.svg" alt="pomerleau" />
 					</div>
 				</div>

@@ -108,7 +108,8 @@
 			display: block;
 			width: 70vw;
 			margin: auto;
-			margin-top: 30px;
+			margin-top: 100px;
+			margin-bottom: 70px;
 			.swiper-wrapper {
 				display: flex;
 				width: 100vw;
@@ -139,6 +140,10 @@
 			display: flex;
 			margin-left: 0;
 			margin-bottom: 100px;
+			#prev,
+			#next {
+				width: 10vw;
+			}
 			span {
 				background-color: $gray;
 				width: 25vw;
