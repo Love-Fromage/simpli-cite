@@ -188,13 +188,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 							<p>
 								<?php lang("Veuillez joindre votre CV", "Please attach your resume"); ?>
 							</p>
-							<div id="fichier1" style="
-							position:absolute;
-							top:25px;
-							left:0%;"><?php if ($cvError) : echo "<p><?php lang(\"Veuillez joindre votre CV\", \"Please attach your resume\"); ?></p>" ?>
-
-								<?php else :  echo ""; ?>
-								<?php endif ?>
+							<div id="fichier1" class="fichier1">
 							</div>
 							<label for="file-upload-cv" class="file-label"><input name="file-upload-cv" type="file" id="file-upload-cv" accept=".pdf, .docx, .txt" required><?php lang("AJOUTER", "ADD"); ?>
 							</label>
@@ -204,10 +198,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 								<?php lang("Veuillez joindre votre lettre de
 									présentation", "Please attach your presentation letter"); ?>
 							</p>
-							<div id="fichier2" style="
-							position:absolute;
-							top:25px;
-							left:0%;"></div>
+							<div id="fichier2" class="fichier1"></div>
 							<label for="file-upload-letter" class="file-label"><input name="file-upload-letter" type="file" id="file-upload-letter" accept=".pdf, .docx, .txt"><?php lang("AJOUTER", "ADD"); ?>
 							</label>
 						</div>

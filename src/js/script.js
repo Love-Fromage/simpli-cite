@@ -30,27 +30,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	let li3Width = li2Width + $li2TW + 50;
 	let li4Width = li3Width + $li3TW + 50;
 	let li5Width;
+	if (window.innerWidth <= 767) {
+		$("#fichier1").css("top:100px;");
+	}
 
-	$("#file").change(() => {
+	$("#file-upload-cv").change(() => {
 		$("#fichier1").html(
-			$("#file")
+			$("#file-upload-cv")
 				.val()
 				.replace(/C:\\fakepath\\/i, "")
 		);
 		console.log(
-			$("#file")
+			$("#file-upload-cv")
 				.val()
 				.replace(/C:\\fakepath\\/i, "")
 		);
 	});
-	$("#file2").change(() => {
+	$("#file-upload-letter").change(() => {
 		$("#fichier2").html(
-			$("#file2")
+			$("#file-upload-letter")
 				.val()
 				.replace(/C:\\fakepath\\/i, "")
 		);
 		console.log(
-			$("#file2")
+			$("#file-upload-letter")
 				.val()
 				.replace(/C:\\fakepath\\/i, "")
 		);

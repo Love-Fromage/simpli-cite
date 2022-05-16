@@ -6,10 +6,10 @@
 		background-size: 120%;
 		background-position: -47vw 100%;
 		background-repeat: no-repeat;
-		height: 1305px;
+		height: 1570px;
 		.carr-para-form {
 			width: 70%;
-			margin-left: 10vw;
+			margin-left: 5vw;
 			// margin-left: auto;
 			margin-right: auto;
 			margin-top: 250px;
@@ -17,7 +17,7 @@
 				width: inherit;
 				font-family: $ff-poppins;
 				font-weight: $fw-regular;
-				font-size: rem(14);
+				font-size: rem(16);
 				color: #16191b;
 				&:last-child {
 					margin-bottom: 70px;
@@ -26,7 +26,7 @@
 		}
 		.carr-cont-form {
 			width: 85%;
-			margin-left: 10vw;
+			margin-left: 5vw;
 			margin-right: auto;
 
 			form {
@@ -39,6 +39,7 @@
 					text-transform: uppercase;
 					line-height: rem(24);
 					color: $black;
+					margin-bottom: 10px;
 				}
 				input,
 				textarea {
@@ -61,12 +62,18 @@
 					margin-bottom: 100px;
 				}
 				.carr-last-bit {
+					.fichier1 {
+						position: absolute;
+						top: 25px;
+						left: 0%;
+					}
 					.carr-last-bit-t {
-						display: flex;
-						width: 60%;
-						justify-content: space-between;
-						align-items: center;
-						margin-bottom: 50px;
+						// display: flex;
+						// width: 60%;
+						// justify-content: space-between;
+						// align-items: center;
+						// margin-bottom: 550px;
+
 						p {
 							width: 45%;
 							font-size: rem(12);
@@ -113,6 +120,7 @@
 						// margin-left: 5vw;
 						width: 60%;
 						height: fit-content;
+						margin-top: 70px;
 						// margin-right: auto;
 						background-color: transparent;
 						border: 2px solid $blue;

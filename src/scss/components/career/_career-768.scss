@@ -29,7 +29,29 @@
 			font-size: rem(70);
 			color: $blue;
 			text-transform: none;
-			margin-left: 5vw;
+			margin-left: auto;
+			margin-right: 5vw;
+		}
+	}
+	.carr-cont-title-en {
+		margin-top: 55px;
+		display: flex;
+		align-items: center;
+		span {
+			display: block;
+			background-color: $blue;
+			width: 60vw;
+			height: 2px;
+			margin-left: 0;
+		}
+		h1 {
+			font-family: $ff-raleway;
+			font-weight: $fw-light;
+			font-size: rem(70);
+			color: $blue;
+			text-transform: none;
+			margin-left: auto;
+			margin-right: 5vw;
 		}
 	}
 	.carr-info-cpt {
@@ -52,7 +74,7 @@
 				width: 80%;
 				margin-left: 5vw;
 
-				padding-top: 35px;
+				padding-top: 45px;
 				// margin-bottom: auto;
 				font-family: $ff-raleway;
 				font-weight: $fw-extra-bold;
@@ -78,7 +100,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			top: 25px;
+			top: 20px;
 			left: calc(100% - 30px);
 
 			span {

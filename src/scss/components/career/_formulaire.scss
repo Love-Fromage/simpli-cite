@@ -58,6 +58,11 @@
 					margin-bottom: 100px;
 				}
 				.carr-last-bit {
+					.fichier1 {
+						position: absolute;
+						top: 85px;
+						left: 0%;
+					}
 					p {
 						font-family: $ff-poppins;
 						font-weight: $fw-regular;
@@ -92,6 +97,7 @@
 
 						// margin-left: 5vw;
 						width: 90%;
+						// margin-top: 2050px;
 						height: fit-content;
 						// margin-right: auto;
 						background-color: transparent;
