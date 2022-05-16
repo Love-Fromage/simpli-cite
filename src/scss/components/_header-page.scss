@@ -9,6 +9,17 @@
 		font-size: rem(50);
 		// margin-top: 50vh;
 	}
+	.focus {
+		&:hover {
+			// color: transparent;
+			text-decoration: none;
+			outline: none;
+			//background-color: red;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
 
 	.bg-home {
 		// overflow: hidden;
@@ -199,9 +210,12 @@
 					margin-left: auto;
 					margin-right: auto;
 					position: relative;
-					top: 25vh;
+					top: 0vh;
 					// left: 10vw;
 					bottom: 0;
+					&:focus {
+						outline: none;
+					}
 				}
 				nav {
 					height: fit-content;

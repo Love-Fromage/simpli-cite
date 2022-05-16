@@ -53,7 +53,7 @@ include("./header2.php");
 						</ul>
 					</nav>
 					<!-- <a href="#" class="lang">EN</a> -->
-					<?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en\" href=\"?lang=en\"><div class='lang'>EN</div></a>", "<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang'>FR</div></a>"); ?>
+					<?php lang("<a class=\"lnk<?= ($lang == 'en')? ' active' : ''; ?> en focus\" href=\"?lang=en\"><div class='lang'>EN</div></a>", "<a class=\"lnk<?= ($lang == 'fr')? ' active' : ''; ?> en\" href=\"?lang=fr\"><div class='lang'>FR</div></a>"); ?>
 				</div>
 				<div class="nav-d blanc-nav">
 					<div class="cont-logo">
