@@ -164,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			if (window.pageYOffset !== 0) {
 				// console.log("plus bas de 10");
 				navM.classList.add("blanc-nav");
+				navD.classList.add("box");
 				navD.classList.add("blanc-nav");
 				scrollD.classList.add("scrolled");
 				hamPain1.classList.add("pain2");
@@ -189,6 +190,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 					logoNavD.src = "./images/" + logoImg;
 					navM.classList.remove("blanc-nav");
 					navD.classList.remove("blanc-nav");
+					navD.classList.remove("box");
 					scrollD.classList.remove("scrolled");
 					hamPain1.classList.remove("pain2");
 					hamPain2.classList.remove("pain2");

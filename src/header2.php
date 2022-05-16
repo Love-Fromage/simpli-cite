@@ -1,13 +1,14 @@
-<?php 
+<?php
 //la fonction qui sert à traduire la page + afficher du 
 //contenu selon sur quelle âge on est rendu
-   
-   $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'],'/') + 1);
-   $page2 = substr($page, 0, strrpos($page,'.'));
+
+$page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], '/') + 1);
+$page2 = substr($page, 0, strrpos($page, '.'));
 $page = str_replace('.php', '', $page);
 
 $lang = (isset($_GET['lang']) && $_GET['lang'] == 'en') ? 'en' : 'fr';
-function lang($frn, $eng) {
+function lang($frn, $eng)
+{
     echo ($GLOBALS['lang'] == 'en') ?  $eng : $frn;
 }
 
@@ -16,38 +17,38 @@ $home = false;
 $career = false;
 $customer = false;
 $contact = false;
-if($page2== "vehicules"){
+if ($page2 == "vehicules") {
     $vehicules = true;
     $home = false;
-$career = false;
-$customer = false;
-$contact = false;
+    $career = false;
+    $customer = false;
+    $contact = false;
 }
-if($page2== "home"){
+if ($page2 == "home") {
     $home = true;
     $vehicules = false;
-$career = false;
-$customer = false;
-$contact = false;
+    $career = false;
+    $customer = false;
+    $contact = false;
 }
-if($page2== "customer"){
+if ($page2 == "customer") {
     $customer = true;
     $home = false;
-$career = false;
-$vehicules = false;
-$contact = false;
+    $career = false;
+    $vehicules = false;
+    $contact = false;
 }
-if($page2== "career"){
+if ($page2 == "career") {
     $career = true;
     $home = false;
-$vehicules = false;
-$customer = false;
-$contact = false;
+    $vehicules = false;
+    $customer = false;
+    $contact = false;
 }
-if($page2== "contact"){
+if ($page2 == "contact") {
     $contact = true;
     $home = false;
-$vehicules = false;
-$customer = false;
-$career = false;
+    $vehicules = false;
+    $customer = false;
+    $career = false;
 }
