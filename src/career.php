@@ -138,23 +138,12 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 <section class="formulaire">
 	<div class="carr-para-form">
 		<p>
-			<?php lang("L’équipe de Simpli-Cité est toujours à la recherche de
-					nouveaux talents. Nous sommes fiers de savoir recruter des
-					gens d’exceptions issus de tous les milieux et de différents
-					champs de compétence. Envoyez-nous votre C.V. si vous voulez
-					faire partie d’une équipe dynamique et atteindre votre plein
-					potentiel.", "We are proud to be able to recruit exceptional people from all walks of life and from different fields of expertise.
+			<?php lang("L’équipe de Simpli-Cité est toujours à la recherche de nouveaux talents. Nous sommes fiers de savoir recruter des gens d’exceptions issus de tous les milieux et de différents champs de compétence. Envoyez-nous votre C.V. si vous voulez faire partie d’une équipe dynamique et atteindre votre plein potentiel.", "We are proud to be able to recruit exceptional people from all walks of life and from different fields of expertise.
 					Send us your resume if you want to be part of a dynamic team and reach your full potential
 					"); ?>
 		</p>
 		<p>
-			<?php lang("Chez Simpli-Cité nous offrons beaucoup d’avantages aux
-					membres de notre équipe. En plus de d’offrir l’accès à un
-					programme d’assurance collective, nous offrons l’accès à une
-					salle d’entraînement et les services d’un entraîneur
-					personnel pour vous aider à atteindre vos objectifs santé.
-					Vous pourrez également profiter des services de notre chef
-					cuisinier pour vos dîners.", "At Simpli-Cité, we offer many benefits to our team members. 
+			<?php lang("Chez Simpli-Cité, nous offrons beaucoup d’avantages aux membres de notre équipe. En plus de d’offrir l’accès à un programme d’assurance collective, nous offrons l’accès à une salle d’entraînement et les services d’un entraîneur personnel pour vous aider à atteindre vos objectifs de santé. Vous pourrez également profiter des services de notre chef cuisinier pour vos dîners.", "At Simpli-Cité, we offer many benefits to our team members. 
 					In addition to offering access to a group insurance program, we offer access to a training room and the services of a personal trainer to help you achieve your health and fitness goals. 
 					You can also take advantage of the services of our chef for your dinners.
 					"); ?>

@@ -90,76 +90,32 @@ include("./headerHome.php");
 				<div class="col-g">
 					<div class="cont-p-top">
 						<p>
-							<?php lang("Notre programme de location de véhicule
-									moyen terme amène un bouffé d’air frais dans
-									une industrie qui est habitués de faire les
-									choses de la même façon depuis toujours. Que
-									ce soit pour un chantier à période
-									déterminé, un besoin saisonnier, une
-									nouvelle embauche ou même simplement pour
-									profiter de l’engagement limité et la
-									flexibilité que procure nos locations, nos
-									clients y trouve tous leurs comptes.", "Our mid-term vehicle rental program brings a breath of fresh air to an industry that has always done things the same way.
+							<?php lang("Notre programme de location de véhicule moyen terme amène une bouffée d’air frais dans une industrie qui est habituée à faire les choses de la même façon depuis toujours. Que ce soit pour un chantier à période déterminée, un besoin saisonnier, une nouvelle embauche ou simplement pour profiter de l’engagement limité et la flexibilité que procure nos locations, nos clients y trouvent tous leurs comptes.", "Our mid-term vehicle rental program brings a breath of fresh air to an industry that has always done things the same way.
 									Whether it is for a construction projects, a seasonal need, a new hire or even simply to take advantage of the limited commitment and flexibility provided by our rentals, our customers all find what they are looking for.
 									"); ?>
 						</p>
 						<br />
 						<p>
-							<?php lang("Fort de notre expérience dans les domaines
-									de la location journalière et de la location
-									commerciale long terme (Fleet) nous avons
-									identifié certains défis que vivent les
-									entreprises au niveau de leurs parc
-									automobiles. C’est pourquoi nous avons mis
-									sur pieds notre programme de location de
-									vehicule moyen terme adapté sur mesure à
-									chacun de nos clients.", "Based on our daily experience in the fields of medium to long term commercial rental (Fleet) services. We have identified certain challenges that companies face in terms of their fleets. This is why we have a tailor-made mid-term vehicle rental program adapted for each of our customers."); ?>
+							<?php lang("Fort de notre expérience dans les domaines de la location journalière et de la location commerciale à long terme (Fleet) nous avons identifié certains défis que vivent les entreprises au niveau de leurs parcs automobiles. C’est pourquoi, nous avons mis sur pied notre programme de location de véhicule moyen terme adapté sur mesure à chacun de nos clients.", "Based on our daily experience in the fields of medium to long term commercial rental (Fleet) services. We have identified certain challenges that companies face in terms of their fleets. This is why we have a tailor-made mid-term vehicle rental program adapted for each of our customers."); ?>
 						</p>
 					</div>
 					<div class="boite-grise">
 						<h2><?php lang("Pourquoi <span>Simpli-Cité ?</span>", "Why <span>Simpli-Cité ?</span>"); ?></h2>
 						<p>
-							<?php lang("Choisir Simpli-Cité c’est choisir la
-									flexibilité et la sécurité. L’industrie
-									automobile fait face à une nouvelle réalité
-									et les entreprises doivent s’adapter.
-									Maintenir un parc automobile permanent n’est
-									plus la solution efficace sur le long terme.
-									Avec la hausse des prix de l’essence et des
-									coûts d’entretiens il est plus important que
-									jamais de re voir la façon de faire.", "Choosing Simpli-Cité means choosing flexibility and security. The automotive industry is facing a new reality and businesses must adapt. Maintaining a permanent fleet of vehicles is no longer an effective solution in the long term. With rising gas prices and maintenance costs, it's more important than ever to rethink how things are done."); ?>
+							<?php lang("Choisir Simpli-Cité, c’est choisir la flexibilité et la sécurité. L’industrie automobile fait face à une nouvelle réalité et les entreprises doivent s’adapter. Maintenir un parc automobile permanent n’est plus la solution efficace sur le long terme. Avec la hausse des prix de l’essence et des coûts d'entretiens, il est plus important que jamais de revoir la façon de faire.", "Choosing Simpli-Cité means choosing flexibility and security. The automotive industry is facing a new reality and businesses must adapt. Maintaining a permanent fleet of vehicles is no longer an effective solution in the long term. With rising gas prices and maintenance costs, it's more important than ever to rethink how things are done."); ?>
 						</p>
 						<br />
 						<p>
-							<?php lang("Chez Simpli-Cité nous vous offrons la
-									possibilité d’utiliser des véhicules neufs
-									pour réaliser vos projets et de les
-									retourner une fois le projet terminé. Fini
-									les engagements sur plusieurs années sans
-									savoir quand seras le nouveau projet qui
-									nécessite un véhicule de travaille. Fini
-									également les frais d’entretien mécanique
-									élevés dû à un véhicule vieillissant et qui
-									n’est plus couvert par la garantie du
-									manufacturier. Avec nous vous n’aurez
-									souvent rien de plus à prévoir que les
-									changements d’huiles.", "At Simpli-Cité, we offer you the possibility of using new vehicles to carry out your projects and returning them once the project is completed. No more multi-year commitments without knowing when the new project will require a work vehicle. No more high mechanical maintenance costs due to an aging vehicle that is no longer covered by the manufacturer's warranty. With us, you will often have nothing more to plan for than an oil change."); ?>
+							<?php lang("Chez Simpli-Cité, nous vous offrons la possibilité d’utiliser des véhicules neufs pour réaliser vos projets et de les retourner une fois le projet terminé. Fini les engagements sur plusieurs années sans savoir quand sera le nouveau projet qui nécessite un véhicule de travail. Fini également les frais d’entretien mécanique élevés dû à un véhicule vieillissant et qui n’est plus couvert par la garantie du manufacturier. Avec nous, vous n’aurez souvent rien de plus à prévoir que les changements d’huiles.", "At Simpli-Cité, we offer you the possibility of using new vehicles to carry out your projects and returning them once the project is completed. No more multi-year commitments without knowing when the new project will require a work vehicle. No more high mechanical maintenance costs due to an aging vehicle that is no longer covered by the manufacturer's warranty. With us, you will often have nothing more to plan for than an oil change."); ?>
 						</p>
 						<br />
 						<p>
-							<?php lang("Vous pourrez également customiser vos
-									véhicules avec différents équipements pour
-									vos chantiers ou besoins technique pour vos
-									équipes sur le terrain. Notre service clés
-									en mains vous assureras d’avoir le bon
-									véhicule au bon moment avec les bons
-									équipements pour réaliser vos travaux.", "You can also customize your vehicles with different equipment for construction sites or the technical needs of your team in the field. 
+							<?php lang("Vous pourrez également customiser vos véhicules avec différents équipements pour vos chantiers ou besoins techniques pour vos équipes sur le terrain. Notre service clé en main vous assure d’avoir le bon véhicule au bon moment avec les bons équipements pour réaliser vos travaux.", "You can also customize your vehicles with different equipment for construction sites or the technical needs of your team in the field. 
 									Our turnkey service ensures you have the right vehicle at the right time with the right equipment to carry out your work.
 									"); ?>
 						</p>
 						<p>
-							<?php lang("Choisir Simpli-Cité c’est choisir la
-									tranquillité d’esprit.", "Choosing Simpli-Cité is to choose the peace of mind"); ?>
+							<?php lang("Choisir Simpli-Cité c’est choisir la tranquillité d’esprit.", "Choosing Simpli-Cité is to choose the peace of mind"); ?>
 						</p>
 						<div class="home-cont-croix">
 							<span></span>
@@ -236,12 +192,7 @@ include("./headerHome.php");
 					<div class="contenu">
 						<p class="first-p"><?php lang("Revente de véhicules", "Vehicle resale"); ?></p>
 						<p class="last-p">
-							<?php lang("Notre division Remarketing peux s’occupe
-									pour de revendre vos véhicules. Nous avons
-									plusieurs canaux de revente tant au Canada
-									qu’au États-Unis pour vous assurez d’avoir
-									le meilleur prix possible pour vos
-									véhicules.", "Our Remarketing division can take care of reselling your vehicles for you. We have several resale channels in both Canada and the United States to ensure you get the best possible price for your vehicles."); ?>
+							<?php lang("Notre division Remarketing peut s’occuper de revendre vos véhicules. Nous avons plusieurs canaux de revente tant au Canada qu’aux États-Unis pour vous assurer d’avoir le meilleur prix possible pour vos véhicules.", "Our Remarketing division can take care of reselling your vehicles for you. We have several resale channels in both Canada and the United States to ensure you get the best possible price for your vehicles."); ?>
 						</p>
 					</div>
 				</div>
