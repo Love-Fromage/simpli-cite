@@ -13,7 +13,7 @@ include("./header2.php");
 				lang('Véhicules', 'Vehicules');
 			}
 			if ($customer) {
-				lang('Nos Clients', 'Our customers');
+				lang('Nos Clients', 'Our clients');
 			}
 			if ($career) {
 				lang('Carrières', 'Careers');
