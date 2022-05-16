@@ -7,7 +7,21 @@ include("./header2.php");
 
 <head>
 	<link rel="shortcut icon" href="./images/270.286528372.ico" />
-	<title><?php lang('Véhicules', 'Vehicules'); ?></title>
+	<title><?php
+			if ($vehicules) {
+
+				lang('Véhicules', 'Vehicules');
+			}
+			if ($customer) {
+				lang('Nos Clients', 'Our customers');
+			}
+			if ($career) {
+				lang('Carrières', 'Careers');
+			}
+			if ($contact) {
+				lang('Contact', 'Contact');
+			}
+			?></title>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
