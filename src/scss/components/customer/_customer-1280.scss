@@ -155,6 +155,9 @@
 			margin-bottom: 100px;
 			#prev,
 			#next {
+				&:hover {
+					cursor: pointer;
+				}
 				@media screen and(max-width:1290px) {
 					width: 4vw;
 				}

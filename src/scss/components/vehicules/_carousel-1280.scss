@@ -277,6 +277,9 @@
 
 			justify-content: flex-start;
 			img {
+				&:hover {
+					cursor: pointer;
+				}
 				width: 5vw;
 				&:first-child {
 					transform: scaleX(-1);
