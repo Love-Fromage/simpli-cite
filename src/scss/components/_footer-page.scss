@@ -151,12 +151,13 @@
 			}
 		}
 		.cont-petit-lien {
-			margin-bottom: 50px;
+			margin-bottom: 0px;
 			.flex-t {
 				display: none;
 			}
 			.tablette {
-				display: none;
+				display: block;
+				margin-top: 50px;
 			}
 			.flex-mobile {
 				display: block;

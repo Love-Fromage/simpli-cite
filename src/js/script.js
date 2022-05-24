@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	const logoNavD = document.querySelector("#logo-nav-d");
 	const hamPain1 = document.querySelector("#pain1");
 	const hamPain2 = document.querySelector("#pain2");
+	// set;
 
 	let logoImg = logoNav.src.split("/").pop();
 	let logoImgD = logoNav.src.split("/").pop();

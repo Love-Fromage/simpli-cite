@@ -93,7 +93,7 @@
 			</div>
 		</div>
 		<div class="flex-mobile">
-			<img src="./images/simplicite-logo.svg" alt="logo-footer" onclick="gotoTop()" />
+
 			<div>
 				<a href="#"><?php lang('Mentions légales', 'Legal mentions'); ?></a> <span>|</span>
 				<a href="#"><?php lang('Politique de confidentialité', 'Privacy policy'); ?></a>
