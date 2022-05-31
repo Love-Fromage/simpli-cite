@@ -13,32 +13,64 @@ include("./header.php");
 			<div class="swiper-slide">
 				<div class="container">
 					<div class="carte carte1">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Pomerleau_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte2">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Borea_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte3">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Telecon_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte4">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Sanexen_gris.webp" alt="pomerleau" />
 					</div>
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="container">
 					<div class="carte carte1">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/NRJ_environnement_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte2">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Pavages_maska_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte3">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Jardins_cousineau_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte4">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Englobe_gris.webp" alt="pomerleau" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="carte carte1">
+						<img src="./images/WSP_gris.webp" alt="pomerleau" />
+					</div>
+					<div class="carte carte2">
+						<img src="./images/Alain Daigle_gris.webp" alt="pomerleau" />
+					</div>
+					<div class="carte carte3">
+						<img src="./images/Alstom_gris.webp" alt="pomerleau" />
+					</div>
+					<div class="carte carte4">
+						<img src="./images/Nordikeau_gris.webp" alt="pomerleau" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="carte carte1">
+						<img src="./images/Sopfeu_gris.webp" alt="pomerleau" />
+					</div>
+					<div class="carte carte2">
+						<img src="./images/AGF Acier_gris.webp" alt="pomerleau" />
+					</div>
+					<div class="carte carte3">
+						<img src="./images/Sig-nature_gris.webp" alt="pomerleau" />
+					</div>
+					<div class="carte carte4">
+						<!-- <img src="" alt="pomerleau" /> -->
 					</div>
 				</div>
 			</div>
@@ -51,66 +83,66 @@ include("./header.php");
 				<!-- contenu de la carte/slide -->
 				<div class="container">
 					<div class="carte carte1">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Pomerleau_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte2">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Borea_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte3">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Telecon_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte4">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Sanexen_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte5">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/NRJ_environnement_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte6">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Pavages_maska_gris.webp" alt="pomerleau" />
 					</div>
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="container">
 					<div class="carte carte1">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Jardins_cousineau_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte2">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Englobe_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte3">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/WSP_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte4">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Alain Daigle_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte5">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Alstom_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte6">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Nordikeau_gris.webp" alt="pomerleau" />
 					</div>
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div class="container">
 					<div class="carte carte1">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Sopfeu_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte2">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/AGF Acier_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte3">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<img src="./images/Sig-nature_gris.webp" alt="pomerleau" />
 					</div>
 					<div class="carte carte4">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<!-- <img src="./images/pomerleau.svg" alt="pomerleau" /> -->
 					</div>
 					<div class="carte carte5">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<!-- <img src="./images/pomerleau.svg" alt="pomerleau" /> -->
 					</div>
 					<div class="carte carte6">
-						<img src="./images/pomerleau.svg" alt="pomerleau" />
+						<!-- <img src="./images/pomerleau.svg" alt="pomerleau" /> -->
 					</div>
 				</div>
 			</div>
