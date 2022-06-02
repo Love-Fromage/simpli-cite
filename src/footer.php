@@ -177,6 +177,7 @@
 			var swiper = new Swiper(".swiper", {
 				spaceBetween: 10,
 				loop: true,
+				speed: 300,
 				navigation: {
 					nextEl: "#next",
 					prevEl: "#prev",
@@ -198,6 +199,10 @@
 			var swiper = new Swiper(".swiper2", {
 				// spaceBetween: 10,
 				loop: true,
+
+				speed: 800,
+
+
 				navigation: {
 					nextEl: "#next",
 					prevEl: "#prev",

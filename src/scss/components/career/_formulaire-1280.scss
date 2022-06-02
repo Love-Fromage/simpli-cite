@@ -1,51 +1,53 @@
 //version pour le desktop
-#cont-confirm {
-	position: absolute;
-	top: 250px;
-	background-color: #fff;
-	left: 30%;
-	padding: 2% 10%;
-	width: fit-content;
-	z-index: 1;
-	animation: nope ease-out 300ms forwards;
-	animation-delay: 5s;
-}
-.mail-sent {
-	display: block;
-	width: fit-content;
-	opacity: 1;
-	animation: mail ease-out 300ms forwards;
-	animation-delay: 5s;
-}
-@keyframes nope {
-	from {
-		position: absolute;
-		// top: 150px;
-		// left: 40vw;
-		z-index: 1;
-	}
-	to {
-		position: absolute;
-		// top: 150px;
-		// left: 40vw;
-		z-index: -1;
-	}
-}
 
-@keyframes mail {
-	0% {
-		display: block;
-		opacity: 1;
-	}
-	99% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-		display: none;
-	}
-}
 @media screen and(min-width:1280px) {
+	#cont-confirm {
+		position: absolute;
+		top: 250px;
+		background-color: #fff;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 2% 10%;
+		width: fit-content;
+		z-index: 1;
+		animation: nope ease-out 300ms forwards;
+		animation-delay: 5s;
+	}
+	.mail-sent {
+		display: block;
+		width: fit-content;
+		opacity: 1;
+		animation: mail ease-out 300ms forwards;
+		animation-delay: 5s;
+	}
+	@keyframes nope {
+		from {
+			position: absolute;
+			// top: 150px;
+			// left: 40vw;
+			z-index: 1;
+		}
+		to {
+			position: absolute;
+			// top: 150px;
+			// left: 40vw;
+			z-index: -1;
+		}
+	}
+
+	@keyframes mail {
+		0% {
+			display: block;
+			opacity: 1;
+		}
+		99% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+			display: none;
+		}
+	}
 	.formulaire {
 		background-image: url("../images/carr-form-bg-d.webp");
 		background-size: 80%;
@@ -182,12 +184,13 @@
 						letter-spacing: 4%;
 						padding-top: 20px;
 						padding-bottom: 20px;
-						z-index: 20;
+						z-index: 15;
+						cursor: pointer;
 						transition: all $transition-len
 							cubic-bezier($transition-bezier);
 						&:hover {
 							color: white;
-							z-index: 5;
+							z-index: 15;
 							text-decoration: none;
 						}
 						&::before,
@@ -217,9 +220,10 @@
 						&:hover::after {
 							width: 100%;
 							z-index: -1;
+							cursor: pointer;
 						}
 						&::after {
-							left: 00px;
+							left: 0px;
 						}
 					}
 				}

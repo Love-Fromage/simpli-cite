@@ -76,7 +76,7 @@ if (empty($visitor_email) || empty($name) || empty($phone)) {
 <?php if (isset($mailEnvoyer)) : ?>
 	<div id="cont-confirm">
 		<?php echo $mailEnvoyer; ?>
-		<?php lang('Merci de nous avoir contactés.', 'Thank you for contacting us.'); ?>
+		<?php lang('Votre candidature a été envoyée.', 'Your application has been sent.'); ?>
 		</p>
 	</div>
 <?php endif ?>

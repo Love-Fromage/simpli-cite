@@ -231,7 +231,7 @@
 					color: $black;
 					text-transform: uppercase;
 					text-overflow: ellipsis;
-					white-space: nowrap;
+					// white-space: nowrap;
 					br {
 						display: none;
 						&:nth-child(2) {
