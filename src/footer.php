@@ -156,7 +156,7 @@
 					if (swiper.activeIndex > 0) {
 						prev.classList.remove("f-s");
 					}
-					if (swiper.activeIndex <= 2) {
+					if (swiper.activeIndex <= 4) {
 						next.classList.remove("f-s");
 					}
 				},

@@ -224,6 +224,9 @@
 		@media screen and(min-width:1280px) {
 			margin-top: -350px;
 		}
+		@media screen and(max-height:900px) {
+			margin-top: -300px;
+		}
 	}
 	footer {
 		width: 100%;
