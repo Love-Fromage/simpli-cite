@@ -18,12 +18,18 @@ include('header.php');
 </div>
 </div>
 <section class="veh-carousel">
-    <div class="cont-nav-carou">
+    <div class="cont-nav-carou cont-nav-carou2">
         <img src="./images/fleche-carou.svg" alt="prev" class="f-s" id="prev" />
         <img src="./images/fleche-carou.svg" alt="next" class="" id="next" />
     </div>
 
 </section>
+<section class="promoContact">
+    <p>pour toute <span>question</span> ou <br><span>renseignement</span> : </p>
+
+
+</section>
+<a href="tel:4509071596" class="promoNumber">(450) 907-1596</a>
 
 
 

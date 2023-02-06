@@ -58,4 +58,44 @@
 
     }
 
+    .cont-nav-carou2 {
+        margin-bottom: 60px !important;
+    }
+
+    .promoContact {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        background-color: #ebedee;
+
+        p {
+            width: rem(235);
+            margin-left: rem(40);
+            margin-right: auto;
+            text-transform: uppercase;
+            color: $black;
+            font-weight: 800;
+
+            span {
+                color: $blue;
+            }
+        }
+    }
+
+    .promoNumber {
+        display: flex;
+        width: rem(280);
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 2px solid $blue;
+        margin-top: -20px;
+        text-decoration: none;
+        color: $black;
+        font-weight: 500;
+        margin-bottom: 80px;
+    }
 }
