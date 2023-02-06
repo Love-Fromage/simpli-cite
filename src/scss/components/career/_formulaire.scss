@@ -1,4 +1,5 @@
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
+
 	//section formulaire
 	#cont-confirm {
 		position: absolute;
@@ -13,6 +14,7 @@
 		animation: nope ease-out 300ms forwards;
 		animation-delay: 5s;
 	}
+
 	.mail-sent {
 		display: block;
 		width: fit-content;
@@ -22,6 +24,7 @@
 		animation: mail ease-out 300ms forwards;
 		animation-delay: 5s;
 	}
+
 	@keyframes nope {
 		from {
 			position: absolute;
@@ -29,6 +32,7 @@
 			// left: 40vw;
 			z-index: 1;
 		}
+
 		to {
 			position: absolute;
 			// top: 150px;
@@ -42,35 +46,42 @@
 			display: block;
 			opacity: 1;
 		}
+
 		99% {
 			opacity: 0;
 		}
+
 		100% {
 			opacity: 0;
 			display: none;
 		}
 	}
+
 	.formulaire {
 		background-image: url("../images/last-card-bg-m.webp");
 		background-size: 120%;
 		background-position: -47vw 100%;
 		background-repeat: no-repeat;
+
 		.carr-para-form {
 			width: 85%;
 			margin-left: 10vw;
 			// margin-left: auto;
 			margin-right: auto;
+
 			p {
 				width: inherit;
 				font-family: $ff-poppins;
 				font-weight: $fw-regular;
 				font-size: rem(12);
 				color: #16191b;
+
 				&:last-child {
 					margin-bottom: 70px;
 				}
 			}
 		}
+
 		.carr-cont-form {
 			width: 85%;
 			margin-left: 10vw;
@@ -79,6 +90,7 @@
 			form {
 				display: flex;
 				flex-direction: column;
+
 				label {
 					font-family: $ff-poppins;
 					font-weight: $fw-bold;
@@ -87,6 +99,7 @@
 					line-height: rem(24);
 					color: $black;
 				}
+
 				input,
 				textarea {
 					width: 90%;
@@ -97,9 +110,11 @@
 					margin-bottom: 30px;
 					resize: none;
 				}
+
 				textarea {
 					height: 130px;
 				}
+
 				.carr-cont-last-bit {
 					//might need this but not working properly
 					// background-image: url("../images/last-card-bg-m.webp");
@@ -107,12 +122,14 @@
 					// background-position: 90% 50%;
 					margin-bottom: 100px;
 				}
+
 				.carr-last-bit {
 					.fichier1 {
 						position: absolute;
 						top: 85px;
 						left: 0%;
 					}
+
 					p {
 						font-family: $ff-poppins;
 						font-weight: $fw-regular;
@@ -120,6 +137,7 @@
 						line-height: rem(26);
 						color: #16191b;
 					}
+
 					#file-upload-cv,
 					#file-upload-letter {
 						display: block;
@@ -127,6 +145,7 @@
 						border: none;
 						width: 1px;
 					}
+
 					.file-label {
 						display: flex;
 						justify-content: center;
@@ -142,6 +161,7 @@
 						letter-spacing: 4%;
 						margin-bottom: 50px;
 					}
+
 					.carr-send-btn {
 						display: block;
 
@@ -166,11 +186,11 @@
 }
 
 //version pour la tablette
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
 	//content
 }
 
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	//content
 }

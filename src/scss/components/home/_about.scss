@@ -1,11 +1,13 @@
 //version mobile ici
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
+
 	//content
 	.about {
 		.home-cont-about-title {
 			display: flex;
 			justify-content: space-between;
 			margin-top: 2vh;
+
 			span {
 				display: block;
 				background-color: $blue;
@@ -16,6 +18,7 @@
 				margin-top: auto;
 				margin-bottom: auto;
 			}
+
 			h1 {
 				font-family: $ff-raleway;
 				font-weight: $fw-light;
@@ -27,12 +30,15 @@
 				margin-right: 10vw;
 			}
 		}
+
 		.home-cont-about {
 			// height: 170vh;
 			position: relative;
+
 			.home-about-para-d-2 {
 				display: none;
 			}
+
 			.home-about-para-d {
 				.col-right {
 					img {
@@ -40,6 +46,7 @@
 					}
 				}
 			}
+
 			.col-left {
 				p {
 					font-family: $ff-poppins;
@@ -50,18 +57,21 @@
 					margin-left: 10vw;
 					margin-right: auto;
 					color: $black;
+
 					&:last-child {
 						margin-bottom: 5vh;
 					}
 				}
 			}
+
 			.col-droite {
 				position: absolute;
 				width: 9.3vw;
 				z-index: -1;
 				top: 4px;
+
 				// height: 500vh;
-				@media screen and(max-width:590px) {
+				@media screen and (max-width:590px) {
 					width: 9.5vw;
 				}
 
@@ -70,22 +80,27 @@
 				height: 250vh;
 				background-color: $gray;
 			}
+
 			.col-right {
 				// overflow-x: hidden;
 				position: relative;
 				//height: 850px;
 				margin-bottom: 150px;
-				@media screen and(min-height:896px) {
+
+				@media screen and (min-height:896px) {
 					margin-bottom: 0px;
 				}
+
 				.cont-img {
 					overflow: hidden;
+
 					img {
 						// display: block;
 						// width: 90%;
 						margin-left: 10vw;
 					}
 				}
+
 				.home-overlay {
 					position: absolute;
 					top: 70px;
@@ -93,6 +108,7 @@
 					padding-bottom: 5vh;
 					width: 90%;
 					height: fit-content;
+
 					h2 {
 						font-family: $ff-raleway;
 						font-weight: $fw-extra-bold;
@@ -106,6 +122,7 @@
 							color: $blue;
 						}
 					}
+
 					p {
 						margin-left: 10vw;
 						width: 80%;
@@ -123,6 +140,7 @@
 						top: auto;
 						bottom: 0vh;
 						left: 84.2vw;
+
 						span {
 							display: block;
 							background-color: $blue;
@@ -134,6 +152,7 @@
 								//test
 								transform: rotate(90deg) translateX(2px);
 							}
+
 							&:last-child {
 								//test
 								position: relative;
@@ -143,35 +162,42 @@
 				}
 			}
 		}
+
 		.home-cont-voiture {
 			position: relative;
 
 			margin-top: 332px;
-			@media screen and(max-height:740px) {
+
+			@media screen and (max-height:740px) {
 				margin-top: 280px;
 			}
 
-			@media screen and(max-width:372px) {
+			@media screen and (max-width:372px) {
 				margin-top: 310px;
 			}
-			@media screen and(max-height:812px) {
+
+			@media screen and (max-height:812px) {
 				margin-top: 450px;
 			}
 
 			.voiture-m {
 				overflow-x: hidden;
+
 				img {
 					display: block;
 					max-width: 100%;
 					margin-left: auto;
 					margin-right: -20vw;
 				}
+
 				position: relative;
 			}
+
 			.col-left {
 				display: flex;
 				width: 100%;
 				position: relative;
+
 				h2 {
 					position: absolute;
 					font-family: $ff-raleway;
@@ -182,6 +208,7 @@
 					display: inline-block;
 					margin-left: 10vw;
 				}
+
 				span {
 					position: absolute;
 					display: block;
@@ -193,12 +220,15 @@
 				}
 			}
 		}
+
 		.home-cont-cartes {
 			margin-top: 150px;
 			display: flex;
 			flex-direction: column;
+
 			.carte {
 				height: fit-content;
+
 				.header {
 					height: 60px;
 					background-color: $blue;
@@ -206,18 +236,22 @@
 					display: flex;
 					justify-content: flex-end;
 					align-items: center;
+
 					img {
 						width: 10vw;
 						max-height: 48px;
 						margin-right: 2vw;
 					}
 				}
+
 				.contenu {
 					margin-top: 30px;
 					margin-bottom: 30px;
+
 					p {
 						width: 60%;
 					}
+
 					.first-p {
 						color: $black;
 						font-family: $ff-poppins;
@@ -227,6 +261,7 @@
 						margin-left: 10vw;
 						margin-bottom: 5px;
 					}
+
 					.last-p {
 						color: $black;
 						font-family: $ff-poppins;
@@ -240,9 +275,11 @@
 					}
 				}
 			}
+
 			.last-card {
 				background-image: url("../images/last-card-bg-m.webp");
 				background-position: 115% 50%;
+
 				.contenu {
 					margin-bottom: 100px;
 				}
@@ -254,11 +291,11 @@
 //version tablette ici
 //le code pour la version tablette est dans un autre fichier
 // voir /src/scss/components/home/_about-768.scss
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
 	//content
 }
 
 //version desktop ici
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	//content
 }

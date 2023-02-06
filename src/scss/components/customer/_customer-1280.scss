@@ -1,5 +1,5 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	.cus-hero {
 		background-image: url("../images/cus-bg-d.webp");
 		background-size: 100%;
@@ -11,6 +11,7 @@
 		margin-right: auto;
 		height: 50vh;
 	}
+
 	section.cus-carousel {
 		.cus-cont-title {
 			width: 100%;
@@ -24,6 +25,7 @@
 				height: 4px;
 				background-color: $blue;
 			}
+
 			h1 {
 				color: $blue;
 				font-family: $ff-raleway;
@@ -36,6 +38,7 @@
 				white-space: nowrap;
 			}
 		}
+
 		.cus-cont-title-en {
 			width: 100%;
 			display: flex;
@@ -44,20 +47,24 @@
 			justify-content: space-between;
 
 			span {
+
 				// width: 60vw;
-				@media screen and(min-width:1280px) {
+				@media screen and (min-width:1280px) {
 					width: 55vw;
 				}
-				@media screen and(min-width:1600px) {
+
+				@media screen and (min-width:1600px) {
 					width: 60vw;
 				}
-				// @media screen and(min-width:600px) {
+
+				// @media screen and (min-width:600px) {
 				// 	width: 55vw;
 				// }
 
 				height: 4px;
 				background-color: $blue;
 			}
+
 			h1 {
 				color: $blue;
 				font-family: $ff-raleway;
@@ -70,12 +77,15 @@
 				white-space: nowrap;
 			}
 		}
+
 		.cont-slider-m {
 			display: none;
 		}
+
 		.swiper {
 			display: none;
 		}
+
 		.cont-slider-d {
 			overflow: hidden;
 			// overflow-y: visible;
@@ -83,31 +93,37 @@
 			width: 80vw;
 			margin: auto;
 			margin-top: 30px;
+
 			.slides {
 				display: -webkit-box;
 				width: 100%;
+
 				.cont-slide {
 					width: 100%;
 					height: fit-content;
 					position: relative;
 					margin-right: 10px;
 					margin-bottom: 155px;
+
 					.container {
 						display: grid;
 						width: 100%;
 						grid-template-columns: 1fr 1fr 1fr;
 						grid-template-rows: 1f 1fr;
 						gap: 200px 15vw;
+
 						.carte {
 							img {
 								height: auto;
 							}
+
 							// background-color: red;
 						}
 					}
 				}
 			}
 		}
+
 		.swiper2 {
 			overflow: hidden;
 			// overflow-y: visible;
@@ -115,9 +131,11 @@
 			width: 80vw;
 			margin: auto;
 			margin-top: 30px;
+
 			.swiper-wrapper {
 				display: -webkit-box;
 				width: 100%;
+
 				.swiper-slide {
 					width: 100%;
 					height: fit-content;
@@ -125,6 +143,7 @@
 					margin-right: 10px;
 					margin-top: 50px;
 					margin-bottom: 155px;
+
 					.container {
 						display: grid;
 						width: 100%;
@@ -132,12 +151,14 @@
 						grid-template-columns: 1fr 1fr 1fr;
 						grid-template-rows: 1f 1fr;
 						gap: 75px 10vw;
+
 						.carte {
 							img {
 								height: auto;
 								display: block;
 								width: 12vw;
 							}
+
 							// background-color: red;
 						}
 					}
@@ -153,34 +174,42 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 100px;
+
 			#prev,
 			#next {
 				&:hover {
 					cursor: pointer;
 				}
-				@media screen and(max-width:1290px) {
+
+				@media screen and (max-width:1290px) {
 					width: 4vw;
 				}
+
 				width: 3vw;
 			}
+
 			span {
 				background-color: $gray;
 				width: 40%;
 				height: 4px;
+
 				&:first-child {
 					display: block;
 					margin-right: auto;
 					margin-left: 0;
 				}
+
 				&:last-child {
 					display: block;
 					margin-left: auto;
 					margin-right: 0;
 				}
 			}
+
 			.cont-fleche-carou {
 				display: flex;
 				margin-bottom: 100px;
+
 				// width: 70%;
 				// justify-content: space-between;
 				img {

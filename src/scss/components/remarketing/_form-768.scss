@@ -1,8 +1,10 @@
 //version tablette du formulaire
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
+
 	//content
 	.leform {
 		width: 75%;
+
 		// margin-left: 5vw;
 		label {
 			text-transform: uppercase;
@@ -12,11 +14,13 @@
 			font-size: rem(12);
 			line-height: rem(24);
 		}
+
 		.label-n {
 			display: inline-block;
 			margin-top: 25px;
 			// background-color: red;
 		}
+
 		input,
 		select {
 			width: 100%;
@@ -27,10 +31,12 @@
 			border: none;
 			border-right: solid 3px $blue;
 		}
+
 		.select-selected {
 			// -webkit-appearance: none;
 			// background-color: red;
 		}
+
 		.select-selected:after {
 			position: absolute;
 			content: "";
@@ -41,6 +47,7 @@
 			border: 6px solid transparent;
 			border-color: #fff transparent transparent transparent;
 		}
+
 		.cont-radio {
 			display: flex;
 			flex-direction: column;
@@ -48,6 +55,7 @@
 			.cont-radio-1,
 			.cont-radio-2 {
 				display: flex;
+
 				.container {
 					display: flex;
 					position: relative;
@@ -83,12 +91,12 @@
 				}
 
 				/* On mouse-over, add a grey background color */
-				.container:hover input ~ .checkmark {
+				.container:hover input~.checkmark {
 					background-color: #ccc;
 				}
 
 				/* When the radio button is checked, add a blue background */
-				.container input:checked ~ .checkmark {
+				.container input:checked~.checkmark {
 					background-color: #2196f3;
 				}
 
@@ -100,9 +108,10 @@
 				}
 
 				/* Show the indicator (dot/circle) when checked */
-				.container input:checked ~ .checkmark:after {
+				.container input:checked~.checkmark:after {
 					display: block;
 				}
+
 				.container .checkmark:after {
 					top: 5px;
 					left: 5px;
@@ -114,12 +123,14 @@
 
 				/* Style the indicator (dot/circle) */
 			}
+
 			[type="checkbox"] {
 				width: fit-content;
 				text-align: left;
 				border: none;
 				background-color: red;
 			}
+
 			.radio {
 				text-transform: none;
 
@@ -133,9 +144,11 @@
 			.info-rm-supp {
 				display: flex;
 				flex-direction: column;
+
 				label {
 					margin-bottom: 20px;
 				}
+
 				textarea {
 					width: 100%;
 					border-radius: 0;
@@ -147,8 +160,10 @@
 					resize: none;
 				}
 			}
+
 			p.partie-2-p {
 				margin-right: 0;
+
 				&:nth-child(2) {
 					width: 100%;
 					margin-left: 0;
@@ -159,13 +174,16 @@
 					line-height: normal;
 				}
 			}
+
 			#num-id {
 				margin-bottom: 35px;
 			}
+
 			select {
 				margin-bottom: 55px;
 			}
 		}
+
 		$transition-bezier: 1, 0, 0, 1;
 		$transition-len: 0.35s;
 
@@ -179,6 +197,7 @@
 			height: 60px;
 			margin-bottom: 30px;
 		}
+
 		padding-bottom: 50px;
 		margin-bottom: 0;
 	}

@@ -1,5 +1,5 @@
 //version mobile ici
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
 	.veh-hero {
 		background-image: url("../images/vehi-hero.webp");
 		background-repeat: no-repeat;
@@ -22,6 +22,7 @@
 			// justify-content: center;
 			padding-left: 10vw;
 			background-color: $gray;
+
 			h3 {
 				width: 60%;
 				font-family: $ff-raleway;
@@ -32,16 +33,19 @@
 				margin-top: 40px;
 
 				text-transform: uppercase;
-				& > span {
+
+				&>span {
 					color: $blue;
 				}
 			}
+
 			.veh-sep {
 				background-color: rgba(0, 0, 0, 0.2);
 				width: 90%;
 				height: 2px;
 			}
 		}
+
 		div.veh-btn-contact {
 			display: flex;
 			width: 80%;
@@ -70,11 +74,11 @@
 }
 
 //version tablette ici
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
 	//content
 }
 
 //version desktop ici
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	//content
 }

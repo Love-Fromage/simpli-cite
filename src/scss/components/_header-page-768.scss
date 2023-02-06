@@ -1,8 +1,9 @@
 //version pour la tablette ici
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
 	.lang-switch {
 		display: none;
 	}
+
 	//content
 	h1,
 	h2,
@@ -11,6 +12,7 @@
 		font-size: rem(50);
 		// margin-top: 50vh;
 	}
+
 	.bg-home {
 		// overflow: hidden;
 		background-image: url("../images/bg-road-d.webp");
@@ -20,16 +22,20 @@
 		width: 100%;
 		height: 100vh;
 	}
+
 	header {
 		width: 100%;
 		z-index: 10;
+
 		nav {
 			z-index: 5;
 			height: 10vh;
+
 			// position: sticky;
 			.nav-d {
 				display: none;
 			}
+
 			.nav-m,
 			.cont-m {
 				display: flex;
@@ -45,6 +51,7 @@
 				height: 12vh;
 				// top: 10vh;
 				width: 100%;
+
 				// margin-top: 2vh;
 				img {
 					// margin-top: auto;
@@ -54,54 +61,67 @@
 					height: auto;
 					// filter: blur(-5px);
 				}
+
 				.animate-hamOn1 {
 					animation: on1 forwards ease 500ms;
 				}
+
 				.animate-hamOn2 {
 					animation: on2 forwards ease 500ms;
 				}
+
 				.animate-hamOff1 {
 					animation: off1 forwards ease 500ms;
 				}
+
 				.animate-hamOff2 {
 					animation: off2 forwards ease 500ms;
 				}
+
 				@keyframes on1 {
 					0% {
 						top: 0px;
 						transform: rotate(0deg);
 					}
+
 					50% {
 						// background-color: red;
 						top: 10px;
 						transform: rotate(0deg);
 					}
+
 					90% {
 						top: 10px;
 					}
+
 					100% {
 						top: 10px;
 						transform: rotate(45deg) translateY(-2.5px);
 					}
 				}
+
 				@keyframes on2 {
 					0% {
 						top: 0px;
 						transform: rotate(0deg);
 					}
+
 					50% {
 						// background-color: red;
 						top: -5px;
 						transform: rotate(0deg);
 					}
+
 					90% {
 						top: -5px;
 					}
+
 					100% {
 						top: -5px;
 						transform: rotate(-45deg) translateY(2.5px);
 					}
 				}
+
 				@keyframes off1 {
 					0% {
 						top: 10px;
@@ -124,6 +144,7 @@
 						// transform: rotate(0deg) translateY(0px);
 					}
 				}
+
 				@keyframes off2 {
 					0% {
 						top: -5px;
@@ -146,6 +167,7 @@
 						// transform: rotate(0deg) translateY(0px);
 					}
 				}
+
 				.cont-ham {
 					// display: block;
 					width: 30px;
@@ -161,10 +183,12 @@
 						height: 2px;
 						background-color: white;
 						position: relative;
+
 						&:first-child {
 							margin-bottom: 10px;
 						}
 					}
+
 					.pain2 {
 						background-color: $blue;
 					}
@@ -175,10 +199,12 @@
 			.toggle-off {
 				display: none;
 			}
+
 			.blanc-nav {
 				// width: 99%;
 				background-color: white;
 			}
+
 			.box {
 				box-shadow: 0 2px rgba($color: #000000, $alpha: 0.1);
 			}
@@ -195,6 +221,7 @@
 				overflow: hidden;
 				border: none;
 				z-index: 10;
+
 				.lang {
 					font-weight: $fw-extra-bold;
 					font-family: $ff-raleway;
@@ -211,9 +238,11 @@
 					// left: 10vw;
 					bottom: 0;
 				}
+
 				nav {
 					height: fit-content;
 					margin-top: 10vh;
+
 					// margin-bottom: 80%;
 					ul {
 						//margin-top: 5vh;
@@ -230,46 +259,54 @@
 							position: relative;
 							margin-bottom: 10px;
 							text-transform: uppercase;
+
 							&:nth-child(1) {
 								left: 100%;
 								opacity: 0;
 								animation: slideIn forwards ease $slideS;
 								animation-delay: 500ms;
 							}
+
 							&:nth-child(2) {
 								left: 100%;
 								opacity: 0;
 								animation: slideIn forwards ease $slideS;
 								animation-delay: 650ms;
 							}
+
 							&:nth-child(3) {
 								left: 100%;
 								opacity: 0;
 								animation: slideIn forwards ease $slideS;
 								animation-delay: 800ms;
 							}
+
 							&:nth-child(4) {
 								left: 100%;
 								opacity: 0;
 								animation: slideIn forwards ease $slideS;
 								animation-delay: 950ms;
 							}
+
 							&:nth-child(5) {
 								left: 100%;
 								opacity: 0;
 								animation: slideIn forwards ease $slideS;
 								animation-delay: 1100ms;
 							}
+
 							@keyframes slideIn {
 								0% {
 									left: 100%;
 									opacity: 0;
 								}
+
 								100% {
 									left: 0;
 									opacity: 1;
 								}
 							}
+
 							a {
 								letter-spacing: 1%;
 								color: $black;
@@ -278,6 +315,7 @@
 								font-weight: $fw-medium;
 							}
 						}
+
 						.activePage {
 							a {
 								color: $blue;

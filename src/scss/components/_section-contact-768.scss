@@ -1,5 +1,6 @@
 //version pour la tablette
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
+
 	//content
 	.contact {
 		background-color: $gray;
@@ -7,14 +8,17 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 90px;
+
 		.carte {
 			padding-top: 50px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			&:last-child {
 				padding-bottom: 100px;
 			}
+
 			h1 {
 				font-family: $ff-raleway;
 				font-weight: $fw-extra-bold;
@@ -22,6 +26,7 @@
 				line-height: rem(40);
 				text-align: center;
 			}
+
 			p {
 				font-family: $ff-raleway;
 				font-weight: $fw-medium;
@@ -29,6 +34,7 @@
 				line-height: rem(40);
 				color: $black;
 			}
+
 			a {
 				display: flex;
 				justify-content: center;
@@ -43,6 +49,7 @@
 				font-size: rem(12);
 			}
 		}
+
 		.separator {
 			display: block;
 			margin-left: auto;

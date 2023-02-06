@@ -1,5 +1,6 @@
 //version pour la tablette
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
+
 	//contcjhgvjhgv
 	.veh-hero {
 		background-image: url("../images/vehi-hero.webp");
@@ -11,8 +12,10 @@
 		margin-right: auto;
 		height: 25vh;
 	}
+
 	section.veh-extra {
 		margin-top: 100px;
+
 		.veh-cont-gris {
 			display: flex;
 			flex-direction: column;
@@ -23,6 +26,7 @@
 			// justify-content: center;
 			padding-left: 10vw;
 			background-color: $gray;
+
 			h3 {
 				width: 80%;
 				font-family: $ff-raleway;
@@ -33,16 +37,19 @@
 				margin-top: 70px;
 
 				text-transform: uppercase;
-				& > span {
+
+				&>span {
 					color: $blue;
 				}
 			}
+
 			.veh-sep {
 				background-color: rgba(0, 0, 0, 0.2);
 				width: 90%;
 				height: 2px;
 			}
 		}
+
 		div.veh-btn-contact {
 			display: flex;
 			width: 50%;

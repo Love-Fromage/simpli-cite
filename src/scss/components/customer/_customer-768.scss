@@ -1,5 +1,6 @@
 //version pour la tablette
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
+
 	//content
 	.cus-hero {
 		background-image: url("../images/customer-bg.webp");
@@ -11,10 +12,12 @@
 		margin-right: auto;
 		height: 25vh;
 	}
+
 	section.cus-carousel {
 		.cont-slider-d {
 			display: none;
 		}
+
 		.cus-cont-title {
 			width: 100%;
 			display: flex;
@@ -26,6 +29,7 @@
 				height: 2px;
 				background-color: $blue;
 			}
+
 			h1 {
 				color: $blue;
 				font-family: $ff-raleway;
@@ -35,6 +39,7 @@
 				margin-left: 5vw;
 			}
 		}
+
 		.cus-cont-title-en {
 			width: 100%;
 			display: flex;
@@ -43,18 +48,22 @@
 
 			span {
 				width: 45vw;
-				@media screen and(min-width:900px) {
+
+				@media screen and (min-width:900px) {
 					width: 50vw;
 				}
-				@media screen and(min-width:1100px) {
+
+				@media screen and (min-width:1100px) {
 					width: 55vw;
 				}
-				// @media screen and(min-width:600px) {
+
+				// @media screen and (min-width:600px) {
 				// 	width: 55vw;
 				// }
 				height: 2px;
 				background-color: $blue;
 			}
+
 			h1 {
 				color: $blue;
 				font-family: $ff-raleway;
@@ -67,6 +76,7 @@
 				white-space: nowrap;
 			}
 		}
+
 		.cont-slider-m {
 			overflow: hidden;
 			// overflow-y: visible;
@@ -74,34 +84,41 @@
 			width: 70vw;
 			margin: auto;
 			margin-top: 30px;
+
 			.slides {
 				display: flex;
 				width: 100vw;
+
 				.cont-slide {
 					width: 70vw;
 					height: fit-content;
 					position: relative;
 					margin-right: 10px;
 					margin-bottom: 155px;
+
 					.container {
 						display: grid;
 						width: 70vw;
 						grid-template-columns: 1fr 1fr;
 						grid-template-rows: 1fr 1fr;
 						gap: 170px 70px;
+
 						.carte {
 							img {
 								height: auto;
 							}
+
 							// background-color: red;
 						}
 					}
 				}
 			}
 		}
+
 		.swiper2 {
 			display: none;
 		}
+
 		.swiper {
 			overflow: hidden;
 			// overflow-y: visible;
@@ -110,58 +127,70 @@
 			margin: auto;
 			margin-top: 100px;
 			margin-bottom: 70px;
+
 			.swiper-wrapper {
 				display: flex;
 				width: 100vw;
+
 				.swiper-slide {
 					width: 70vw;
 					height: fit-content;
 					position: relative;
 					margin-right: 10px;
 					margin-bottom: 75px;
+
 					.container {
 						display: grid;
 						width: 70vw;
 						grid-template-columns: 1fr 1fr;
 						grid-template-rows: 1fr 1fr;
 						gap: 30px 70px;
+
 						.carte {
 							img {
 								height: auto;
 							}
+
 							// background-color: red;
 						}
 					}
 				}
 			}
 		}
+
 		.cont-nav-carou {
 			width: 100vw;
 			display: flex;
 			margin-left: 0;
 			margin-bottom: 100px;
+
 			#prev,
 			#next {
 				width: 10vw;
 			}
+
 			span {
 				background-color: $gray;
 				width: 25vw;
 				height: 4px;
+
 				&:first-child {
 					display: block;
 					margin-right: auto;
 					margin-left: 0;
 				}
+
 				&:last-child {
 					display: block;
 					margin-left: auto;
 					margin-right: 0;
 				}
 			}
+
 			.cont-fleche-carou {
 				display: flex;
 				margin-bottom: 100px;
+
 				// width: 70%;
 				// justify-content: space-between;
 				img {

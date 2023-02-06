@@ -1,5 +1,5 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	.carr-actual-content {
 		.chapeau {
 			display: none;
@@ -8,6 +8,7 @@
 			background-color: white;
 			height: 90px;
 		}
+
 		// padding-top: 90px;
 		background-color: $gray;
 		margin-left: auto;
@@ -17,12 +18,14 @@
 		position: absolute;
 		left: 100%;
 		right: 0vw;
+
 		img {
 			max-width: 100%;
 			display: block;
 			position: relative;
 			right: 0;
 		}
+
 		.carr-cont-cpt {
 			// margin-left: auto;
 			// margin-right: auto;
@@ -41,6 +44,7 @@
 				margin-left: 3vw;
 				margin-right: auto;
 			}
+
 			p {
 				margin-left: 3vw;
 				margin-top: 15px;
@@ -50,10 +54,12 @@
 				line-height: rem(26);
 				color: #16191b;
 				width: inherit;
+
 				&:last-child {
 					padding-bottom: 50px;
 				}
 			}
+
 			.ligne-dotted {
 				display: block;
 				width: 90%;

@@ -1,6 +1,6 @@
 //version pour le desktop
 
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	#cont-confirm {
 		position: absolute;
 		top: 250px;
@@ -13,6 +13,7 @@
 		animation: nope ease-out 300ms forwards;
 		animation-delay: 5s;
 	}
+
 	.mail-sent {
 		display: block;
 		width: fit-content;
@@ -20,6 +21,7 @@
 		animation: mail ease-out 300ms forwards;
 		animation-delay: 5s;
 	}
+
 	@keyframes nope {
 		from {
 			position: absolute;
@@ -27,6 +29,7 @@
 			// left: 40vw;
 			z-index: 1;
 		}
+
 		to {
 			position: absolute;
 			// top: 150px;
@@ -40,26 +43,31 @@
 			display: block;
 			opacity: 1;
 		}
+
 		99% {
 			opacity: 0;
 		}
+
 		100% {
 			opacity: 0;
 			display: none;
 		}
 	}
+
 	.formulaire {
 		background-image: url("../images/carr-form-bg-d.webp");
 		background-size: 80%;
 		background-position: -30vw 100%;
 		background-repeat: no-repeat;
 		height: 1305px;
+
 		.carr-para-form {
 			width: 70%;
 			margin-left: 5vw;
 			// margin-left: auto;
 			margin-right: auto;
 			margin-top: 550px;
+
 			p {
 				width: inherit;
 				font-family: $ff-poppins;
@@ -67,11 +75,13 @@
 				font-size: rem(16);
 				line-height: rem(26);
 				color: #16191b;
+
 				&:last-child {
 					margin-bottom: 70px;
 				}
 			}
 		}
+
 		.carr-cont-form {
 			width: 85%;
 			margin-left: 5vw;
@@ -80,6 +90,7 @@
 			form {
 				display: flex;
 				flex-direction: column;
+
 				label {
 					font-family: $ff-poppins;
 					font-weight: $fw-bold;
@@ -88,6 +99,7 @@
 					line-height: rem(24);
 					color: $black;
 				}
+
 				input,
 				textarea {
 					width: 60%;
@@ -99,9 +111,11 @@
 					margin-bottom: 30px;
 					resize: none;
 				}
+
 				textarea {
 					height: 130px;
 				}
+
 				.carr-cont-last-bit {
 					//might need this but not working properly
 					// background-image: url("../images/last-card-bg-m.webp");
@@ -109,23 +123,29 @@
 					// background-position: 90% 50%;
 					margin-bottom: 100px;
 				}
+
 				.carr-last-bit {
 					.carr-last-bit-t {
 						display: block;
+
 						div {
 							display: flex;
 							justify-content: space-between;
 							align-items: center;
 							height: 65px;
+
 							&:last-child {
 								margin-bottom: 50px;
 							}
 						}
+
 						width: 60%;
+
 						p {
 							width: 100%;
 							font-size: rem(12);
 						}
+
 						.file-label {
 							position: relative;
 							top: 20px;
@@ -133,6 +153,7 @@
 							cursor: pointer;
 						}
 					}
+
 					p {
 						font-family: $ff-poppins;
 						font-weight: $fw-regular;
@@ -140,6 +161,7 @@
 						line-height: rem(26);
 						color: #16191b;
 					}
+
 					#file-upload-cv,
 					#file-upload-letter {
 						display: block;
@@ -164,9 +186,11 @@
 						letter-spacing: 4%;
 						margin-bottom: 50px;
 					}
+
 					$transition-bezier: 1, 0, 0, 1;
 					$transition-len: 0.35s;
 					$pink: #f93195;
+
 					.carr-send-btn {
 						display: block;
 
@@ -186,22 +210,23 @@
 						padding-bottom: 20px;
 						z-index: 15;
 						cursor: pointer;
-						transition: all $transition-len
-							cubic-bezier($transition-bezier);
+						transition: all $transition-len cubic-bezier($transition-bezier);
+
 						&:hover {
 							color: white;
 							z-index: 15;
 							text-decoration: none;
 						}
+
 						&::before,
 						&::after {
 							content: "";
 							position: absolute;
 							z-index: -1;
-							transition: all $transition-len
-								cubic-bezier($transition-bezier);
+							transition: all $transition-len cubic-bezier($transition-bezier);
 						}
 					}
+
 					.btn-color {
 						// border-color: $pink;
 						// color: $pink;
@@ -211,17 +236,20 @@
 							background: $blue;
 						}
 					}
+
 					.btn-l-r {
 						&::after {
 							height: 58px;
 							width: 0;
 							top: 0px;
 						}
+
 						&:hover::after {
 							width: 100%;
 							z-index: -1;
 							cursor: pointer;
 						}
+
 						&::after {
 							left: 0px;
 						}

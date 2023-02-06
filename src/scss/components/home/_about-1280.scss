@@ -1,31 +1,38 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
+
 	//content
 	.about {
 		// height: fit-content;
 		background-image: url("../images/carr-form-bg-d.webp");
 		background-repeat: no-repeat;
 		background-position: -400px 100%;
+
 		.home-cont-about-title {
 			display: flex;
 			justify-content: space-between;
 			margin-top: 2vh;
+
 			span {
 				display: block;
 				background-color: $blue;
 				width: 55vw;
-				@media screen and(min-width:1500px) {
+
+				@media screen and (min-width:1500px) {
 					width: 65vw;
 				}
-				@media screen and(min-width:1920px) {
+
+				@media screen and (min-width:1920px) {
 					width: 70vw;
 				}
+
 				height: 4px;
 				// margin-right: 10vw;
 				margin-top: auto;
 				margin-bottom: auto;
 				margin-left: 0;
 			}
+
 			h1 {
 				font-family: $ff-raleway;
 				font-weight: $fw-light;
@@ -40,33 +47,41 @@
 				margin-left: auto;
 			}
 		}
+
 		.home-cont-about {
 			// height: 170vh;
 			position: relative;
+
 			.home-about-para-d {
 				display: none;
 			}
+
 			.home-about-para-d-2 {
 				//content
 				display: flex;
+
 				.d2-cont {
 					display: flex;
 					justify-content: space-between;
+
 					.col-g {
 						display: flex;
 						flex-direction: column;
 						width: 45%;
+
 						.cont-p-top {
 							p {
 								&:first-child {
 									margin-top: 0;
 								}
+
 								font-family: $ff-poppins;
 								font-weight: $fw-regular;
 								font-size: rem(16);
 								line-height: rem(26);
 							}
 						}
+
 						.boite-grise {
 							position: absolute;
 							width: 65%;
@@ -75,6 +90,7 @@
 							height: 800px;
 							left: 0;
 							z-index: 55;
+
 							//pourquoi simplicite
 							h2 {
 								margin-top: 150px;
@@ -82,6 +98,7 @@
 								font-family: $ff-raleway;
 								font-weight: $fw-extra-bold;
 								font-size: rem(30);
+
 								span {
 									color: $blue;
 								}
@@ -98,34 +115,44 @@
 							}
 						}
 					}
+
 					.col-d {
 						width: 50%;
+
 						.cont-img {
 							position: relative;
 							margin-right: 2.5vw;
+
 							img {
 								max-width: 100%;
 								height: 1258px;
 								margin-bottom: 0;
 							}
+
 							.col-droite {
 								position: absolute;
-								@media screen and(max-height:1024px) {
+
+								@media screen and (max-height:1024px) {
 									height: 150vh;
 								}
-								@media screen and(max-height:900px) {
+
+								@media screen and (max-height:900px) {
 									height: 200vh;
 								}
-								@media screen and(max-height:800px) {
+
+								@media screen and (max-height:800px) {
 									height: 200vh;
 								}
-								@media screen and(max-height:750px) {
+
+								@media screen and (max-height:750px) {
 									height: 250vh;
 								}
-								@media screen and(max-height:700px) {
+
+								@media screen and (max-height:700px) {
 									height: 310vh;
 								}
-								@media screen and(max-height:600px) {
+
+								@media screen and (max-height:600px) {
 									height: 310vh;
 								}
 
@@ -138,6 +165,7 @@
 						}
 					}
 				}
+
 				justify-content: space-between;
 				width: 100%;
 				padding-left: 5vw;
@@ -150,6 +178,7 @@
 					position: absolute;
 					left: calc(100% - 2vw);
 					bottom: 0;
+
 					// top: 0;
 					span {
 						display: block;
@@ -166,6 +195,7 @@
 							//test
 							transform: rotate(90deg) translateX(3px);
 						}
+
 						&:last-child {
 							//test
 							position: relative;
@@ -174,16 +204,19 @@
 				}
 			}
 		}
+
 		.home-cont-voiture {
 			position: relative;
 
 			margin-top: 0px;
-			@media screen and(max-height:740px) {
+
+			@media screen and (max-height:740px) {
 				margin-top: 280px;
 			}
 
 			.voiture-m {
 				overflow-x: hidden;
+
 				img {
 					// position: absolute;
 					display: block;
@@ -192,13 +225,16 @@
 					margin-left: auto;
 					margin-right: -55vw;
 				}
+
 				position: relative;
 				top: 550px;
 			}
+
 			.col-left {
 				display: flex;
 				width: 100%;
 				position: relative;
+
 				// overflow: hidden;
 				h2 {
 					position: absolute;
@@ -211,17 +247,21 @@
 					display: inline-block;
 					margin-left: 5vw;
 				}
+
 				span {
 					position: absolute;
 					overflow: hidden;
 					display: block;
 					width: 45vw;
-					@media screen and(min-width:1500px) {
+
+					@media screen and (min-width:1500px) {
 						width: 50vw;
 					}
-					@media screen and(min-width:1920px) {
+
+					@media screen and (min-width:1920px) {
 						width: 55vw;
 					}
+
 					height: 4px;
 					top: -250px;
 					left: auto;
@@ -230,18 +270,21 @@
 				}
 			}
 		}
+
 		.home-cont-cartes {
 			margin-top: -150px;
 			display: flex;
 			width: 100%;
 			height: fit-content;
 			flex-direction: column;
+
 			.carte {
 				height: fit-content;
 				width: 80%;
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
+
 				.header {
 					height: 100px;
 					// height: auto;
@@ -250,6 +293,7 @@
 					display: flex;
 					justify-content: flex-end;
 					align-items: center;
+
 					img {
 						width: 60px;
 						max-height: 65px;
@@ -261,9 +305,11 @@
 					width: 60%;
 					margin-top: 30px;
 					margin-bottom: 50px;
+
 					p {
 						width: 65%;
 					}
+
 					.first-p {
 						padding-top: 0px;
 						margin-top: 0px;
@@ -274,6 +320,7 @@
 						line-height: rem(24);
 						margin-left: 5vw;
 					}
+
 					.last-p {
 						color: $black;
 						font-family: $ff-poppins;
@@ -284,35 +331,41 @@
 						//test
 					}
 				}
+
 				&:nth-child(1) {
 					.contenu {
 						position: relative;
 						top: 05px;
 					}
 				}
+
 				&:nth-child(2) {
 					.contenu {
 						position: relative;
 						top: 15px;
 					}
 				}
+
 				&:nth-child(3) {
 					.contenu {
 						position: relative;
 						top: 45px;
 					}
 				}
+
 				&:nth-child(4) {
 					.contenu {
 						position: relative;
 						top: 30px;
 					}
 				}
+
 				&:nth-child(2) {
 					margin-top: 30px;
 					// background-color: red;
 				}
 			}
+
 			.last-card {
 				margin-bottom: 150px;
 			}

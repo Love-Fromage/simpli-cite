@@ -1,5 +1,5 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	section.veh-carousel {
 		.cont-title {
 			width: 100%;
@@ -15,6 +15,7 @@
 				height: 4px;
 				background-color: $blue;
 			}
+
 			h1 {
 				color: $blue;
 				font-family: $ff-raleway;
@@ -37,14 +38,17 @@
 			display: block;
 			width: 90vw;
 			margin: auto;
+
 			.slides {
 				display: flex;
 				width: 100vw;
+
 				.cont-slide {
 					width: 23vw;
 					height: 300px;
 					position: relative;
 					margin-right: 50px;
+
 					// overflow-y: visible;
 					.cont-img {
 						border: 5px $gray solid;
@@ -53,6 +57,7 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+
 						img {
 							display: block;
 							// margin: auto;
@@ -62,6 +67,7 @@
 							// margin-bottom: 50px;
 						}
 					}
+
 					&:nth-child(1) {
 						.cont-img {
 							img {
@@ -84,6 +90,7 @@
 						border-right: solid 4px $blue;
 
 						box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+
 						h4 {
 							margin: 0;
 							margin-left: 2vw;
@@ -94,6 +101,7 @@
 							line-height: rem(40);
 							text-transform: uppercase;
 						}
+
 						p {
 							margin-left: 2vw;
 							margin-top: 0;
@@ -104,6 +112,7 @@
 				}
 			}
 		}
+
 		.swiper {
 			width: 90%;
 			padding-right: 1vw;
@@ -113,6 +122,7 @@
 			width: 15vw;
 			height: 300px;
 			position: relative;
+
 			// margin-inline: 20px;
 			&:nth-child(4),
 			&:nth-child(2) {
@@ -121,15 +131,18 @@
 						top: 20px;
 					}
 				}
+
 				// top: 20px;
 				// background-color: red;
 			}
+
 			&:nth-child(2) {
 				.cont-img {
 					img {
 						top: 30px;
 						width: 13vw;
-						@media screen and(max-width:1290px) {
+
+						@media screen and (max-width:1290px) {
 							top: 45px;
 						}
 					}
@@ -140,55 +153,65 @@
 				.cont-img {
 					img {
 						width: 8vw;
-						@media screen and(max-width:1290px) {
+
+						@media screen and (max-width:1290px) {
 							width: 10vw;
 						}
 					}
 				}
+
 				.carte-grise {
 					// background-color: red;
 					width: 25vw;
 				}
 			}
+
 			&:nth-child(5) {
 				.cont-img {
 					img {
 						top: 20px;
-						@media screen and(max-width:1290px) {
+
+						@media screen and (max-width:1290px) {
 							width: 15vw;
 							top: 50px;
 						}
 					}
 				}
 			}
+
 			&:nth-child(6) {
 				.cont-img {
 					img {
 						position: relative;
 						top: 10px;
-						@media screen and(max-width:1290px) {
+
+						@media screen and (max-width:1290px) {
 							width: 15vw;
 							top: 30px;
 						}
 					}
 				}
 			}
+
 			&:nth-child(1) {
 				.cont-img {
+
 					// background-color: red;
 					img {
 						top: -20px;
 						width: 20vw;
-						@media screen and(max-width:1290px) {
+
+						@media screen and (max-width:1290px) {
 							top: 0px;
 						}
 					}
 				}
 			}
+
 			&:nth-child(3) {
 				.cont-img {
 					img {
-						@media screen and(max-width:1290px) {
+						@media screen and (max-width:1290px) {
 							width: 15vw;
 							top: 30px;
 						}
@@ -201,6 +224,7 @@
 				border: 5px $gray solid;
 				width: inherit;
 				height: 218px;
+
 				img {
 					display: block;
 					margin-left: auto;
@@ -208,7 +232,8 @@
 					// top: 20px;
 					margin-right: auto;
 					width: 20vw;
-					@media screen and(min-width:1500px) {
+
+					@media screen and (min-width:1500px) {
 						width: 15vw;
 					}
 
@@ -216,6 +241,7 @@
 					// margin-bottom: 50px;
 				}
 			}
+
 			// .carte-grise {
 			// 	background-color: $gray;
 			// 	padding: 10px;
@@ -245,6 +271,7 @@
 				border-right: solid 4px $blue;
 
 				box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+
 				h4 {
 					margin: 0;
 					margin-left: 2vw;
@@ -255,6 +282,7 @@
 					line-height: rem(40);
 					text-transform: uppercase;
 				}
+
 				p {
 					margin-left: 2vw;
 					margin-top: 0;
@@ -263,12 +291,14 @@
 				}
 			}
 		}
+
 		.cont-nav-carou {
 			display: flex;
 			width: 5%;
 			margin-left: 5vw;
 			margin-top: 50px;
 			margin-bottom: 25px;
+
 			.f-s,
 			.f-s2 {
 				filter: grayscale(1);
@@ -276,17 +306,21 @@
 			}
 
 			justify-content: flex-start;
+
 			img {
 				&:hover {
 					cursor: pointer;
 				}
+
 				width: 5vw;
+
 				&:first-child {
 					transform: scaleX(-1);
 					margin-right: 10px;
 				}
 			}
 		}
+
 		// .cont-nav-carou {
 		// 	display: flex;
 		// 	width: 100%;

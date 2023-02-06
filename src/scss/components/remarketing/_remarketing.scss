@@ -1,5 +1,5 @@
 //version pour le mobile
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
 	.lang-switch {
 		position: fixed;
 		left: auto;
@@ -20,20 +20,25 @@
 		font-weight: $fw-medium;
 		font-size: rem(10);
 		letter-spacing: 0.04em;
+
 		a {
 			color: white;
 		}
+
 		display: none;
 	}
+
 	//content
 	.cont-rm {
 		height: fit-content;
 		background-color: black;
+
 		.rm-bg-img {
 			background-image: url("../images/bg-road.webp");
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+
 		//ici c'est literalement le linear-gradient qui
 		//part du au jusqu'a la fin de l'image de fond.
 
@@ -51,6 +56,7 @@
 			width: 40vw;
 			height: auto;
 		}
+
 		.ligne-bleue {
 			position: absolute;
 			width: 0.5vw;
@@ -64,6 +70,7 @@
 			right: auto;
 			height: 80px;
 		}
+
 		h1 {
 			display: block;
 			width: fit-content;
@@ -76,6 +83,7 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		//le bg de toute le reste sauf le formulaire
 		.rm-bg {
 			background-color: black;
@@ -92,6 +100,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				height: fit-content;
+
 				h2 {
 					margin-top: 80px;
 					font-family: $ff-raleway;
@@ -107,6 +116,7 @@
 						color: $blue;
 					}
 				}
+
 				p {
 					font-family: $ff-poppins;
 					font-weight: $fw-regular;
@@ -114,6 +124,7 @@
 					line-height: rem(20);
 					color: $black;
 					width: 75%;
+
 					// margin-left: 5vw;
 					&:nth-child(3) {
 						font-weight: $fw-bold;
@@ -121,6 +132,7 @@
 					}
 				}
 			}
+
 			//pour le formulaire, va voir dans un autre fichier
 			// src/remarketing/_formulaire.scss
 			.rm-cont-link {
@@ -131,12 +143,14 @@
 
 				text-align: center;
 				text-transform: uppercase;
+
 				a {
 					font-family: $ff-poppins;
 					font-weight: $fw-medium;
 					letter-spacing: 4%;
 					font-size: rem(16);
 					color: $blue;
+
 					&:visited {
 						color: $blue;
 					}
@@ -150,17 +164,20 @@
 //voir src/scss/components/remarketing/_remarketing-768.scss
 
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
+
 	//content
 	.cont-rm {
 		height: fit-content;
 		background-color: black;
+
 		.rm-bg-img {
 			background-image: url("../images/rm-768.webp");
 			background-repeat: no-repeat;
 			background-size: cover;
 			height: 1024px;
 		}
+
 		//ici c'est literalement le linear-gradient qui
 		//part du au jusqu'a la fin de l'image de fond.
 
@@ -178,6 +195,7 @@
 			width: 30vw;
 			height: auto;
 		}
+
 		.ligne-bleue {
 			position: absolute;
 			width: 0.5vw;
@@ -191,6 +209,7 @@
 			right: auto;
 			height: 100px;
 		}
+
 		h1 {
 			display: block;
 			width: fit-content;
@@ -203,6 +222,7 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		//le bg de toute le reste sauf le formulaire
 		.rm-bg {
 			background-color: black;
@@ -219,6 +239,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				height: fit-content;
+
 				h2 {
 					width: 75%;
 					margin-left: auto;
@@ -231,18 +252,22 @@
 					color: $black;
 					text-transform: uppercase;
 					text-overflow: ellipsis;
+
 					// white-space: nowrap;
 					br {
 						display: none;
+
 						&:nth-child(2) {
 							background-color: red;
 							display: block;
 						}
 					}
+
 					span {
 						color: $blue;
 					}
 				}
+
 				p {
 					font-family: $ff-poppins;
 					font-weight: $fw-regular;
@@ -250,12 +275,14 @@
 					line-height: rem(22);
 					color: $black;
 					width: 75%;
+
 					// margin-left: 5vw;
 					&:nth-child(3) {
 						font-weight: $fw-bold;
 					}
 				}
 			}
+
 			//pour le formulaire, va voir dans un autre fichier
 			// src/remarketing/_form-768.scss
 			.rm-cont-link {
@@ -266,12 +293,14 @@
 
 				text-align: center;
 				text-transform: uppercase;
+
 				a {
 					font-family: $ff-poppins;
 					font-weight: $fw-medium;
 					letter-spacing: 4%;
 					font-size: rem(16);
 					color: $blue;
+
 					&:visited {
 						color: $blue;
 					}

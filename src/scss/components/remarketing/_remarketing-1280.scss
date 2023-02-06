@@ -1,5 +1,5 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	.lang-switch {
 		position: fixed;
 		left: auto;
@@ -20,20 +20,24 @@
 		font-weight: $fw-medium;
 		font-size: rem(10);
 		letter-spacing: 0.04em;
+
 		a {
 			color: white;
 		}
 	}
+
 	//content
 	.cont-rm {
 		height: fit-content;
 		background-color: black;
+
 		.rm-bg-img {
 			background-image: url("../images/rm-1280.webp");
 			background-repeat: no-repeat;
 			background-size: cover;
 			height: 1024px;
 		}
+
 		//ici c'est literalement le linear-gradient qui
 		//part du au jusqu'a la fin de l'image de fond.
 
@@ -51,6 +55,7 @@
 			width: 15vw;
 			height: auto;
 		}
+
 		.ligne-bleue {
 			position: absolute;
 			width: 0.3vw;
@@ -64,6 +69,7 @@
 			right: auto;
 			height: 200px;
 		}
+
 		h1 {
 			display: block;
 			width: fit-content;
@@ -76,6 +82,7 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		//le bg de toute le reste sauf le formulaire
 		.rm-bg {
 			background-color: black;
@@ -92,6 +99,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				height: fit-content;
+
 				h2 {
 					width: 75%;
 					// display: block;
@@ -104,6 +112,7 @@
 					line-height: rem(42);
 					color: $black;
 					text-transform: uppercase;
+
 					br {
 						// &:first-child {
 						display: none;
@@ -116,10 +125,12 @@
 							display: none;
 						}
 					}
+
 					span {
 						color: $blue;
 					}
 				}
+
 				p {
 					font-family: $ff-poppins;
 					font-weight: $fw-regular;
@@ -127,12 +138,14 @@
 					line-height: rem(26);
 					color: $black;
 					width: 75%;
+
 					// margin-left: 5vw;
 					&:nth-child(3) {
 						font-weight: $fw-bold;
 					}
 				}
 			}
+
 			//pour le formulaire, va voir dans un autre fichier
 			// src/remarketing/_form-768.scss
 			.rm-cont-link {
@@ -140,19 +153,23 @@
 				margin-top: 40px;
 				margin-bottom: 65px;
 				position: relative;
-				@media screen and(max-height:900px) {
+
+				@media screen and (max-height:900px) {
 					top: -260px;
 				}
+
 				top: -325px;
 
 				text-align: center;
 				text-transform: uppercase;
+
 				a {
 					font-family: $ff-poppins;
 					font-weight: $fw-medium;
 					letter-spacing: 4%;
 					font-size: rem(16);
 					color: $blue;
+
 					&:visited {
 						color: $blue;
 					}

@@ -1,23 +1,24 @@
 //version pour la tablette
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
+
 	//
 	.hero {
 		position: relative;
 		top: -12vh;
 		height: 100%;
 		z-index: 5;
+
 		.hero-d {
 			height: inherit;
-			background: linear-gradient(
-				180deg,
-				rgba(0, 0, 0, 0) 11.51%,
-				rgba(0, 0, 0, 0.85) 100%
-			);
+			background: linear-gradient(180deg,
+					rgba(0, 0, 0, 0) 11.51%,
+					rgba(0, 0, 0, 0.85) 100%);
 			// width: 50%;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
 		}
+
 		h1 {
 			font-family: $ff-raleway;
 			font-size: rem(35);
@@ -32,6 +33,7 @@
 
 			line-height: auto;
 		}
+
 		.home-call {
 			color: white;
 			display: block;

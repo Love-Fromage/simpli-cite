@@ -2,10 +2,13 @@
 a:link {
 	text-decoration: none;
 }
-@media screen and(max-width:767px) {
+
+@media screen and (max-width:767px) {
+
 	//c'est ici le code pour faire le form
 	.leform {
 		width: 75%;
+
 		// margin-left: 5vw;
 		label {
 			text-transform: uppercase;
@@ -15,6 +18,7 @@ a:link {
 			font-size: rem(10);
 			line-height: rem(24);
 		}
+
 		input,
 		select {
 			width: 100%;
@@ -25,10 +29,12 @@ a:link {
 			border: none;
 			border-right: solid 3px $blue;
 		}
+
 		.select-selected {
 			// -webkit-appearance: none;
 			// background-color: red;
 		}
+
 		.select-selected:after {
 			position: absolute;
 			content: "";
@@ -39,6 +45,7 @@ a:link {
 			border: 6px solid transparent;
 			border-color: #fff transparent transparent transparent;
 		}
+
 		.cont-radio {
 			display: flex;
 			flex-direction: column;
@@ -46,6 +53,7 @@ a:link {
 			.cont-radio-1,
 			.cont-radio-2 {
 				display: flex;
+
 				.container {
 					display: flex;
 					position: relative;
@@ -81,12 +89,12 @@ a:link {
 				}
 
 				/* On mouse-over, add a grey background color */
-				.container:hover input ~ .checkmark {
+				.container:hover input~.checkmark {
 					background-color: #ccc;
 				}
 
 				/* When the radio button is checked, add a blue background */
-				.container input:checked ~ .checkmark {
+				.container input:checked~.checkmark {
 					background-color: #2196f3;
 				}
 
@@ -98,7 +106,7 @@ a:link {
 				}
 
 				/* Show the indicator (dot/circle) when checked */
-				.container input:checked ~ .checkmark:after {
+				.container input:checked~.checkmark:after {
 					display: block;
 				}
 
@@ -113,12 +121,14 @@ a:link {
 
 				/* Style the indicator (dot/circle) */
 			}
+
 			[type="checkbox"] {
 				width: fit-content;
 				text-align: left;
 				border: none;
 				background-color: red;
 			}
+
 			.radio {
 				text-transform: none;
 
@@ -127,12 +137,14 @@ a:link {
 				height: fit-content;
 			}
 		}
+
 		.cont-partie-2 {
 			.label-last {
 				margin-top: 15px;
 				display: inline-block;
 				line-height: rem(15);
 			}
+
 			p {
 				&:nth-child(2) {
 					width: 100%;
@@ -144,12 +156,15 @@ a:link {
 					line-height: normal;
 				}
 			}
+
 			.info-rm-supp {
 				display: flex;
 				flex-direction: column;
+
 				label {
 					margin-bottom: 20px;
 				}
+
 				textarea {
 					width: 100%;
 					border-radius: 0;
@@ -162,6 +177,7 @@ a:link {
 				}
 			}
 		}
+
 		.rm-sub {
 			margin-top: 50px;
 			background-color: #fff;
@@ -173,6 +189,7 @@ a:link {
 			height: 60px;
 			width: 100%;
 		}
+
 		padding-bottom: 50px;
 		margin-bottom: 0;
 	}
@@ -180,11 +197,11 @@ a:link {
 
 //version pour la tablette se trouve dans un autre fichier
 //voir src/scss/components/remarketing/_form-768.scss
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
 	//
 }
 
 //version pour le desktop ici
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	//
 }

@@ -1,5 +1,5 @@
 //version pour le mobile
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
 	.carr-actual-content {
 		.chapeau {
 			width: 90%;
@@ -7,18 +7,22 @@
 			background-color: white;
 			height: 90px;
 		}
+
 		// padding-top: 90px;
 		background-color: $gray;
 		margin-left: auto;
 		width: 90%;
+
 		img {
 			display: block;
 		}
+
 		.carr-cont-cpt {
 			margin-left: auto;
 			// margin-right: auto;
 			margin-top: 50px;
 			margin-bottom: 70px;
+
 			h4 {
 				font-family: $ff-poppins;
 				font-weight: $fw-bold;
@@ -28,6 +32,7 @@
 				margin-bottom: 0;
 				margin-left: 10vw;
 			}
+
 			p {
 				margin-left: 10vw;
 				margin-top: 15px;
@@ -37,10 +42,12 @@
 				line-height: rem(20);
 				color: #16191b;
 				width: 80%;
+
 				&:last-child {
 					padding-bottom: 50px;
 				}
 			}
+
 			.ligne-dotted {
 				display: block;
 				width: 70%;
@@ -55,11 +62,11 @@
 }
 
 //version pour la tablette
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
 	//content
 }
 
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	//content
 }

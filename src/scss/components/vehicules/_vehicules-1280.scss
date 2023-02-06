@@ -1,5 +1,5 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
 	.veh-hero {
 		background-image: url("../images/veh-home-bg-d.webp");
 		background-repeat: no-repeat;
@@ -12,10 +12,12 @@
 		margin-right: auto;
 		height: 50vh;
 	}
+
 	section.veh-extra {
 		margin-top: 100px;
 		display: flex;
 		margin-bottom: 75px;
+
 		.veh-cont-gris {
 			display: flex;
 			flex-direction: column;
@@ -26,6 +28,7 @@
 			justify-content: center;
 			padding-left: 5vw;
 			background-color: $gray;
+
 			h3 {
 				width: 80%;
 				font-family: $ff-raleway;
@@ -36,19 +39,23 @@
 				margin-top: 0px;
 
 				text-transform: uppercase;
+
 				span {
 					color: $blue;
 				}
 			}
+
 			.veh-sep {
 				background-color: rgba(0, 0, 0, 0.2);
 				width: 85%;
 				height: 2px;
 			}
 		}
+
 		$transition-bezier: 1, 0, 0, 1;
 		$transition-len: 0.35s;
 		$pink: #f93195;
+
 		div.veh-btn-contact {
 			display: flex;
 			width: 30vw;
@@ -65,14 +72,17 @@
 			box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
 			z-index: 20;
 			transition: all $transition-len cubic-bezier($transition-bezier);
+
 			&:hover {
 				a.veh-btn-contact {
 					color: white;
 					// background-color: red;
 				}
+
 				z-index: 5;
 				text-decoration: none;
 			}
+
 			&::before,
 			&::after {
 				content: "";
@@ -80,6 +90,7 @@
 				z-index: -1;
 				transition: all $transition-len cubic-bezier($transition-bezier);
 			}
+
 			a.veh-btn-contact {
 				margin: auto;
 				color: $black;
@@ -88,12 +99,14 @@
 				font-size: rem(16);
 				letter-spacing: 4%;
 				text-transform: uppercase;
+
 				&:hover {
 					text-decoration: none;
 					color: white;
 				}
 			}
 		}
+
 		.btn-color {
 			// border-color: $pink;
 			// color: $pink;
@@ -103,22 +116,25 @@
 				background: $blue;
 			}
 		}
+
 		.btn-l-r {
 			&::after {
 				height: 158px;
 				width: 0;
 				top: 0px;
 			}
+
 			&:hover::after {
-				// @media screen and(min-width:1350px) {
+				// @media screen and (min-width:1350px) {
 				// 	width: 15.2vw;
 				// }
-				// @media screen and(min-width:1500px) {
+				// @media screen and (min-width:1500px) {
 				// 	width: 15.7vw;
 				// }
 				width: 26.9vw;
 				z-index: -1;
 			}
+
 			&::after {
 				left: 0vw;
 			}

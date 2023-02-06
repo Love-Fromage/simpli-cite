@@ -1,8 +1,10 @@
 //version pour le desktop
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
+
 	//content
 	.leform {
 		width: 75%;
+
 		// margin-left: 5vw;
 		label {
 			text-transform: uppercase;
@@ -12,10 +14,12 @@
 			font-size: rem(12);
 			line-height: rem(24);
 		}
+
 		.label-trans {
 			display: inline-block;
 			margin-top: 25px;
 		}
+
 		input,
 		select {
 			width: 100%;
@@ -31,6 +35,7 @@
 			// -webkit-appearance: none;
 			// background-color: red;
 		}
+
 		.select-selected:after {
 			position: absolute;
 			content: "";
@@ -41,6 +46,7 @@
 			border: 6px solid transparent;
 			border-color: #fff transparent transparent transparent;
 		}
+
 		.cont-radio {
 			display: flex;
 			flex-direction: column;
@@ -84,12 +90,12 @@
 				}
 
 				/* On mouse-over, add a grey background color */
-				.container:hover input ~ .checkmark {
+				.container:hover input~.checkmark {
 					background-color: #ccc;
 				}
 
 				/* When the radio button is checked, add a blue background */
-				.container input:checked ~ .checkmark {
+				.container input:checked~.checkmark {
 					background-color: #2196f3;
 				}
 
@@ -101,9 +107,10 @@
 				}
 
 				/* Show the indicator (dot/circle) when checked */
-				.container input:checked ~ .checkmark:after {
+				.container input:checked~.checkmark:after {
 					display: block;
 				}
+
 				.container .checkmark:after {
 					top: 5.2px;
 					left: 5.2px;
@@ -115,12 +122,14 @@
 
 				/* Style the indicator (dot/circle) */
 			}
+
 			[type="checkbox"] {
 				width: fit-content;
 				text-align: left;
 				border: none;
 				background-color: red;
 			}
+
 			.radio {
 				text-transform: none;
 
@@ -134,9 +143,11 @@
 			.info-rm-supp {
 				display: flex;
 				flex-direction: column;
+
 				label {
 					margin-bottom: 10px;
 				}
+
 				textarea {
 					width: 100%;
 					border-radius: 0;
@@ -148,12 +159,15 @@
 					resize: none;
 				}
 			}
+
 			label:first-child {
 				display: inline-block;
 				margin-top: 25px;
 			}
+
 			p.partie-2-p {
 				margin-right: 0;
+
 				&:nth-child(2) {
 					width: 100%;
 					margin-left: 0;
@@ -164,9 +178,11 @@
 					line-height: normal;
 				}
 			}
+
 			#num-id {
 				margin-bottom: 35px;
 			}
+
 			select {
 				margin-bottom: 55px;
 			}
@@ -176,6 +192,7 @@
 		$transition-bezier: 1, 0, 0, 1;
 		$transition-len: 0.35s;
 		$pink: #f93195;
+
 		.rm-sub {
 			background-color: #fff;
 			border: $blue 2px solid;
@@ -188,11 +205,13 @@
 			position: relative;
 			z-index: 20;
 			transition: all $transition-len cubic-bezier($transition-bezier);
+
 			&:hover {
 				color: white;
 				z-index: 5;
 				text-decoration: none;
 			}
+
 			&::before,
 			&::after {
 				content: "";
@@ -201,6 +220,7 @@
 				transition: all $transition-len cubic-bezier($transition-bezier);
 			}
 		}
+
 		.btn-color {
 			// border-color: $pink;
 			// color: $pink;
@@ -210,29 +230,33 @@
 				background: $blue;
 			}
 		}
+
 		.btn-l-r {
 			&::after {
 				height: 58px;
 				width: 0;
 				top: 0px;
 			}
+
 			&:hover::after {
-				// @media screen and(min-width:1280px) {
+				// @media screen and (min-width:1280px) {
 				// 	width: 15.8vw;
 				// }
-				// @media screen and(min-width:1350px) {
+				// @media screen and (min-width:1350px) {
 				// 	width: 15.2vw;
 				// }
-				// @media screen and(min-width:1500px) {
+				// @media screen and (min-width:1500px) {
 				// 	width: 15.7vw;
 				// }
 				width: 100%;
 				z-index: -1;
 			}
+
 			&::after {
 				left: 0vw;
 			}
 		}
+
 		padding-bottom: 50px;
 		margin-bottom: 0;
 	}
