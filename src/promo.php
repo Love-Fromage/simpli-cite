@@ -8,12 +8,12 @@ include('header.php');
     <span></span>
     <h1><?php lang('Promotions', 'Promotions'); ?></h1>
 </div>
-<div class="swiper">
+<div class="Promoswiper">
 
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./images/promo-m-1.png" alt="promo1"></div>
-        <div class="swiper-slide"><img src="./images/promo-m-2.png" alt="promo2"></div>
-        <div class="swiper-slide"><img src="./images/promo-m-3.png" alt="promo3"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
     </div>
 </div>
 </div>
@@ -34,7 +34,7 @@ include('header.php');
 
 
 <script defer>
-    const swiper4 = new Swiper('.swiper', {
+    const swiper4 = new Swiper('.Promoswiper', {
         navigation: {
             nextEl: '#next',
             prevEl: '#prev',
