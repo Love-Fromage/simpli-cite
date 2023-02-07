@@ -66,6 +66,49 @@
     }
 
     .promo-desk {
-        display: block;
+        display: flex;
+
+        section.veh-extra .btn-l-r:hover::after {
+            width: 100%;
+        }
+
+        .veh-extra {
+            width: 90%;
+
+        }
+
+        .veh-btn-contact {
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        p {
+            &::after {
+                display: none;
+            }
+
+            margin-left: rem(80);
+        }
+
+        margin-bottom: 80px;
+
+        .promoContact {
+            width: 70%;
+            font-weight: 800;
+            font-size: rem(30);
+
+        }
+
+        .promoNumber {
+            margin-top: 0;
+            width: rem(400);
+            margin-left: rem(-80);
+            font-size: rem(16);
+            margin-top: auto;
+            margin-bottom: auto;
+            transition: all 0.35s cubic-bezier(1, 0, 0, 1);
+        }
     }
 }

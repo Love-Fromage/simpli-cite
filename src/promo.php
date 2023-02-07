@@ -55,10 +55,22 @@ include('header.php');
     <a href="tel:4509071596" class="promoNumber">(450) 907-1596</a>
 </section>
 <section class="promo-desk">
-    <div class="promoContact">
+    <!-- <div class="promoContact">
         <p>pour toute <span>question</span> ou <span>renseignement</span> : </p>
     </div>
-    <a href="tel:4509071596" class="promoNumber">(450) 907-1596</a>
+    <a href="tel:4509071596" class="promoNumber veh-btn-contact btn-color btn-l-r">(450) 907-1596</a> -->
+    <section class="veh-extra">
+        <div class="veh-cont-gris">
+            <h3>
+                <?php lang('pour toute <span>question</span> ou
+					<span>renseignement</span>', 'For any <span>question</span> or <span>information</span>'); ?> :
+            </h3>
+            <span class="veh-sep"></span>
+        </div>
+        <div class="veh-btn-contact btn-color btn-l-r">
+            <a href="tel:4509071596" class="veh-btn-contact">(450) 907-1596</a>
+        </div>
+    </section>
 </section>
 
 
