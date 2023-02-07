@@ -23,7 +23,7 @@
 
     .Promoswiper {
         .swiper-wrapper {
-            width: 90vw;
+            width: rem(1200);
             margin-left: auto;
             margin-right: auto;
             height: 668px;
@@ -33,8 +33,10 @@
                 margin-left: auto;
                 height: 668px;
 
+                width: rem(1200);
+
                 img {
-                    width: 90vw;
+                    width: rem(1200);
                     height: 665px;
                     margin-left: auto;
                     margin-right: auto;
@@ -46,12 +48,15 @@
 
     .cont-nav-carou2 {
         position: relative;
+        width: rem(1200) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
 
         &::after {
             content: "";
             display: flex;
             background-color: rgba($color: #000000, $alpha: 0.2);
-            width: 80vw;
+            width: calc(rem(1200) - 10vw);
             height: 2px;
             margin-left: 10vw;
 
