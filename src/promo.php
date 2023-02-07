@@ -18,14 +18,34 @@ include('header.php');
 
         if (screen < 767) {
             console.log('mobile');
-            img1.src = "./images/promo-m-1.png";
-            img2.src = "./images/promo-m-2.png";
-            img3.src = "./images/promo-m-3.png";
+            if (window.location.search === "?lang=en") {
+
+                img1.src = "./images/promo-en-1.jpg";
+                img2.src = "./images/promo-en-2.jpg";
+                img3.src = "./images/promo-en-3.jpg";
+            } else {
+                img1.src = "./images/promo-m-1.png";
+                img2.src = "./images/promo-m-2.png";
+                img3.src = "./images/promo-m-3.png";
+
+            }
         } else if (screen >= 768) {
             console.log('tablette at', screen);
-            img1.src = "./images/promo-tab-1.png";
-            img2.src = "./images/promo-tab-2.png";
-            img3.src = "./images/promo-tab-3.png";
+
+            if (window.location.search === "?lang=en") {
+
+                img1.src = "./images/promo-en-1.jpg";
+                img2.src = "./images/promo-en-2.jpg";
+                img3.src = "./images/promo-en-3.jpg";
+            } else {
+                img1.src = "./images/promo-tab-1.png";
+                img2.src = "./images/promo-tab-2.png";
+                img3.src = "./images/promo-tab-3.png";
+
+            }
+            // img1.src = "./images/promo-tab-1.png";
+            // img2.src = "./images/promo-tab-2.png";
+            // img3.src = "./images/promo-tab-3.png";
         }
     });
 </script>
@@ -48,7 +68,7 @@ include('header.php');
 <section class="promo-mobile">
 
     <section class="promoContact">
-        <p>pour toute <span>question</span> ou <br><span>renseignement</span> : </p>
+        <p><?php lang("pour toute ", "for any "); ?><span>question</span> <?php lang("ou", "or"); ?> <br><span><?php lang("renseignement", "information"); ?></span> : </p>
 
 
     </section>
