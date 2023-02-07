@@ -8,12 +8,33 @@ include('header.php');
     <span></span>
     <h1><?php lang('Promotions', 'Promotions'); ?></h1>
 </div>
+<script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const img1 = document.getElementById('img1');
+        const img2 = document.getElementById('img2');
+        const img3 = document.getElementById('img3');
+        let screen = window.outerWidth;
+
+        if (screen < 767) {
+            console.log('mobile');
+            img1.src = "./images/promo-m-1.png";
+            img2.src = "./images/promo-m-2.png";
+            img3.src = "./images/promo-m-3.png";
+        } else if (screen >= 768) {
+            console.log('tablette at', screen);
+            img1.src = "./images/promo-tab-1.png";
+            img2.src = "./images/promo-tab-2.png";
+            img3.src = "./images/promo-tab-3.png";
+        }
+    });
+</script>
 <div class="Promoswiper">
 
     <div class="swiper-wrapper">
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
+        <div class="swiper-slide"><img id="img1" src="" alt=""></div>
+        <div class="swiper-slide"><img id="img2" src="" alt=""></div>
+        <div class="swiper-slide"><img id="img3" src="" alt=""></div>
     </div>
 </div>
 </div>

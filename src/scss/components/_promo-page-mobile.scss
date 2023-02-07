@@ -40,17 +40,36 @@
 
             margin-left: auto;
             margin-right: auto;
+            height: auto;
 
             .swiper-slide {
                 // width: rem(280);
                 margin-left: auto;
                 margin-right: auto;
 
-                &:nth-child(1) {
-                    background-image: url('../images/promo-m-1.png');
-                    background-size: cover;
-
+                img {
+                    width: rem(280);
+                    height: auto;
                 }
+
+                // &:nth-child(1) {
+                //     // background-image: url('../images/promo-m-1.png');
+                //     // background-size: cover;
+                //     // height: 148px;
+
+                // }
+
+                // &:nth-child(2) {
+                //     background-image: url('../images/promo-m-2.png');
+                //     background-size: cover;
+
+                // }
+
+                // &:nth-child(3) {
+                //     background-image: url('../images/promo-m-3.png');
+                //     background-size: cover;
+
+                // }
 
 
             }
