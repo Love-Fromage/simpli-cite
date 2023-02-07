@@ -29,7 +29,7 @@ include('header.php');
         }
     });
 </script>
-<div class="Promoswiper">
+<div class="Promoswiper swiper">
 
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img id="img1" src="" alt=""></div>

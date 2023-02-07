@@ -17,6 +17,8 @@
         display: flex;
         align-items: center;
 
+
+
         span {
             display: block;
             width: 45%;
@@ -29,6 +31,7 @@
             font-family: $ff-raleway;
             font-weight: 400;
             color: $blue;
+            text-transform: none;
         }
     }
 

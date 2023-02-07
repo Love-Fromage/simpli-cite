@@ -1,0 +1,63 @@
+@media screen and (min-width:1280px) {
+    .promoHero {
+        background-image: url('../images/promo-hero-desk.png');
+        background-size: cover;
+        width: 90%;
+        height: 420px;
+    }
+
+    .promo-cont-title {
+        display: flex;
+        align-items: center;
+
+        span {
+            width: 50%;
+        }
+
+        h1 {
+            font-family: $ff-raleway;
+            font-weight: 300;
+            font-size: rem(100);
+        }
+    }
+
+    .Promoswiper {
+        .swiper-wrapper {
+            width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+            height: 668px;
+
+            .swiper-slide {
+                margin-right: auto;
+                margin-left: auto;
+                height: 668px;
+
+                img {
+                    width: 90vw;
+                    height: 665px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    outline: 1px solid $blue;
+                }
+            }
+        }
+    }
+
+    .cont-nav-carou2 {
+        position: relative;
+
+        &::after {
+            content: "";
+            display: flex;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+            width: 80vw;
+            height: 2px;
+            margin-left: 10vw;
+
+            align-items: center;
+            position: absolute;
+            top: 5px;
+        }
+    }
+}
