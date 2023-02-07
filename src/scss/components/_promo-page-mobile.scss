@@ -1,4 +1,12 @@
 @media screen and (max-width:767px) {
+    .promo-mobile {
+        display: block;
+    }
+
+    .promo-desk {
+        display: none;
+    }
+
     .promoChapeau {
         height: 17px;
 

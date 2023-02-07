@@ -45,12 +45,21 @@ include('header.php');
     </div>
 
 </section>
-<section class="promoContact">
-    <p>pour toute <span>question</span> ou <br><span>renseignement</span> : </p>
+<section class="promo-mobile">
+
+    <section class="promoContact">
+        <p>pour toute <span>question</span> ou <br><span>renseignement</span> : </p>
 
 
+    </section>
+    <a href="tel:4509071596" class="promoNumber">(450) 907-1596</a>
 </section>
-<a href="tel:4509071596" class="promoNumber">(450) 907-1596</a>
+<section class="promo-desk">
+    <div class="promoContact">
+        <p>pour toute <span>question</span> ou <span>renseignement</span> : </p>
+    </div>
+    <a href="tel:4509071596" class="promoNumber">(450) 907-1596</a>
+</section>
 
 
 
